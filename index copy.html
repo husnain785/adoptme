@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adopt Me Trade Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-beige: #f4f1eb;
+            --modal-bg: #f0ebe0;
+            /* Slightly darker beige for modal */
+            --card-white: #ffffff;
+            --coral-red: #ff6b6b;
+            --coral-light: #ff8c8c;
+            --text-dark: #4a4a4a;
+            --text-grey: #888888;
+            --btn-blue: #29abe2;
+            --btn-pink: #ff005c;
+            --btn-purple: #6600cc;
+            --shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            user-select: none;
+            outline: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito', sans-serif;
+            background-color: var(--bg-beige);
+            color: var(--text-dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* --- MAIN WRAPPER --- */
+        .calculator-wrapper {
+            width: 100%;
+            max-width: 1000px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* --- HEADER SECTION --- */
+        .header-pill {
+            background: var(--card-white);
+            border-radius: 60px;
+            padding: 15px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: var(--shadow);
+            position: relative;
+            height: 120px;
+        }
+
+        .score-display {
+            font-size: 64px;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .score-left {
+            color: var(--coral-red);
+        }
+
+        .score-right {
+            color: var(--text-dark);
+        }
+
+        .status-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 40px;
+        }
+
+        .status-pill {
+            background: #e8e8e8;
+            border-radius: 30px;
+            padding: 8px 20px;
+            display: flex;
+            gap: 20px;
+            font-weight: 900;
+            color: #ccc;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .status-pill.win .t-win {
+            color: #2ecc71;
+        }
+
+        .status-pill.fair .t-fair {
+            color: #aaa;
+        }
+
+        .status-pill.lose .t-lose {
+            color: var(--coral-red);
+        }
+
+        .labels-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 400px;
+            font-size: 24px;
+            font-weight: 800;
+            color: var(--text-grey);
+            position: relative;
+        }
+
+        .label-item {
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .label-item::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 120%;
+            height: 6px;
+            border-radius: 3px;
+        }
+
+        .label-left::after {
+            background: #ffa500;
+        }
+
+        .label-right::after {
+            background: var(--coral-red);
+            left: -20%;
+        }
+
+        .center-divider {
+            color: #ccc;
+            font-weight: 300;
+            font-size: 30px;
+            margin-top: -10px;
+        }
+
+        /* --- GRID AREA --- */
+        .main-card {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 0;
+            border: 4px solid var(--coral-light);
+            border-radius: 15px;
+            overflow: hidden;
+            background: #ffe5d9;
+            width: 360px;
+            height: 360px;
+        }
+
+        .slot {
+            border: 2px solid var(--coral-light);
+            position: relative;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #ffe5d9;
+            transition: background 0.2s;
+        }
+
+        .slot:hover {
+            background: #ffece6;
+        }
+
+        .slot.filled {
+            background: #fff;
+            border-color: var(--coral-light);
+        }
+
+        .slot-img {
+            width: 85%;
+            height: 85%;
+            object-fit: contain;
+        }
+
+        .slot-tags {
+            position: absolute;
+            bottom: 4px;
+            display: flex;
+            gap: 2px;
+        }
+
+        .tag {
+            font-size: 10px;
+            font-weight: 800;
+            color: #fff;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+
+        .tag.n {
+            background: #00d2ff;
+        }
+
+        .tag.m {
+            background: #ff00aa;
+        }
+
+        .tag.f {
+            background: #88caff;
+        }
+
+        .tag.r {
+            background: #ff9eb5;
+        }
+
+        .add-circle {
+            width: 60px;
+            height: 60px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .add-circle::before,
+        .add-circle::after {
+            content: '';
+            position: absolute;
+            background: #e0cbbd;
+            border-radius: 2px;
+        }
+
+        .add-circle::before {
+            width: 24px;
+            height: 6px;
+        }
+
+        .add-circle::after {
+            width: 6px;
+            height: 24px;
+        }
+
+        /* --- CENTER & FOOTER --- */
+        .center-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 360px;
+            width: 100px;
+            color: var(--coral-light);
+            opacity: 0.5;
+        }
+
+        .chevron {
+            width: 40px;
+            height: 40px;
+            border-bottom: 8px solid var(--coral-light);
+            border-right: 8px solid var(--coral-light);
+            transform: rotate(45deg);
+            margin: -15px 0;
+            opacity: 0.3;
+        }
+
+        .center-score-float {
+            font-size: 48px;
+            font-weight: 900;
+            color: var(--coral-red);
+            margin: 20px 0;
+            opacity: 1;
+        }
+
+        .footer-controls {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-top: -20px;
+            padding-right: 20px;
+        }
+
+        .toggle-pill {
+            background: #ffece6;
+            border-radius: 30px;
+            padding: 5px;
+            display: flex;
+            width: 180px;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .toggle-bg {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            width: 85px;
+            height: calc(100% - 10px);
+            background: var(--coral-red);
+            border-radius: 25px;
+            transition: transform 0.3s ease;
+        }
+
+        .toggle-option {
+            flex: 1;
+            text-align: center;
+            z-index: 2;
+            padding: 8px 0;
+            font-weight: 800;
+            font-size: 16px;
+            color: #fff;
+        }
+
+        .toggle-pill.frost-mode .toggle-bg {
+            transform: translateX(85px);
+        }
+
+        /* ==========================================================================
+           NEW DRAWER MODAL STYLES (MATCHING SCREENSHOT)
+           ========================================================================== */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(5px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        .modal-overlay.show {
+            display: flex;
+        }
+
+        .drawer-container {
+            width: 900px;
+            height: 550px;
+            background: var(--modal-bg);
+            border-radius: 40px;
+            display: flex;
+            padding: 20px;
+            position: relative;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        /* LEFT SIDEBAR */
+        .drawer-sidebar {
+            width: 160px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            padding-right: 10px;
+            border-right: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .cat-header {
+            background: #dad5cc;
+            color: #666;
+            font-weight: 800;
+            text-align: center;
+            padding: 10px;
+            border-radius: 25px;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .cat-btn {
+            background: transparent;
+            border: 1px solid #dad5cc;
+            border-radius: 25px;
+            padding: 10px;
+            font-weight: 700;
+            color: #888;
+            cursor: pointer;
+            transition: all 0.2s;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .cat-btn:hover {
+            background: #fff;
+        }
+
+        .cat-btn.active {
+            background: #fff;
+            border-color: #bbb;
+            color: var(--text-dark);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+
+        .pagination-row {
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .page-btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            background: transparent;
+            color: #666;
+            font-weight: 800;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* RIGHT CONTENT */
+        .drawer-main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+        }
+
+        /* Top Search Row */
+        .search-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .search-bar-wrap {
+            flex: 1;
+            position: relative;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 20px;
+            border-radius: 25px;
+            border: 1px solid #ccc;
+            background: transparent;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .search-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            opacity: 0.5;
+        }
+
+        .close-btn {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+            background: transparent;
+            font-size: 20px;
+            color: #666;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: transform 0.2s;
+        }
+
+        .close-btn:hover {
+            transform: scale(1.1);
+            background: #fff;
+        }
+
+        /* Item Grid */
+        .drawer-grid-wrap {
+            flex: 1;
+            overflow-y: auto;
+            padding-right: 10px;
+        }
+
+        /* Custom Scrollbar */
+        .drawer-grid-wrap::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .drawer-grid-wrap::-webkit-scrollbar-track {
+            background: #e6e1d6;
+            border-radius: 5px;
+        }
+
+        .drawer-grid-wrap::-webkit-scrollbar-thumb {
+            background: #d1ccc2;
+            border-radius: 5px;
+        }
+
+        .drawer-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+            gap: 10px;
+        }
+
+        .d-item {
+            background: #f8f6f2;
+            border-radius: 16px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: 2px solid transparent;
+            transition: all 0.2s;
+            height: 100px;
+        }
+
+        .d-item img {
+            width: 100%;
+            height: 70%;
+            object-fit: contain;
+        }
+
+        .d-item.selected {
+            border-color: var(--coral-red);
+            background: #fff;
+        }
+
+        .d-item:hover {
+            transform: translateY(-2px);
+            background: #fff;
+        }
+
+        /* Bottom Actions */
+        .action-row {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            background: transparent;
+        }
+
+        /* Action Buttons */
+        .act-btn {
+            height: 45px;
+            padding: 0 25px;
+            border-radius: 25px;
+            border: none;
+            font-weight: 800;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.1s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .act-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Potion Toggles (Circles) */
+        .potion-btn {
+            width: 50px;
+            height: 35px;
+            border-radius: 20px;
+            border: none;
+            color: #fff;
+            font-weight: 900;
+            font-size: 14px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.2s;
+            opacity: 0.3;
+            box-shadow: none;
+        }
+
+        .potion-btn.active {
+            opacity: 1;
+            transform: scale(1.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .btn-fly {
+            background: var(--btn-blue);
+        }
+
+        .btn-ride {
+            background: var(--btn-pink);
+        }
+
+        /* Version Buttons (Pills) */
+        .ver-btn {
+            width: 60px;
+            height: 40px;
+            border-radius: 20px;
+            border: 1px solid #ccc;
+            background: transparent;
+            color: #666;
+            font-weight: 800;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .ver-btn:hover {
+            background: #fff;
+        }
+
+        /* Mega specific styling from image */
+        .ver-btn.mega {
+            background: var(--btn-purple);
+            color: #fff;
+            border: none;
+        }
+
+        .ver-btn.neon {
+            background: #fff;
+            border-color: #ccc;
+            color: #444;
+        }
+
+        .ver-btn.reg {
+            background: #fff;
+            border-color: #ccc;
+            color: #444;
+        }
+
+        @media (max-width: 768px) {
+            .header-pill {
+                flex-direction: column;
+                height: auto;
+                padding: 20px;
+            }
+
+            .main-card {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .drawer-container {
+                width: 95%;
+                height: 80vh;
+                flex-direction: column;
+            }
+
+            .drawer-sidebar {
+                width: 100%;
+                flex-direction: row;
+                overflow-x: auto;
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 10px;
+                margin-bottom: 10px;
+            }
+
+            .drawer-main {
+                padding-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="calculator-wrapper">
+        <!-- Header Scoreboard -->
+        <div class="header-pill">
+            <div class="score-display score-left" id="score-left">0</div>
+            <div class="status-container">
+                <div class="status-pill" id="status-pill">
+                    <span class="status-text t-win">WIN</span>
+                    <span class="status-text t-fair">FAIR</span>
+                    <span class="status-text t-lose">LOSE</span>
+                </div>
+                <div class="labels-row">
+                    <div class="label-item label-left">YOUR OFFER</div>
+                    <div class="center-divider">|</div>
+                    <div class="label-item label-right">THEIR OFFER</div>
+                </div>
+            </div>
+            <div class="score-display score-right" id="score-right">0</div>
+        </div>
+
+        <!-- Grids -->
+        <div class="main-card">
+            <div class="grid-container" id="grid-left"></div>
+            <div class="center-area">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="center-score-float" id="center-float">0</div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+            </div>
+            <div class="grid-container" id="grid-right"></div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-controls">
+            <div class="toggle-pill shark-mode" id="currency-toggle">
+                <div class="toggle-bg"></div>
+                <div class="toggle-option opt-shark">Shark</div>
+                <div class="toggle-option opt-frost">Frost</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NEW DRAWER MODAL -->
+    <div class="modal-overlay" id="drawer-modal">
+        <div class="drawer-container">
+
+            <!-- Left Sidebar: Filters -->
+            <div class="drawer-sidebar">
+                <div class="cat-header">Standard</div>
+                <button class="cat-btn active" data-cat="all">All</button>
+                <button class="cat-btn" data-cat="pets">Pets</button>
+                <button class="cat-btn" data-cat="eggs">Eggs</button>
+                <button class="cat-btn" data-cat="vehicles">Vehicles</button>
+                <button class="cat-btn" data-cat="pet_wear">Pet Wear</button>
+                <button class="cat-btn" style="opacity:0.5;">Other</button>
+
+                <div class="pagination-row">
+                    <button class="page-btn">&lt;</button>
+                    <span>1</span>
+                    <button class="page-btn">&gt;</button>
+                </div>
+            </div>
+
+            <!-- Right Content -->
+            <div class="drawer-main">
+                <!-- Search Row -->
+                <div class="search-row">
+                    <div class="search-bar-wrap">
+                        <input type="text" class="search-input" id="drawer-search" placeholder="Search">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                        </svg>
+                    </div>
+                    <button class="close-btn" id="drawer-close">&times;</button>
+                </div>
+
+                <!-- Item Grid -->
+                <div class="drawer-grid-wrap">
+                    <div class="drawer-items" id="drawer-grid"></div>
+                </div>
+
+                <!-- Action Row (The Logic) -->
+                <div class="action-row">
+                    <!-- Potions (Toggles) -->
+                    <button class="potion-btn btn-fly" id="btn-fly">F</button>
+                    <button class="potion-btn btn-ride" id="btn-ride">R</button>
+
+                    <!-- Spacer -->
+                    <div style="width: 20px;"></div>
+
+                    <!-- Versions (Triggers Add) -->
+                    <button class="ver-btn reg" id="btn-reg">D</button>
+                    <button class="ver-btn neon" id="btn-neon">N</button>
+                    <button class="ver-btn mega" id="btn-mega">M</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- STATE ---
+        let allItems = [];
+        let activeGridId = null;
+        let selectedItem = null;
+        let currencyMode = 'shark';
+        const SHARK_VAL = 1.0;
+        const FROST_VAL = 160.0;
+
+        // Drawer State
+        let isFly = false;
+        let isRide = false;
+
+        // --- DOM ---
+        const els = {
+            gridLeft: document.getElementById('grid-left'),
+            gridRight: document.getElementById('grid-right'),
+            scoreLeft: document.getElementById('score-left'),
+            scoreRight: document.getElementById('score-right'),
+            statusPill: document.getElementById('status-pill'),
+            centerFloat: document.getElementById('center-float'),
+            toggle: document.getElementById('currency-toggle'),
+
+            // Drawer
+            modal: document.getElementById('drawer-modal'),
+            close: document.getElementById('drawer-close'),
+            search: document.getElementById('drawer-search'),
+            drawerGrid: document.getElementById('drawer-grid'),
+            catBtns: document.querySelectorAll('.cat-btn'),
+
+            // Controls
+            btnFly: document.getElementById('btn-fly'),
+            btnRide: document.getElementById('btn-ride'),
+            btnReg: document.getElementById('btn-reg'),
+            btnNeon: document.getElementById('btn-neon'),
+            btnMega: document.getElementById('btn-mega')
+        };
+
+        // --- INIT ---
+        async function init() {
+            try {
+                const [d1, d2] = await Promise.all([fetch('data.json'), fetch('Gag.json')]);
+                const j1 = await d1.json();
+                const j2 = await d2.json();
+
+                const process = (obj) => Object.values(obj).map(i => ({ ...i, value: i.value || i.rvalue || 0 }));
+                allItems = [...process(j1), ...process(j2)].sort((a, b) => b.value - a.value);
+
+                setupGrids();
+                setupEvents();
+            } catch (e) {
+                console.error(e);
+            }
+        }
+
+        function setupGrids() {
+            [els.gridLeft, els.gridRight].forEach(grid => {
+                grid.innerHTML = '';
+                for (let i = 0; i < 9; i++) {
+                    const div = document.createElement('div');
+                    div.className = 'slot';
+                    div.onclick = () => handleSlotClick(grid, div);
+                    grid.appendChild(div);
+                }
+                refreshGridUI(grid);
+            });
+        }
+
+        function setupEvents() {
+            // Modal
+            els.close.onclick = closeModal;
+            els.modal.onclick = (e) => { if (e.target === els.modal) closeModal(); };
+            els.search.oninput = () => renderDrawerItems(els.search.value);
+
+            // Categories (Visual only for now)
+            els.catBtns.forEach(btn => {
+                btn.onclick = () => {
+                    els.catBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const cat = btn.dataset.cat;
+                    renderDrawerItems(els.search.value, cat);
+                };
+            });
+
+            // Potions (Toggles)
+            els.btnFly.onclick = () => { isFly = !isFly; updatePotionUI(); };
+            els.btnRide.onclick = () => { isRide = !isRide; updatePotionUI(); };
+
+            // Versions (Actions)
+            els.btnReg.onclick = () => addItemToGrid('rvalue');
+            els.btnNeon.onclick = () => addItemToGrid('nvalue');
+            els.btnMega.onclick = () => addItemToGrid('mvalue');
+
+            // Currency Toggle
+            els.toggle.onclick = () => {
+                currencyMode = currencyMode === 'shark' ? 'frost' : 'shark';
+                els.toggle.className = `toggle-pill ${currencyMode}-mode`;
+                calcTotals();
+            };
+        }
+
+        // --- DRAWER LOGIC ---
+        function handleSlotClick(grid, slot) {
+            if (slot.classList.contains('filled')) {
+                // Remove
+                slot.className = 'slot';
+                slot.innerHTML = '';
+                slot.dataset.val = 0;
+                refreshGridUI(grid);
+                calcTotals();
+            } else if (slot.querySelector('.add-circle')) {
+                // Open Drawer
+                activeGridId = grid.id;
+                openModal();
+            }
+        }
+
+        function openModal() {
+            els.modal.classList.add('show');
+            els.search.value = '';
+            selectedItem = null;
+            isFly = false; isRide = false;
+            updatePotionUI();
+            renderDrawerItems('');
+            updateControlState();
+        }
+
+        function closeModal() {
+            els.modal.classList.remove('show');
+        }
+
+        function renderDrawerItems(query, cat = 'all') {
+            els.drawerGrid.innerHTML = '';
+            const q = query.toLowerCase();
+
+            const filtered = allItems.filter(i => {
+                const matchName = i.name.toLowerCase().includes(q);
+                // Simple category filter logic
+                let matchCat = true;
+                if (cat === 'pets') matchCat = i.type === 'pets';
+                if (cat === 'eggs') matchCat = i.name.toLowerCase().includes('egg'); // Simple fallback if no type
+                return matchName && matchCat;
+            });
+
+            // Render first 100
+            filtered.slice(0, 100).forEach(item => {
+                const el = document.createElement('div');
+                el.className = 'd-item';
+                if (selectedItem && selectedItem.id === item.id) el.classList.add('selected');
+
+                el.innerHTML = `<img src="${item.image}" loading="lazy">`;
+                el.onclick = () => {
+                    // Deselect others
+                    document.querySelectorAll('.d-item').forEach(d => d.classList.remove('selected'));
+                    el.classList.add('selected');
+                    selectedItem = item;
+                    updateControlState(); // Enable/Disable Neon/Mega buttons based on item type
+                };
+                els.drawerGrid.appendChild(el);
+            });
+        }
+
+        function updatePotionUI() {
+            els.btnFly.classList.toggle('active', isFly);
+            els.btnRide.classList.toggle('active', isRide);
+        }
+
+        function updateControlState() {
+            // If no item selected, maybe dim buttons. 
+            // If item is not a pet, disable Fly/Ride/Neon/Mega
+            if (!selectedItem) return;
+
+            const isPet = selectedItem.type === 'pets' || selectedItem.rvalue;
+            // Simple check: if it has 'nvalue' it's likely a pet
+            const hasNeon = selectedItem.nvalue !== undefined;
+
+            if (!hasNeon) {
+                els.btnFly.style.opacity = '0.2'; els.btnFly.style.pointerEvents = 'none';
+                els.btnRide.style.opacity = '0.2'; els.btnRide.style.pointerEvents = 'none';
+                els.btnNeon.style.opacity = '0.2'; els.btnNeon.style.pointerEvents = 'none';
+                els.btnMega.style.opacity = '0.2'; els.btnMega.style.pointerEvents = 'none';
+            } else {
+                els.btnFly.style.opacity = isFly ? '1' : '0.3'; els.btnFly.style.pointerEvents = 'auto';
+                els.btnRide.style.opacity = isRide ? '1' : '0.3'; els.btnRide.style.pointerEvents = 'auto';
+                els.btnNeon.style.opacity = '1'; els.btnNeon.style.pointerEvents = 'auto';
+                els.btnMega.style.opacity = '1'; els.btnMega.style.pointerEvents = 'auto';
+            }
+        }
+
+        function addItemToGrid(versionKey) {
+            if (!selectedItem) return;
+
+            // 1. Calculate Value
+            let val = 0;
+            let key = versionKey;
+
+            // Potions logic (only for pets)
+            if (selectedItem.nvalue !== undefined) {
+                // Construct key e.g., "rvalue - fly&ride"
+                let potionSuffix = "";
+                if (isFly && isRide) potionSuffix = " - fly&ride";
+                else if (isFly) potionSuffix = " - fly";
+                else if (isRide) potionSuffix = " - ride";
+
+                const fullKey = key + potionSuffix;
+                if (selectedItem[fullKey]) val = selectedItem[fullKey];
+                else if (selectedItem[key]) val = selectedItem[key]; // Fallback
+                else val = selectedItem.value;
+            } else {
+                val = selectedItem.value || 0;
+            }
+
+            // 2. Generate Tags
+            let tagsHtml = '';
+            if (versionKey === 'nvalue') tagsHtml += '<span class="tag n">N</span>';
+            if (versionKey === 'mvalue') tagsHtml += '<span class="tag m">M</span>';
+            if (isFly) tagsHtml += '<span class="tag f">F</span>';
+            if (isRide) tagsHtml += '<span class="tag r">R</span>';
+
+            // 3. Place
+            const grid = document.getElementById(activeGridId);
+            const slots = Array.from(grid.children);
+            const empty = slots.find(s => !s.classList.contains('filled'));
+
+            if (empty) {
+                empty.className = 'slot filled';
+                empty.dataset.val = val;
+                empty.innerHTML = `
+                    <img src="${selectedItem.image}" class="slot-img">
+                    <div class="slot-tags">${tagsHtml}</div>
+                `;
+                refreshGridUI(grid);
+                calcTotals();
+                closeModal();
+            }
+        }
+
+        // --- UI HELPERS ---
+        function refreshGridUI(grid) {
+            const slots = Array.from(grid.children);
+            slots.forEach(s => { if (!s.classList.contains('filled')) s.innerHTML = ''; });
+            const firstEmpty = slots.find(s => !s.classList.contains('filled'));
+            if (firstEmpty) firstEmpty.innerHTML = `<div class="add-circle">+</div>`;
+        }
+
+        function calcTotals() {
+            const getSum = (id) => Array.from(document.getElementById(id).children)
+                .reduce((acc, s) => acc + parseFloat(s.dataset.val || 0), 0);
+
+            const rL = getSum('grid-left');
+            const rR = getSum('grid-right');
+            const div = currencyMode === 'shark' ? SHARK_VAL : FROST_VAL;
+
+            els.scoreLeft.innerText = Math.round(rL / div);
+            els.scoreRight.innerText = Math.round(rR / div);
+            els.centerFloat.innerText = Math.round(rL / div);
+
+            // Fairness
+            const total = rL + rR;
+            els.statusPill.className = 'status-pill';
+            if (total === 0) els.statusPill.classList.add('fair');
+            else {
+                const diff = rR - rL;
+                const ratio = Math.abs(diff) / Math.max(rL, rR);
+                if (ratio < 0.1) els.statusPill.classList.add('fair');
+                else if (diff > 0) els.statusPill.classList.add('win');
+                else els.statusPill.classList.add('lose');
+            }
+        }
+
+        init();
+    </script>
+</body>
+
+</html>
