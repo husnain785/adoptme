@@ -1,0 +1,695 @@
+id,name,category,type,rarity,origin,value,image_url
+1,Shadow Dragon,petsneons,Pet,Legendary,Halloween 2019 (Robux),285.0,https://adoptmetradingvalues.com/images/1.png
+10,Diamond Unicorn,petsneons,Pet,Legendary,Diamond Egg,1.3,https://adoptmetradingvalues.com/images/10.png
+100,Bandicoot,petsneons,Pet,Common,Aussie Egg,0.15,https://adoptmetradingvalues.com/images/100.png
+101,Dilophosaurus,petsneons,Pet,Rare,Fossil Egg,0.15,https://adoptmetradingvalues.com/images/101.png
+1017,Squid,petsneons,Pet,Legendary,RGB Reward Box,1.25,https://adoptmetradingvalues.com/images/1017.png
+1018,Chameleon,petsneons,Pet,Legendary,RGB Reward Box,1.15,https://adoptmetradingvalues.com/images/1018.png
+102,Pterodactyl,petsneons,Pet,Rare,Fossil Egg,0.15,https://adoptmetradingvalues.com/images/102.png
+103,Woolly Mammoth,petsneons,Pet,Rare,Fossil Egg,0.15,https://adoptmetradingvalues.com/images/103.png
+1030,Dancing Dragon,petsneons,Pet,Legendary,Lunar New Year 2022,3.25,https://adoptmetradingvalues.com/images/1030.png
+1031,Lunar Tiger,petsneons,Pet,Rare,Lunar New Year 2022 (Lunar Tiger Box),0.08,https://adoptmetradingvalues.com/images/1031.png
+1032,Lunar Gold Tiger,petsneons,Pet,Legendary,Lunar New Year 2022 (Lunar Tiger Box),0.5,https://adoptmetradingvalues.com/images/1032.png
+1033,Lunar White Tiger,petsneons,Pet,Ultra-Rare,Lunar New Year 2022 (Lunar Tiger Box),0.15,https://adoptmetradingvalues.com/images/1033.png
+104,Glyptodon,petsneons,Pet,Uncommon,Fossil Egg,0.2,https://adoptmetradingvalues.com/images/104.png
+1045,Lavender Dragon,petsneons,Pet,Legendary,DJ Gamepass Compensation,2.15,https://adoptmetradingvalues.com/images/1045.png
+1046,Abyssinian Cat,petsneons,Pet,Rare,Desert Weather Map,0.18,https://adoptmetradingvalues.com/images/1046.png
+105,Red Panda,petsneons,Pet,Ultra-Rare,Retired Egg,0.08,https://adoptmetradingvalues.com/images/105.png
+1057,Woodland Egg,petsneons,Pet,Legendary,Nursery,0.45,https://adoptmetradingvalues.com/images/1057.png
+106,Shiba Inu,petsneons,Pet,Ultra-Rare,Retired Egg,0.08,https://adoptmetradingvalues.com/images/106.png
+1065,Pine Marten,petsneons,Pet,Ultra-Rare,Woodland Egg,0.2,https://adoptmetradingvalues.com/images/1065.png
+1066,Hawk,petsneons,Pet,Legendary,Woodland Egg,1.05,https://adoptmetradingvalues.com/images/1066.png
+1067,Bullfrog,petsneons,Pet,Common,Woodland Egg,0.08,https://adoptmetradingvalues.com/images/1067.png
+1068,Salamander,petsneons,Pet,Ultra-Rare,Woodland Egg,0.2,https://adoptmetradingvalues.com/images/1068.png
+1069,Fallow Deer,petsneons,Pet,Legendary,Woodland Egg,1.6,https://adoptmetradingvalues.com/images/1069.png
+107,Stegosaurus,petsneons,Pet,Uncommon,Fossil Egg,0.15,https://adoptmetradingvalues.com/images/107.png
+1070,Red Cardinal,petsneons,Pet,Uncommon,Woodland Egg,0.1,https://adoptmetradingvalues.com/images/1070.png
+1071,Red Fox,petsneons,Pet,Rare,Woodland Egg,0.2,https://adoptmetradingvalues.com/images/1071.png
+1072,Woodpecker,petsneons,Pet,Rare,Woodland Egg,0.15,https://adoptmetradingvalues.com/images/1072.png
+108,Triceratops,petsneons,Pet,Uncommon,Fossil Egg,0.18,https://adoptmetradingvalues.com/images/108.png
+109,Beaver,petsneons,Pet,Rare,Retired Egg,0.04,https://adoptmetradingvalues.com/images/109.png
+1093,Rock,petsneons,Pet,Uncommon,April Fools Day 2022,0.18,https://adoptmetradingvalues.com/images/1093.png
+1094,Mechapup,petsneons,Pet,Legendary,Robux,5.2,https://adoptmetradingvalues.com/images/1094.png
+1096,Sugar Glider,petsneons,Pet,Legendary,Easter 2022 (Robux),8.0,https://adoptmetradingvalues.com/images/1096.png
+1097,Brown Springer Spaniel,petsneons,Pet,Ultra-Rare,Easter 2022,0.65,https://adoptmetradingvalues.com/images/1097.png
+1098,Black Springer Spaniel,petsneons,Pet,Ultra-Rare,Easter 2022,1.0,https://adoptmetradingvalues.com/images/1098.png
+11,Arctic Reindeer,petsneons,Pet,Legendary,Christmas 2019 (Christmas Egg),32.0,https://adoptmetradingvalues.com/images/11.png
+110,Bunny,petsneons,Pet,Rare,Retired Egg,0.04,https://adoptmetradingvalues.com/images/110.png
+111,Ground Sloth,petsneons,Pet,Common,Fossil Egg,0.13,https://adoptmetradingvalues.com/images/111.png
+112,Rabbit,petsneons,Pet,Rare,Retired Egg,0.04,https://adoptmetradingvalues.com/images/112.png
+113,Snow Puma,petsneons,Pet,Rare,Retired Egg,0.04,https://adoptmetradingvalues.com/images/113.png
+114,Tasmanian Tiger,petsneons,Pet,Common,Fossil Egg,0.13,https://adoptmetradingvalues.com/images/114.png
+115,Chocolate Labrador,petsneons,Pet,Uncommon,Retired Egg,0.02,https://adoptmetradingvalues.com/images/115.png
+116,Fennec Fox,petsneons,Pet,Uncommon,Retired Egg,0.04,https://adoptmetradingvalues.com/images/116.png
+1168,Diamond Albatross,petsneons,Pet,Legendary,Golden Clam,3.5,https://adoptmetradingvalues.com/images/1168.png
+1169,Albatross,petsneons,Pet,Ultra-Rare,Golden Clam,0.35,https://adoptmetradingvalues.com/images/1169.png
+117,Puma,petsneons,Pet,Uncommon,Retired Egg,0.02,https://adoptmetradingvalues.com/images/117.png
+1170,Ribbon Seal,petsneons,Pet,Ultra-Rare,Desert Weather Map,0.18,https://adoptmetradingvalues.com/images/1170.png
+1171,Golden Albatross,petsneons,Pet,Legendary,Golden Clam,1.1,https://adoptmetradingvalues.com/images/1171.png
+1172,Winged Horse,petsneons,Pet,Legendary,Robux,1.5,https://adoptmetradingvalues.com/images/1172.png
+1173,Ibex,petsneons,Pet,Rare,May 2022,0.23,https://adoptmetradingvalues.com/images/1173.png
+1174,Goat,petsneons,Pet,Ultra-Rare,Pride Event 2022 (Robux),6.2,https://adoptmetradingvalues.com/images/1174.png
+118,Snow Cat,petsneons,Pet,Uncommon,Retired Egg,0.02,https://adoptmetradingvalues.com/images/118.png
+119,Buffalo,petsneons,Pet,Common,Retired Egg,0.01,https://adoptmetradingvalues.com/images/119.png
+12,Diamond Griffin,petsneons,Pet,Legendary,Diamond Egg,1.0,https://adoptmetradingvalues.com/images/12.png
+120,Cat,petsneons,Pet,Common,Retired Egg,0.01,https://adoptmetradingvalues.com/images/120.png
+1200,Zodiac Minion Egg,petsneons,Pet,Legendary,Minion Event 2022,0.3,https://adoptmetradingvalues.com/images/1200.png
+1201,Zodiac Minion Chick,petsneons,Pet,Legendary,Zodiac Minion Egg,0.25,https://adoptmetradingvalues.com/images/1201.png
+1202,Chick,petsneons,Pet,Common,Easter 2020 Egg,0.65,https://adoptmetradingvalues.com/images/1202.png
+1203,Easter 2020 Egg,petsneons,Pet,Common,Easter 2020,2.15,https://adoptmetradingvalues.com/images/1203.png
+1204,Space Whale,petsneons,Pet,Ultra-Rare,Spacehome Update 2022,0.65,https://adoptmetradingvalues.com/images/1204.png
+1205,Capricorn,petsneons,Pet,Legendary,Spacehome Update 2022 (Robux),2.0,https://adoptmetradingvalues.com/images/1205.png
+1207,Irish Water Spaniel,petsneons,Pet,Ultra-Rare,UGC Rewards,8.5,https://adoptmetradingvalues.com/images/1207.png
+1208,Diamond King Penguin,petsneons,Pet,Legendary,Golden Goldfish,2.75,https://adoptmetradingvalues.com/images/1208.png
+1209,Golden King Penguin,petsneons,Pet,Legendary,Ice Cream Shop Update,1.2,https://adoptmetradingvalues.com/images/1209.png
+121,Dog,petsneons,Pet,Common,Retired Egg,0.01,https://adoptmetradingvalues.com/images/121.png
+1210,King Penguin,petsneons,Pet,Ultra-Rare,Ice Cream Shop Update,0.35,https://adoptmetradingvalues.com/images/1210.png
+1215,Swordfish,petsneons,Pet,Ultra-Rare,Regular Egg,0.13,https://adoptmetradingvalues.com/images/1215.png
+1216,Dragonfly,petsneons,Pet,Legendary,Regular Egg,0.6,https://adoptmetradingvalues.com/images/1216.png
+1217,Orangutan,petsneons,Pet,Rare,Regular Egg,0.08,https://adoptmetradingvalues.com/images/1217.png
+1218,Ant,petsneons,Pet,Common,Regular Egg,0.01,https://adoptmetradingvalues.com/images/1218.png
+1219,Alicorn,petsneons,Pet,Legendary,Regular Egg,1.15,https://adoptmetradingvalues.com/images/1219.png
+122,Otter,petsneons,Pet,Common,Retired Egg,0.01,https://adoptmetradingvalues.com/images/122.png
+1220,Retired Egg,petsneons,Pet,Rare,VIP Room,0.13,https://adoptmetradingvalues.com/images/1220.png
+1221,Donkey,petsneons,Pet,Uncommon,Regular Egg,0.04,https://adoptmetradingvalues.com/images/1221.png
+1222,Camel,petsneons,Pet,Uncommon,Regular Egg,0.04,https://adoptmetradingvalues.com/images/1222.png
+1223,Mouse,petsneons,Pet,Common,Regular Egg,0.01,https://adoptmetradingvalues.com/images/1223.png
+1224,Zebra,petsneons,Pet,Rare,Regular Egg,0.08,https://adoptmetradingvalues.com/images/1224.png
+1225,Corgi,petsneons,Pet,Ultra-Rare,Regular Egg,0.13,https://adoptmetradingvalues.com/images/1225.png
+1226,Poodle,petsneons,Pet,Uncommon,Regular Egg,0.06,https://adoptmetradingvalues.com/images/1226.png
+1227,Ancient Dragon,petsneons,Pet,Legendary,Regular Egg,1.05,https://adoptmetradingvalues.com/images/1227.png
+1228,Robot,petsneons,Pet,Ultra-Rare,Regular Egg,0.13,https://adoptmetradingvalues.com/images/1228.png
+1229,Parakeet,petsneons,Pet,Rare,Regular Egg,0.08,https://adoptmetradingvalues.com/images/1229.png
+123,Pet Egg,petsneons,Pet,Rare,Nursery,0.08,https://adoptmetradingvalues.com/images/123.png
+1231,Tan Chow-Chow,petsneons,Pet,Ultra-Rare,Golden Bone,0.3,https://adoptmetradingvalues.com/images/1231.png
+1232,Chocolate Chow-Chow,petsneons,Pet,Legendary,Golden Bone,1.0,https://adoptmetradingvalues.com/images/1232.png
+1233,Black Chow-Chow,petsneons,Pet,Legendary,Golden Bone,0.8,https://adoptmetradingvalues.com/images/1233.png
+1234,Golden Chow-Chow,petsneons,Pet,Legendary,Golden Bone,4.0,https://adoptmetradingvalues.com/images/1234.png
+1236,Yellow Butterfly,petsneons,Pet,Rare,Leaf,0.15,https://adoptmetradingvalues.com/images/1236.png
+1237,Scarlet Butterfly,petsneons,Pet,Ultra-Rare,Leaf,0.25,https://adoptmetradingvalues.com/images/1237.png
+1238,Purple Butterfly,petsneons,Pet,Ultra-Rare,Leaf,6.2,https://adoptmetradingvalues.com/images/1238.png
+1239,Orange Butterfly,petsneons,Pet,Ultra-Rare,Golden Leaf,1.15,https://adoptmetradingvalues.com/images/1239.png
+124,Blue Egg,petsneons,Pet,Rare,Easter 2019,43.0,https://adoptmetradingvalues.com/images/124.png
+1240,Green Butterfly,petsneons,Pet,Legendary,Golden Leaf,1.85,https://adoptmetradingvalues.com/images/1240.png
+1241,Diamond Butterfly,petsneons,Pet,Legendary,Golden Leaf,52.0,https://adoptmetradingvalues.com/images/1241.png
+1245,Brown-Chested Pheasant,petsneons,Pet,Ultra-Rare,Golden Wheat,0.35,https://adoptmetradingvalues.com/images/1245.png
+1246,Green-Chested Pheasant,petsneons,Pet,Legendary,Golden Wheat,1.1,https://adoptmetradingvalues.com/images/1246.png
+1247,Black-Chested Pheasant,petsneons,Pet,Legendary,Golden Wheat,10.0,https://adoptmetradingvalues.com/images/1247.png
+1248,Badger,petsneons,Pet,Ultra-Rare,Fall Weather Update,0.13,https://adoptmetradingvalues.com/images/1248.png
+125,Pink Egg,petsneons,Pet,Rare,Special,28.0,https://adoptmetradingvalues.com/images/125.png
+126,Farm Egg,petsneons,Pet,Legendary,Nursery,55.0,https://adoptmetradingvalues.com/images/126.png
+1267,2022 Uplift Butterfly,petsneons,Pet,Uncommon,Adopt Me 5th Birthday,0.25,https://adoptmetradingvalues.com/images/1267.png
+127,Royal Egg,petsneons,Pet,Legendary,Nursery,0.15,https://adoptmetradingvalues.com/images/127.png
+1275,Royal Palace Spaniel,petsneons,Pet,Ultra-Rare,Royal Tea Party 2022 (Robux),1.2,https://adoptmetradingvalues.com/images/1275.png
+1276,Royal Corgi,petsneons,Pet,Ultra-Rare,Royal Tea Party 2022,1.7,https://adoptmetradingvalues.com/images/1276.png
+128,Aussie Egg,petsneons,Pet,Legendary,Nursery,3.25,https://adoptmetradingvalues.com/images/128.png
+1281,Pomeranian,petsneons,Pet,Ultra-Rare,Star Rewards Refresh,0.5,https://adoptmetradingvalues.com/images/1281.png
+1282,Orca,petsneons,Pet,Ultra-Rare,Star Rewards Refresh,0.8,https://adoptmetradingvalues.com/images/1282.png
+129,Jungle Egg,petsneons,Pet,Legendary,Nursery,47.0,https://adoptmetradingvalues.com/images/129.png
+1293,Dugong,petsneons,Pet,Common,Japan Egg,0.08,https://adoptmetradingvalues.com/images/1293.png
+1294,Sado Mole,petsneons,Pet,Common,Japan Egg,0.08,https://adoptmetradingvalues.com/images/1294.png
+1295,Rhino Beetle,petsneons,Pet,Uncommon,Japan Egg,0.1,https://adoptmetradingvalues.com/images/1295.png
+1296,Tanuki,petsneons,Pet,Uncommon,Japan Egg,0.13,https://adoptmetradingvalues.com/images/1296.png
+1297,Ibis,petsneons,Pet,Rare,Japan Egg,0.1,https://adoptmetradingvalues.com/images/1297.png
+1298,Koi Carp,petsneons,Pet,Rare,Japan Egg,0.2,https://adoptmetradingvalues.com/images/1298.png
+1299,Leopard Cat,petsneons,Pet,Rare,Japan Egg,0.35,https://adoptmetradingvalues.com/images/1299.png
+13,Hedgehog,petsneons,Pet,Ultra-Rare,Christmas 2019 (Gingerbread),45.0,https://adoptmetradingvalues.com/images/13.png
+130,Fossil Egg,petsneons,Pet,Legendary,Nursery,1.15,https://adoptmetradingvalues.com/images/130.png
+1300,Red Crowned Crane,petsneons,Pet,Ultra-Rare,Japan Egg,0.2,https://adoptmetradingvalues.com/images/1300.png
+1301,Spider Crab,petsneons,Pet,Ultra-Rare,Japan Egg,0.2,https://adoptmetradingvalues.com/images/1301.png
+1302,Trapdoor Snail,petsneons,Pet,Ultra-Rare,Japan Egg,0.18,https://adoptmetradingvalues.com/images/1302.png
+1303,Baku,petsneons,Pet,Legendary,Japan Egg,0.9,https://adoptmetradingvalues.com/images/1303.png
+1304,Maneki-Neko,petsneons,Pet,Legendary,Japan Egg,1.0,https://adoptmetradingvalues.com/images/1304.png
+1305,Japan Egg,petsneons,Pet,Legendary,Nursery,0.4,https://adoptmetradingvalues.com/images/1305.png
+131,Golden Egg,petsneons,Pet,Legendary,Star Rewards,0.8,https://adoptmetradingvalues.com/images/131.png
+132,Safari Egg,petsneons,Pet,Legendary,Nursery,155.0,https://adoptmetradingvalues.com/images/132.png
+133,Cracked Egg,petsneons,Pet,Common,Nursery,0.04,https://adoptmetradingvalues.com/images/133.png
+134,Diamond Egg,petsneons,Pet,Legendary,Star Rewards,1.25,https://adoptmetradingvalues.com/images/134.png
+135,Christmas Egg,petsneons,Pet,Legendary,Christmas 2019,13.0,https://adoptmetradingvalues.com/images/135.png
+136,Peacock,petsneons,Pet,Legendary,Robux,1.0,https://adoptmetradingvalues.com/images/136.png
+1366,Slug,petsneons,Pet,Uncommon,Halloween 2022,0.13,https://adoptmetradingvalues.com/images/1366.png
+1367,Basilisk,petsneons,Pet,Rare,Halloween 2022,0.3,https://adoptmetradingvalues.com/images/1367.png
+1368,Evil Basilisk,petsneons,Pet,Ultra-Rare,Halloween 2022,0.6,https://adoptmetradingvalues.com/images/1368.png
+1369,Chimera,petsneons,Pet,Legendary,Halloween 2022,1.15,https://adoptmetradingvalues.com/images/1369.png
+137,Clownfish,petsneons,Pet,Ultra-Rare,Ocean Egg,0.23,https://adoptmetradingvalues.com/images/137.png
+1370,Lava Dragon,petsneons,Pet,Legendary,Halloween 2022 (Robux),4.25,https://adoptmetradingvalues.com/images/1370.png
+138,Stingray,petsneons,Pet,Common,Ocean Egg,0.1,https://adoptmetradingvalues.com/images/138.png
+139,Shark,petsneons,Pet,Legendary,Ocean Egg,1.5,https://adoptmetradingvalues.com/images/139.png
+1391,Chickatrice,petsneons,Pet,Uncommon,Halloween 2022,0.23,https://adoptmetradingvalues.com/images/1391.png
+1392,Evil Chickatrice,petsneons,Pet,Ultra-Rare,Halloween 2022,0.6,https://adoptmetradingvalues.com/images/1392.png
+1393,Ghost Wolf,petsneons,Pet,Rare,Halloween 2022 (Wolf Box),0.15,https://adoptmetradingvalues.com/images/1393.png
+1394,Zombie Wolf,petsneons,Pet,Ultra-Rare,Halloween 2022 (Wolf Box),1.1,https://adoptmetradingvalues.com/images/1394.png
+1395,Lava Wolf,petsneons,Pet,Legendary,Halloween 2022 (Wolf Box),1.25,https://adoptmetradingvalues.com/images/1395.png
+1397,Mule,petsneons,Pet,Rare,Halloween 2022,2.0,https://adoptmetradingvalues.com/images/1397.png
+1398,Undead Jousting Horse,petsneons,Pet,Legendary,Halloween 2022 (Robux),14.5,https://adoptmetradingvalues.com/images/1398.png
+1399,Jousting Horse,petsneons,Pet,Legendary,Halloween 2022,1.4,https://adoptmetradingvalues.com/images/1399.png
+14,Monkey King,petsneons,Pet,Legendary,Monkey Fairground,19.5,https://adoptmetradingvalues.com/images/14.png
+140,Narwhal,petsneons,Pet,Rare,Ocean Egg,0.15,https://adoptmetradingvalues.com/images/140.png
+141,Octopus,petsneons,Pet,Legendary,Ocean Egg,1.4,https://adoptmetradingvalues.com/images/141.png
+1419,Therapy Dog,petsneons,Pet,Uncommon,Great Ormond Charity Update,0.18,https://adoptmetradingvalues.com/images/1419.png
+142,Dolphin,petsneons,Pet,Uncommon,Ocean Egg,0.15,https://adoptmetradingvalues.com/images/142.png
+1426,Persian Cat,petsneons,Pet,Ultra-Rare,Puss in Boots,0.1,https://adoptmetradingvalues.com/images/1426.png
+1427,Strawberry Shortcake Bat Dragon,petsneons,Pet,Legendary,Winter 2022 (Robux),17.5,https://adoptmetradingvalues.com/images/1427.png
+143,Seahorse,petsneons,Pet,Rare,Ocean Egg,0.18,https://adoptmetradingvalues.com/images/143.png
+1437,Irish Elk,petsneons,Pet,Rare,Winter 2022,0.45,https://adoptmetradingvalues.com/images/1437.png
+1438,Ermine,petsneons,Pet,Uncommon,Winter 2022,0.15,https://adoptmetradingvalues.com/images/1438.png
+1439,Ice Moth Dragon,petsneons,Pet,Legendary,Winter 2022,1.15,https://adoptmetradingvalues.com/images/1439.png
+144,Crab,petsneons,Pet,Uncommon,Ocean Egg,0.13,https://adoptmetradingvalues.com/images/144.png
+1446,Shetland Pony Dark Brown,petsneons,Pet,Rare,Winter 2022 (Pony Box),0.1,https://adoptmetradingvalues.com/images/1446.png
+1447,Shetland Pony White,petsneons,Pet,Ultra-Rare,Winter 2022 (Pony Box),0.45,https://adoptmetradingvalues.com/images/1447.png
+1448,Shetland Pony Light Brown,petsneons,Pet,Legendary,Winter 2022 (Pony Box),1.0,https://adoptmetradingvalues.com/images/1448.png
+145,Ocean Egg,petsneons,Pet,Legendary,Nursery,0.9,https://adoptmetradingvalues.com/images/145.png
+1454,Snowball Pet,petsneons,Pet,Ultra-Rare,Winter 2022 (Robux),1.1,https://adoptmetradingvalues.com/images/1454.png
+1455,Steppe Lion,petsneons,Pet,Rare,Winter 2022,0.3,https://adoptmetradingvalues.com/images/1455.png
+1468,Ram,petsneons,Pet,Ultra-Rare,Winter 2022,1.5,https://adoptmetradingvalues.com/images/1468.png
+1469,Ice Wolf,petsneons,Pet,Ultra-Rare,Winter 2022 (Robux),1.85,https://adoptmetradingvalues.com/images/1469.png
+1473,Gingerbread Reindeer,petsneons,Pet,Ultra-Rare,Winter 2022,0.3,https://adoptmetradingvalues.com/images/1473.png
+1474,Wooly Rhino,petsneons,Pet,Ultra-Rare,Winter 2022,0.9,https://adoptmetradingvalues.com/images/1474.png
+1476,Nessie,petsneons,Pet,Legendary,Scottish Pets Update 2023,5.7,https://adoptmetradingvalues.com/images/1476.png
+1477,Highland Cow,petsneons,Pet,Ultra-Rare,Scottish Pets Update 2023,0.45,https://adoptmetradingvalues.com/images/1477.png
+1478,Bloodhound,petsneons,Pet,Rare,UGC Pet Refresh January 2023,0.18,https://adoptmetradingvalues.com/images/1478.png
+1479,Glacier Moth,petsneons,Pet,Ultra-Rare,UGC Pet Refresh January 2023,5.2,https://adoptmetradingvalues.com/images/1479.png
+1480,Winged Tiger,petsneons,Pet,Legendary,Lunar New Year 2023 (Robux),5.7,https://adoptmetradingvalues.com/images/1480.png
+1482,Black Moon Bear,petsneons,Pet,Rare,Lunar New Year 2023 (Moon Bear Box),0.13,https://adoptmetradingvalues.com/images/1482.png
+1483,Water Moon Bear,petsneons,Pet,Ultra-Rare,Lunar New Year 2023 (Moon Bear Box),0.3,https://adoptmetradingvalues.com/images/1483.png
+1484,Lunar Moon Bear,petsneons,Pet,Legendary,Lunar New Year 2023 (Moon Bear Box),0.7,https://adoptmetradingvalues.com/images/1484.png
+1485,Amami Rabbit,petsneons,Pet,Uncommon,Lunar New Year 2023,0.2,https://adoptmetradingvalues.com/images/1485.png
+1486,Moon Rabbit,petsneons,Pet,Rare,Lunar New Year 2023,0.3,https://adoptmetradingvalues.com/images/1486.png
+1487,Water Rabbit,petsneons,Pet,Ultra-Rare,Lunar New Year 2023,0.5,https://adoptmetradingvalues.com/images/1487.png
+15,Albino Monkey,petsneons,Pet,Legendary,Monkey Fairground,15.5,https://adoptmetradingvalues.com/images/15.png
+1500,Frogspawn,petsneons,Pet,Uncommon,Meme Pets Update 2023,0.13,https://adoptmetradingvalues.com/images/1500.png
+1501,Feesh,petsneons,Pet,Rare,Meme Pets Update 2023,0.3,https://adoptmetradingvalues.com/images/1501.png
+1502,Sheeeeep,petsneons,Pet,Ultra-Rare,Meme Pets Update 2023 (Robux),4.75,https://adoptmetradingvalues.com/images/1502.png
+1504,Green Amazon,petsneons,Pet,Ultra-Rare,Golden Plantain,0.45,https://adoptmetradingvalues.com/images/1504.png
+1505,White Amazon,petsneons,Pet,Legendary,Golden Plantain,1.25,https://adoptmetradingvalues.com/images/1505.png
+1506,Diamond Amazon,petsneons,Pet,Legendary,Golden Plantain,8.0,https://adoptmetradingvalues.com/images/1506.png
+1507,Ocelot,petsneons,Pet,Rare,Rain Weather Update,0.13,https://adoptmetradingvalues.com/images/1507.png
+1526,Firefly,petsneons,Pet,Legendary,Camping Shop Refresh 2023 (Robux),1.35,https://adoptmetradingvalues.com/images/1526.png
+1527,Possum,petsneons,Pet,Uncommon,Camping Shop Refresh 2023,0.15,https://adoptmetradingvalues.com/images/1527.png
+1538,Frost Unicorn,petsneons,Pet,Legendary,Mountain House Update (Robux),9.5,https://adoptmetradingvalues.com/images/1538.png
+1539,Southeast Asia Egg,petsneons,Pet,Legendary,Nursery,0.35,https://adoptmetradingvalues.com/images/1539.png
+1540,Bali Starling,petsneons,Pet,Common,Southeast Asia Egg,0.06,https://adoptmetradingvalues.com/images/1540.png
+1541,Malaysian Tapir,petsneons,Pet,Common,Southeast Asia Egg,0.06,https://adoptmetradingvalues.com/images/1541.png
+1542,Maleo Bird,petsneons,Pet,Common,Southeast Asia Egg,0.06,https://adoptmetradingvalues.com/images/1542.png
+1543,Banded Palm Civet,petsneons,Pet,Uncommon,Southeast Asia Egg,0.1,https://adoptmetradingvalues.com/images/1543.png
+1544,Yellow-lipped Sea Krait,petsneons,Pet,Uncommon,Southeast Asia Egg,0.08,https://adoptmetradingvalues.com/images/1544.png
+1545,Gecko,petsneons,Pet,Rare,Southeast Asia Egg,0.2,https://adoptmetradingvalues.com/images/1545.png
+1546,Tarsier,petsneons,Pet,Rare,Southeast Asia Egg,0.2,https://adoptmetradingvalues.com/images/1546.png
+1547,Black Macaque,petsneons,Pet,Ultra-Rare,Southeast Asia Egg,0.2,https://adoptmetradingvalues.com/images/1547.png
+1548,Binturong,petsneons,Pet,Ultra-Rare,Southeast Asia Egg,1.0,https://adoptmetradingvalues.com/images/1548.png
+1549,Komodo Dragon,petsneons,Pet,Ultra-Rare,Southeast Asia Egg,0.2,https://adoptmetradingvalues.com/images/1549.png
+1550,Tree Kangaroo,petsneons,Pet,Legendary,Southeast Asia Egg,1.25,https://adoptmetradingvalues.com/images/1550.png
+1551,Naga Dragon,petsneons,Pet,Legendary,Southeast Asia Egg,1.25,https://adoptmetradingvalues.com/images/1551.png
+1552,Goldfish,petsneons,Pet,Rare,Pool Store 2023 Update,0.2,https://adoptmetradingvalues.com/images/1552.png
+1553,White Sand Dollar,petsneons,Pet,Ultra-Rare,Pool Store 2023 Update (Robux),1.25,https://adoptmetradingvalues.com/images/1553.png
+1554,Red Sand Dollar,petsneons,Pet,Ultra-Rare,Pool Store 2023 Update (Robux),1.0,https://adoptmetradingvalues.com/images/1554.png
+1564,Gorilla,petsneons,Pet,Rare,Gorilla Box,0.06,https://adoptmetradingvalues.com/images/1564.png
+1565,Chef Gorilla,petsneons,Pet,Ultra-Rare,Gorilla Box,1.4,https://adoptmetradingvalues.com/images/1565.png
+1566,Astronaut Gorilla,petsneons,Pet,Legendary,Gorilla Box,1.5,https://adoptmetradingvalues.com/images/1566.png
+1567,Karate Gorilla,petsneons,Pet,Ultra-Rare,Gorilla Box,1.25,https://adoptmetradingvalues.com/images/1567.png
+1568,Albino Gorilla,petsneons,Pet,Legendary,Premium Gorilla Box,2.75,https://adoptmetradingvalues.com/images/1568.png
+1569,Emperor Gorilla,petsneons,Pet,Legendary,Premium Gorilla Box,5.7,https://adoptmetradingvalues.com/images/1569.png
+1586,Wood Pigeon,petsneons,Pet,Ultra-Rare,Spring Fest 2023,2.15,https://adoptmetradingvalues.com/images/1586.png
+1587,Hare,petsneons,Pet,Rare,Spring Fest 2023,3.25,https://adoptmetradingvalues.com/images/1587.png
+1588,Border Collie,petsneons,Pet,Rare,Spring Fest 2023 (Robux),7.4,https://adoptmetradingvalues.com/images/1588.png
+16,Turtle,petsneons,Pet,Legendary,Aussie Egg,21.0,https://adoptmetradingvalues.com/images/16.png
+1602,Field Mouse,petsneons,Pet,Legendary,Spring Fest 2023,4.0,https://adoptmetradingvalues.com/images/1602.png
+1603,Goose,petsneons,Pet,Rare,Spring Fest 2023 (Robux),12.5,https://adoptmetradingvalues.com/images/1603.png
+1604,Tio De Nadal,petsneons,Pet,Legendary,April Fools Day 2023 (Robux),5.7,https://adoptmetradingvalues.com/images/1604.png
+1605,Fool Egg,petsneons,Pet,Legendary,April Fools Day 2023,0.28,https://adoptmetradingvalues.com/images/1605.png
+1606,Pudding Cat,petsneons,Pet,Rare,Fool Egg,0.3,https://adoptmetradingvalues.com/images/1606.png
+1607,Sprout Snail,petsneons,Pet,Ultra-Rare,Fool Egg,0.45,https://adoptmetradingvalues.com/images/1607.png
+1608,Yule Log Dog,petsneons,Pet,Legendary,Fool Egg,1.5,https://adoptmetradingvalues.com/images/1608.png
+1614,Happy Duckling,petsneons,Pet,Rare,Duckling Box,0.4,https://adoptmetradingvalues.com/images/1614.png
+1616,Flower Power Duckling,petsneons,Pet,Ultra-Rare,Duckling Box,0.45,https://adoptmetradingvalues.com/images/1616.png
+1617,Sunrise Duckling,petsneons,Pet,Legendary,Duckling Box,1.0,https://adoptmetradingvalues.com/images/1617.png
+1683,Grinmoire,petsneons,Pet,Ultra-Rare,Sky Castle Refresh 2023,0.45,https://adoptmetradingvalues.com/images/1683.png
+1684,Cuddly Candle,petsneons,Pet,Legendary,Sky Castle Refresh 2023 (Robux),1.3,https://adoptmetradingvalues.com/images/1684.png
+17,Flamingo,petsneons,Pet,Ultra-Rare,Safari Egg,17.5,https://adoptmetradingvalues.com/images/17.png
+1703,Caelum Cervi,petsneons,Pet,Legendary,Pride Update 2023 (Robux),4.25,https://adoptmetradingvalues.com/images/1703.png
+1725,Danger Egg,petsneons,Pet,Legendary,Nursery,0.3,https://adoptmetradingvalues.com/images/1725.png
+1726,Liger,petsneons,Pet,Common,Danger Egg,0.1,https://adoptmetradingvalues.com/images/1726.png
+1727,Mosquito,petsneons,Pet,Common,Danger Egg,0.05,https://adoptmetradingvalues.com/images/1727.png
+1728,Piranha,petsneons,Pet,Common,Danger Egg,0.05,https://adoptmetradingvalues.com/images/1728.png
+1729,Angler Fish,petsneons,Pet,Uncommon,Danger Egg,0.08,https://adoptmetradingvalues.com/images/1729.png
+1730,Borhyaena Gigantica,petsneons,Pet,Uncommon,Danger Egg,0.08,https://adoptmetradingvalues.com/images/1730.png
+1731,Hippo,petsneons,Pet,Rare,Danger Egg,0.15,https://adoptmetradingvalues.com/images/1731.png
+1732,Poison Dart Frog,petsneons,Pet,Rare,Danger Egg,0.1,https://adoptmetradingvalues.com/images/1732.png
+1733,Blue Ringed Octopus,petsneons,Pet,Ultra-Rare,Danger Egg,0.23,https://adoptmetradingvalues.com/images/1733.png
+1734,Lammergeier,petsneons,Pet,Ultra-Rare,Danger Egg,0.18,https://adoptmetradingvalues.com/images/1734.png
+1735,Puffer Fish,petsneons,Pet,Ultra-Rare,Danger Egg,1.15,https://adoptmetradingvalues.com/images/1735.png
+1736,Owlbear,petsneons,Pet,Legendary,Danger Egg,2.35,https://adoptmetradingvalues.com/images/1736.png
+1737,Spinosaurus,petsneons,Pet,Legendary,Danger Egg,1.25,https://adoptmetradingvalues.com/images/1737.png
+1738,Hot Doggo,petsneons,Pet,Legendary,Summer Festival 2023 (Robux),17.0,https://adoptmetradingvalues.com/images/1738.png
+1739,Shark Puppy,petsneons,Pet,Legendary,Summer Festival 2023,5.7,https://adoptmetradingvalues.com/images/1739.png
+1740,Many Mackerel,petsneons,Pet,Ultra-Rare,Summer Festival 2023,6.2,https://adoptmetradingvalues.com/images/1740.png
+1741,Flying Fish,petsneons,Pet,Common,Summer Festival 2023,0.05,https://adoptmetradingvalues.com/images/1741.png
+1760,Tortuga de la Isla,petsneons,Pet,Ultra-Rare,Summer Festival 2023 (Robux),6.7,https://adoptmetradingvalues.com/images/1760.png
+1761,Leviathan,petsneons,Pet,Legendary,Summer Festival 2023,1.5,https://adoptmetradingvalues.com/images/1761.png
+1765,Hermit Crab,petsneons,Pet,Uncommon,Hermit Crab Box,0.13,https://adoptmetradingvalues.com/images/1765.png
+1766,Castle Hermit Crab,petsneons,Pet,Rare,Hermit Crab Box,0.45,https://adoptmetradingvalues.com/images/1766.png
+1767,Ice Cream Hermit Crab,petsneons,Pet,Ultra-Rare,Hermit Crab Box,2.5,https://adoptmetradingvalues.com/images/1767.png
+1768,Pirate Hermit Crab,petsneons,Pet,Legendary,Hermit Crab Box,1.35,https://adoptmetradingvalues.com/images/1768.png
+1770,Leopard Shark,petsneons,Pet,Rare,Summer Festival 2023,1.25,https://adoptmetradingvalues.com/images/1770.png
+1771,Happy Clam,petsneons,Pet,Ultra-Rare,Summer Festival 2023,3.7,https://adoptmetradingvalues.com/images/1771.png
+1772,Arctic Tern,petsneons,Pet,Uncommon,Summer Festival 2023,0.13,https://adoptmetradingvalues.com/images/1772.png
+1773,Lion Cub,petsneons,Pet,Ultra-Rare,Safari Update 2023 (Robux),5.7,https://adoptmetradingvalues.com/images/1773.png
+1774,Warthog,petsneons,Pet,Uncommon,Safari Update 2023,0.13,https://adoptmetradingvalues.com/images/1774.png
+1775,Ostrich,petsneons,Pet,Rare,Safari Update 2023,0.23,https://adoptmetradingvalues.com/images/1775.png
+1776,African Wild Dog,petsneons,Pet,Ultra-Rare,UGC Rewards Update July 2023,50.0,https://adoptmetradingvalues.com/images/1776.png
+1778,Wrapped Doll,petsneons,Pet,Legendary,Adopt a Doll Update,0.2,https://adoptmetradingvalues.com/images/1778.png
+1779,Dylan,petsneons,Pet,Uncommon,Wrapped Doll,0.15,https://adoptmetradingvalues.com/images/1779.png
+1780,River,petsneons,Pet,Uncommon,Wrapped Doll,0.15,https://adoptmetradingvalues.com/images/1780.png
+1781,Pistachio,petsneons,Pet,Uncommon,Wrapped Doll,0.15,https://adoptmetradingvalues.com/images/1781.png
+1783,Fossa,petsneons,Pet,Uncommon,Jungle Update 2023,0.13,https://adoptmetradingvalues.com/images/1783.png
+1784,Bird of Paradise,petsneons,Pet,Rare,Jungle Update 2023,0.23,https://adoptmetradingvalues.com/images/1784.png
+1785,Giant Anteater,petsneons,Pet,Rare,Jungle Update 2023 (Robux),2.75,https://adoptmetradingvalues.com/images/1785.png
+1787,Angelfish,petsneons,Pet,Common,Jungle Update 2023,0.05,https://adoptmetradingvalues.com/images/1787.png
+1788,Cassowary,petsneons,Pet,Rare,Jungle Update 2023,0.18,https://adoptmetradingvalues.com/images/1788.png
+1789,Birthday Butterfly 2023,petsneons,Pet,Uncommon,Adopt Me 6th Birthday,0.23,https://adoptmetradingvalues.com/images/1789.png
+1790,Ring-tailed Lemur,petsneons,Pet,Rare,Jungle Update 2023 (Robux),4.25,https://adoptmetradingvalues.com/images/1790.png
+1791,Bluebottle Fly,petsneons,Pet,Common,Urban Egg,0.04,https://adoptmetradingvalues.com/images/1791.png
+1792,Cockroach,petsneons,Pet,Common,Urban Egg,0.06,https://adoptmetradingvalues.com/images/1792.png
+1793,Mongoose,petsneons,Pet,Common,Urban Egg,0.1,https://adoptmetradingvalues.com/images/1793.png
+1794,Tawny Frogmouth,petsneons,Pet,Uncommon,Urban Egg,0.06,https://adoptmetradingvalues.com/images/1794.png
+1795,Rock Pigeon,petsneons,Pet,Uncommon,Urban Egg,0.06,https://adoptmetradingvalues.com/images/1795.png
+1796,Indian Leopard,petsneons,Pet,Rare,Urban Egg,0.1,https://adoptmetradingvalues.com/images/1796.png
+1797,Toy Poodle,petsneons,Pet,Rare,Urban Egg,0.13,https://adoptmetradingvalues.com/images/1797.png
+1798,Alley Cat,petsneons,Pet,Ultra-Rare,Urban Egg,2.75,https://adoptmetradingvalues.com/images/1798.png
+1799,Seagull,petsneons,Pet,Ultra-Rare,Urban Egg,0.18,https://adoptmetradingvalues.com/images/1799.png
+18,Lion,petsneons,Pet,Ultra-Rare,Safari Egg,11.0,https://adoptmetradingvalues.com/images/18.png
+1800,Black Kite,petsneons,Pet,Ultra-Rare,Urban Egg,0.18,https://adoptmetradingvalues.com/images/1800.png
+1801,Billy Goat,petsneons,Pet,Legendary,Urban Egg,1.0,https://adoptmetradingvalues.com/images/1801.png
+1802,Gargoyle,petsneons,Pet,Legendary,Urban Egg,1.35,https://adoptmetradingvalues.com/images/1802.png
+1803,Urban Egg,petsneons,Pet,Legendary,Nursery,0.3,https://adoptmetradingvalues.com/images/1803.png
+1805,Raccoon,petsneons,Pet,Uncommon,September 2023,0.13,https://adoptmetradingvalues.com/images/1805.png
+1806,Chipmunk,petsneons,Pet,Rare,September 2023,0.25,https://adoptmetradingvalues.com/images/1806.png
+1813,Flaming Zebra,petsneons,Pet,Rare,Flaming Zebra Bait,0.8,https://adoptmetradingvalues.com/images/1813.png
+1814,Ash Zebra,petsneons,Pet,Common,Ash Zebra Bait,0.5,https://adoptmetradingvalues.com/images/1814.png
+1815,Blazing Lion,petsneons,Pet,Legendary,Campfire Cookie,45.0,https://adoptmetradingvalues.com/images/1815.png
+1816,Magma Moose,petsneons,Pet,Ultra-Rare,Campfire Cookie,0.35,https://adoptmetradingvalues.com/images/1816.png
+1817,Magma Snail,petsneons,Pet,Ultra-Rare,Campfire Cookie,0.25,https://adoptmetradingvalues.com/images/1817.png
+1818,Toasty Red Panda,petsneons,Pet,Ultra-Rare,Campfire Cookie,0.4,https://adoptmetradingvalues.com/images/1818.png
+1819,Kiwi,petsneons,Pet,Rare,September 2023,0.3,https://adoptmetradingvalues.com/images/1819.png
+1827,Pelican,petsneons,Pet,Ultra-Rare,September 2023 (Robux),27.0,https://adoptmetradingvalues.com/images/1827.png
+1828,Eel,petsneons,Pet,Uncommon,September 2023,0.2,https://adoptmetradingvalues.com/images/1828.png
+1829,Vampire Dragon,petsneons,Pet,Legendary,Halloween 2023 (Robux),5.7,https://adoptmetradingvalues.com/images/1829.png
+1830,Ghost,petsneons,Pet,Common,Halloween 2023,0.13,https://adoptmetradingvalues.com/images/1830.png
+1831,Undead Elk,petsneons,Pet,Rare,Halloween 2023,0.35,https://adoptmetradingvalues.com/images/1831.png
+1832,Nightmare Owl,petsneons,Pet,Ultra-Rare,Halloween 2023,0.8,https://adoptmetradingvalues.com/images/1832.png
+1850,Cute-A-Cabra,petsneons,Pet,Uncommon,Halloween 2023,0.13,https://adoptmetradingvalues.com/images/1850.png
+1851,Ghost Dog,petsneons,Pet,Rare,Halloween 2023,1.35,https://adoptmetradingvalues.com/images/1851.png
+1852,Dire Stag,petsneons,Pet,Legendary,Halloween 2023,1.0,https://adoptmetradingvalues.com/images/1852.png
+1855,Evil Rock,petsneons,Pet,Rare,Halloween 2023 (Robux),0.9,https://adoptmetradingvalues.com/images/1855.png
+1856,Scarecrow,petsneons,Pet,Uncommon,Halloween 2023,0.13,https://adoptmetradingvalues.com/images/1856.png
+1857,Scarecrow Horse,petsneons,Pet,Rare,Scarecrow Box,0.13,https://adoptmetradingvalues.com/images/1857.png
+1858,Scarecrow Cat,petsneons,Pet,Ultra-Rare,Scarecrow Box,0.4,https://adoptmetradingvalues.com/images/1858.png
+1859,Scarecrow Crow,petsneons,Pet,Legendary,Scarecrow Box,0.85,https://adoptmetradingvalues.com/images/1859.png
+1862,Slime,petsneons,Pet,Ultra-Rare,Halloween 2023,2.75,https://adoptmetradingvalues.com/images/1862.png
+1863,Werewolf,petsneons,Pet,Legendary,Halloween 2023 (Robux),5.7,https://adoptmetradingvalues.com/images/1863.png
+1865,Canadian Goose,petsneons,Pet,Uncommon,Farm Theme 2023,0.18,https://adoptmetradingvalues.com/images/1865.png
+1866,English Sheepdog,petsneons,Pet,Rare,Farm Theme 2023,0.4,https://adoptmetradingvalues.com/images/1866.png
+1867,Caterpillar,petsneons,Pet,Ultra-Rare,Farm Theme 2023 (Robux),13.0,https://adoptmetradingvalues.com/images/1867.png
+19,Dalmatian,petsneons,Pet,Ultra-Rare,Christmas 2019 (Robux),37.0,https://adoptmetradingvalues.com/images/19.png
+1924,Longhorn Cow,petsneons,Pet,Rare,Farm Theme 2023,0.23,https://adoptmetradingvalues.com/images/1924.png
+1925,Rooster,petsneons,Pet,Ultra-Rare,Farm Theme 2023,0.3,https://adoptmetradingvalues.com/images/1925.png
+1926,Alpaca,petsneons,Pet,Ultra-Rare,Farm Theme 2023,4.75,https://adoptmetradingvalues.com/images/1926.png
+1927,Mecha Meow,petsneons,Pet,Legendary,Black Friday 2023,1.1,https://adoptmetradingvalues.com/images/1927.png
+1928,Chocolate Chip Bat Dragon,petsneons,Pet,Legendary,Winter 2023 (Robux),15.5,https://adoptmetradingvalues.com/images/1928.png
+1929,Beluga Whale,petsneons,Pet,Common,Winter 2023,0.08,https://adoptmetradingvalues.com/images/1929.png
+1930,Nutcracker Squirrel,petsneons,Pet,Rare,Winter 2023,0.3,https://adoptmetradingvalues.com/images/1930.png
+194,Lamb,petsneons,Pet,Ultra-Rare,Easter 2021,1.5,https://adoptmetradingvalues.com/images/194.png
+1944,Fleur De Ice,petsneons,Pet,Legendary,Winter 2023,1.0,https://adoptmetradingvalues.com/images/1944.png
+1945,Peppermint Penguin,petsneons,Pet,Ultra-Rare,Winter 2023 (Robux),23.0,https://adoptmetradingvalues.com/images/1945.png
+195,Red Squirrel,petsneons,Pet,Ultra-Rare,Robux,0.25,https://adoptmetradingvalues.com/images/195.png
+1956,Arctic Hare,petsneons,Pet,Uncommon,Hare Box,0.08,https://adoptmetradingvalues.com/images/1956.png
+1957,Eggnog Hare,petsneons,Pet,Rare,Hare Box,0.15,https://adoptmetradingvalues.com/images/1957.png
+1958,Gingerbread Hare,petsneons,Pet,Ultra-Rare,Hare Box,0.3,https://adoptmetradingvalues.com/images/1958.png
+1959,Candy Hare,petsneons,Pet,Legendary,Hare Box,1.2,https://adoptmetradingvalues.com/images/1959.png
+1973,Christmas Pudding Pup,petsneons,Pet,Ultra-Rare,Christmas Pudding Pup Bait,7.4,https://adoptmetradingvalues.com/images/1973.png
+1974,Glacier Kitsune,petsneons,Pet,Legendary,Winter 2023 (Robux),4.0,https://adoptmetradingvalues.com/images/1974.png
+1975,Harp Seal,petsneons,Pet,Uncommon,Winter 2023,0.7,https://adoptmetradingvalues.com/images/1975.png
+1980,Christmas Future Egg,petsneons,Pet,Uncommon,Winter 2023,0.3,https://adoptmetradingvalues.com/images/1980.png
+1981,Eggnog Dog,petsneons,Pet,Uncommon,Christmas Future Egg,0.3,https://adoptmetradingvalues.com/images/1981.png
+1982,Gingerbread Mouse,petsneons,Pet,Ultra-Rare,Winter 2023 (Advent Calendar),0.15,https://adoptmetradingvalues.com/images/1982.png
+1984,Snow Monkey,petsneons,Pet,Ultra-Rare,Winter 2023,1.1,https://adoptmetradingvalues.com/images/1984.png
+1990,Kookaburra,petsneons,Pet,Ultra-Rare,Aussie Zone Update,4.25,https://adoptmetradingvalues.com/images/1990.png
+1991,Quokka,petsneons,Pet,Uncommon,Aussie Zone Update,0.2,https://adoptmetradingvalues.com/images/1991.png
+1992,Tasmanian Devil,petsneons,Pet,Rare,Aussie Zone Update,0.25,https://adoptmetradingvalues.com/images/1992.png
+1993,Jellyfish,petsneons,Pet,Ultra-Rare,UGC Rewards Update January 2024,6.2,https://adoptmetradingvalues.com/images/1993.png
+1997,Royal Desert Egg,petsneons,Pet,Legendary,Sphinx Statue Event,0.85,https://adoptmetradingvalues.com/images/1997.png
+1998,Desert Egg,petsneons,Pet,Legendary,Nursery,0.2,https://adoptmetradingvalues.com/images/1998.png
+1999,Cactus Friend,petsneons,Pet,Legendary,Desert Egg,1.25,https://adoptmetradingvalues.com/images/1999.png
+2,Giraffe,petsneons,Pet,Legendary,Safari Egg,190.0,https://adoptmetradingvalues.com/images/2.png
+20,Kangaroo,petsneons,Pet,Legendary,Aussie Egg,15.0,https://adoptmetradingvalues.com/images/20.png
+2000,Criosphinx,petsneons,Pet,Legendary,Desert Egg,1.15,https://adoptmetradingvalues.com/images/2000.png
+2001,Vulture,petsneons,Pet,Ultra-Rare,Desert Egg,0.18,https://adoptmetradingvalues.com/images/2001.png
+2002,Roadrunner,petsneons,Pet,Ultra-Rare,Desert Egg,0.18,https://adoptmetradingvalues.com/images/2002.png
+2003,Deathstalker Scorpion,petsneons,Pet,Ultra-Rare,Desert Egg,0.18,https://adoptmetradingvalues.com/images/2003.png
+2004,Thorny Devil,petsneons,Pet,Rare,Desert Egg,0.1,https://adoptmetradingvalues.com/images/2004.png
+2005,Oryx,petsneons,Pet,Rare,Desert Egg,0.1,https://adoptmetradingvalues.com/images/2005.png
+2006,Rattlesnake,petsneons,Pet,Uncommon,Desert Egg,0.06,https://adoptmetradingvalues.com/images/2006.png
+2007,Gila Monster,petsneons,Pet,Uncommon,Desert Egg,0.06,https://adoptmetradingvalues.com/images/2007.png
+2008,Sandfish,petsneons,Pet,Common,Desert Egg,0.04,https://adoptmetradingvalues.com/images/2008.png
+2009,Coyote,petsneons,Pet,Common,Desert Egg,0.08,https://adoptmetradingvalues.com/images/2009.png
+2010,Armadillo,petsneons,Pet,Common,Desert Egg,0.05,https://adoptmetradingvalues.com/images/2010.png
+2011,Groundhog,petsneons,Pet,Ultra-Rare,Groundhog Day 2024,4.25,https://adoptmetradingvalues.com/images/2011.png
+2017,Midnight Dragon,petsneons,Pet,Legendary,Lunar New Year 2024 (Robux),4.25,https://adoptmetradingvalues.com/images/2017.png
+2021,Rainbow Dragon,petsneons,Pet,Legendary,Lunar New Year Gift Boxes,2.0,https://adoptmetradingvalues.com/images/2021.png
+2022,Fanghorn Tortoise,petsneons,Pet,Ultra-Rare,Lunar New Year Gift Boxes,0.3,https://adoptmetradingvalues.com/images/2022.png
+2023,Rice Cake Rabbit,petsneons,Pet,Ultra-Rare,Lunar New Year Gift Boxes,0.35,https://adoptmetradingvalues.com/images/2023.png
+2038,Wildfire Hawk,petsneons,Pet,Ultra-Rare,Burnt Bites and Baked Alaska Baits,0.35,https://adoptmetradingvalues.com/images/2038.png
+2039,Flaming Fox,petsneons,Pet,Ultra-Rare,Burnt Bites and Baked Alaska Baits,2.5,https://adoptmetradingvalues.com/images/2039.png
+2040,Burning Bunny,petsneons,Pet,Ultra-Rare,Burnt Bites and Baked Alaska Baits,0.35,https://adoptmetradingvalues.com/images/2040.png
+2041,Volcanic Rhino,petsneons,Pet,Legendary,Burnt Bites and Baked Alaska Baits,1.5,https://adoptmetradingvalues.com/images/2041.png
+2044,Ornate Horned Frog,petsneons,Pet,Ultra-Rare,Leap Year 2024,0.2,https://adoptmetradingvalues.com/images/2044.png
+2051,Nautilus,petsneons,Pet,Ultra-Rare,Beach Update 2024 (Robux),1.2,https://adoptmetradingvalues.com/images/2051.png
+2052,Mahi Mahi,petsneons,Pet,Uncommon,Mahi Spinning Rod,0.08,https://adoptmetradingvalues.com/images/2052.png
+2053,Gold Mahi Mahi,petsneons,Pet,Ultra-Rare,Mahi Spinning Rod,0.3,https://adoptmetradingvalues.com/images/2053.png
+2054,Diamond Mahi Mahi,petsneons,Pet,Legendary,Mahi Spinning Rod,0.45,https://adoptmetradingvalues.com/images/2054.png
+2057,Hamster,petsneons,Pet,Ultra-Rare,Golden Corn,0.65,https://adoptmetradingvalues.com/images/2057.png
+2058,Golden Hamster,petsneons,Pet,Legendary,Golden Corn,1.25,https://adoptmetradingvalues.com/images/2058.png
+2059,Diamond Hamster,petsneons,Pet,Legendary,Golden Corn,3.25,https://adoptmetradingvalues.com/images/2059.png
+2061,Candyfloss Chick,petsneons,Pet,Legendary,Easter 2024 (Robux),13.0,https://adoptmetradingvalues.com/images/2061.png
+2063,Dotted Eggy,petsneons,Pet,Rare,Easter Eggy Box,0.13,https://adoptmetradingvalues.com/images/2063.png
+2064,Floral Eggy,petsneons,Pet,Ultra-Rare,Easter Eggy Box,0.25,https://adoptmetradingvalues.com/images/2064.png
+2065,Striped Eggy,petsneons,Pet,Legendary,Easter Eggy Box,0.7,https://adoptmetradingvalues.com/images/2065.png
+2069,Candy Cane Snail,petsneons,Pet,Ultra-Rare,Easter 2024,0.6,https://adoptmetradingvalues.com/images/2069.png
+2073,Capuchin Monkey,petsneons,Pet,Rare,Capuchin Fairground 2024,0.06,https://adoptmetradingvalues.com/images/2073.png
+2074,Inmate Capuchin Monkey,petsneons,Pet,Ultra-Rare,Capuchin Boxes,0.45,https://adoptmetradingvalues.com/images/2074.png
+2075,Princess Capuchin Monkey,petsneons,Pet,Legendary,Capuchin Boxes,1.4,https://adoptmetradingvalues.com/images/2075.png
+2076,Preppy Capuchin Monkey,petsneons,Pet,Ultra-Rare,Capuchin Boxes,0.45,https://adoptmetradingvalues.com/images/2076.png
+2077,Royal Capuchin Monkey,petsneons,Pet,Legendary,Capuchin Boxes,1.7,https://adoptmetradingvalues.com/images/2077.png
+2078,Pirate Ghost Capuchin Monkey,petsneons,Pet,Legendary,Capuchin Boxes,9.0,https://adoptmetradingvalues.com/images/2078.png
+21,Platypus,petsneons,Pet,Ultra-Rare,Jungle Egg,4.25,https://adoptmetradingvalues.com/images/21.png
+2153,Brachiosaurus,petsneons,Pet,Common,Fossil Isle 2024,0.1,https://adoptmetradingvalues.com/images/2153.png
+2154,Velociraptor,petsneons,Pet,Uncommon,Fossil Isle 2024,0.15,https://adoptmetradingvalues.com/images/2154.png
+2155,Ankylosaurus,petsneons,Pet,Rare,Fossil Isle 2024,0.25,https://adoptmetradingvalues.com/images/2155.png
+2156,Elasmosaurus,petsneons,Pet,Ultra-Rare,Fossil Isle 2024,0.45,https://adoptmetradingvalues.com/images/2156.png
+2157,Dimorphodon,petsneons,Pet,Legendary,Fossil Isle 2024,1.25,https://adoptmetradingvalues.com/images/2157.png
+22,Elephant,petsneons,Pet,Rare,Safari Egg,13.0,https://adoptmetradingvalues.com/images/22.png
+2247,Garden Snake,petsneons,Pet,Common,Garden Egg,0.04,https://adoptmetradingvalues.com/images/2247.png
+2248,Mole,petsneons,Pet,Uncommon,Garden Egg,0.08,https://adoptmetradingvalues.com/images/2248.png
+2249,Weevil,petsneons,Pet,Rare,Garden Egg,0.1,https://adoptmetradingvalues.com/images/2249.png
+2250,Blue Jay,petsneons,Pet,Rare,Garden Egg,0.1,https://adoptmetradingvalues.com/images/2250.png
+2251,Praying Mantis,petsneons,Pet,Ultra-Rare,Garden Egg,0.18,https://adoptmetradingvalues.com/images/2251.png
+2252,Skunk,petsneons,Pet,Ultra-Rare,Garden Egg,0.18,https://adoptmetradingvalues.com/images/2252.png
+2253,Rosy Maple Moth,petsneons,Pet,Legendary,Garden Egg,0.75,https://adoptmetradingvalues.com/images/2253.png
+2254,Mushroom Friend,petsneons,Pet,Legendary,Garden Egg,1.15,https://adoptmetradingvalues.com/images/2254.png
+2255,Golden Tortoise Beetle,petsneons,Pet,Legendary,Vault,0.45,https://adoptmetradingvalues.com/images/2255.png
+2256,Garden Egg,petsneons,Pet,Legendary,Nursery,0.15,https://adoptmetradingvalues.com/images/2256.png
+23,Hyena,petsneons,Pet,Rare,Safari Egg,4.25,https://adoptmetradingvalues.com/images/23.png
+2306,Mini Pig,petsneons,Pet,Ultra-Rare,Summer State Fair 2024 (Robux),14.5,https://adoptmetradingvalues.com/images/2306.png
+2307,Kid Goat,petsneons,Pet,Common,Summer State Fair 2024,0.06,https://adoptmetradingvalues.com/images/2307.png
+2308,Cow Calf,petsneons,Pet,Rare,Summer State Fair 2024,0.2,https://adoptmetradingvalues.com/images/2308.png
+2332,Orange Betta Fish,petsneons,Pet,Rare,Summer State Fair 2024,0.06,https://adoptmetradingvalues.com/images/2332.png
+2333,Pink Betta Fish,petsneons,Pet,Ultra-Rare,Summer State Fair 2024,0.25,https://adoptmetradingvalues.com/images/2333.png
+2334,Blue Betta Fish,petsneons,Pet,Legendary,Summer State Fair 2024,0.7,https://adoptmetradingvalues.com/images/2334.png
+2335,Show Pony,petsneons,Pet,Common,Summer State Fair 2024,0.1,https://adoptmetradingvalues.com/images/2335.png
+2336,Punk Pony,petsneons,Pet,Rare,Summer State Fair 2024,0.23,https://adoptmetradingvalues.com/images/2336.png
+2337,Pretty Pony,petsneons,Pet,Ultra-Rare,Summer State Fair 2024,0.6,https://adoptmetradingvalues.com/images/2337.png
+2338,Majestic Pony,petsneons,Pet,Legendary,Summer State Fair 2024,2.35,https://adoptmetradingvalues.com/images/2338.png
+2339,Balloon Unicorn,petsneons,Pet,Legendary,Summer State Fair 2024 (Robux),58.0,https://adoptmetradingvalues.com/images/2339.png
+2340,Corn Doggo,petsneons,Pet,Legendary,Summer State Fair 2024,1.3,https://adoptmetradingvalues.com/images/2340.png
+2354,Rodeo Bull,petsneons,Pet,Uncommon,Summer State Fair 2024,0.15,https://adoptmetradingvalues.com/images/2354.png
+2355,Bald Eagle,petsneons,Pet,Ultra-Rare,Summer State Fair 2024 (Robux),4.75,https://adoptmetradingvalues.com/images/2355.png
+2398,Birthday Butterfly 2024,petsneons,Pet,Uncommon,Adopt Me 7th Birthday,0.25,https://adoptmetradingvalues.com/images/2398.png
+24,Meerkat,petsneons,Pet,Uncommon,Safari Egg,4.75,https://adoptmetradingvalues.com/images/24.png
+2401,Bush Elephant,petsneons,Pet,Legendary,Sunshine Games 2024 (Robux),4.25,https://adoptmetradingvalues.com/images/2401.png
+2402,Black Marlin,petsneons,Pet,Uncommon,Sunshine Games 2024,0.1,https://adoptmetradingvalues.com/images/2402.png
+2403,Peregrine Falcon,petsneons,Pet,Ultra-Rare,Sunshine Games 2024,0.5,https://adoptmetradingvalues.com/images/2403.png
+2404,Cheetah,petsneons,Pet,Legendary,Sunshine Games 2024,1.7,https://adoptmetradingvalues.com/images/2404.png
+2447,Singularity Beetle,petsneons,Pet,Rare,Galactic Pass,0.45,https://adoptmetradingvalues.com/images/2447.png
+2450,Glormy Hound,petsneons,Pet,Legendary,Galactic Pass (Shards),2.35,https://adoptmetradingvalues.com/images/2450.png
+2451,Starhopper,petsneons,Pet,Rare,Galactic Pass,0.45,https://adoptmetradingvalues.com/images/2451.png
+2453,Glormy Leo,petsneons,Pet,Legendary,Galactic Pass (Shards),2.75,https://adoptmetradingvalues.com/images/2453.png
+2455,Hummingbird,petsneons,Pet,Ultra-Rare,Golden Petunia,0.5,https://adoptmetradingvalues.com/images/2455.png
+2456,Golden Hummingbird,petsneons,Pet,Legendary,Golden Petunia,1.35,https://adoptmetradingvalues.com/images/2456.png
+2457,Diamond Hummingbird,petsneons,Pet,Legendary,Golden Petunia,3.25,https://adoptmetradingvalues.com/images/2457.png
+2459,Singularity Pisces,petsneons,Pet,Rare,Galactic Pass,0.45,https://adoptmetradingvalues.com/images/2459.png
+2461,Moonlight Moth,petsneons,Pet,Rare,Galactic Pass,0.55,https://adoptmetradingvalues.com/images/2461.png
+2463,Urchin,petsneons,Pet,Common,Ocean Event 2024,0.04,https://adoptmetradingvalues.com/images/2463.png
+2464,Dracula Fish,petsneons,Pet,Uncommon,Ocean Event 2024,0.06,https://adoptmetradingvalues.com/images/2464.png
+2465,Sea Angel,petsneons,Pet,Rare,Ocean Event 2024,0.13,https://adoptmetradingvalues.com/images/2465.png
+2466,Lionfish,petsneons,Pet,Ultra-Rare,Ocean Event 2024,0.15,https://adoptmetradingvalues.com/images/2466.png
+2467,Kraken,petsneons,Pet,Legendary,Ocean Event 2024,0.75,https://adoptmetradingvalues.com/images/2467.png
+2489,Classic Teapot,petsneons,Pet,Common,Roblox Classic Event 2024,0.2,https://adoptmetradingvalues.com/images/2489.png
+2491,Honey Badger,petsneons,Pet,Ultra-Rare,UGC Rewards Update September 2024,4.75,https://adoptmetradingvalues.com/images/2491.png
+2493,Frankenfeline,petsneons,Pet,Common,Halloween 2024,0.04,https://adoptmetradingvalues.com/images/2493.png
+2494,Indian Flying Fox,petsneons,Pet,Ultra-Rare,Halloween 2024,0.6,https://adoptmetradingvalues.com/images/2494.png
+25,Shrew,petsneons,Pet,Rare,Christmas 2019 (Gingerbread),5.2,https://adoptmetradingvalues.com/images/25.png
+2503,Pumpkin Friend,petsneons,Pet,Ultra-Rare,Halloween 2024,0.9,https://adoptmetradingvalues.com/images/2503.png
+2504,Scarebear,petsneons,Pet,Legendary,Halloween 2024,1.15,https://adoptmetradingvalues.com/images/2504.png
+2505,Sea Skeleton Panda,petsneons,Pet,Uncommon,Halloween 2024,0.1,https://adoptmetradingvalues.com/images/2505.png
+2506,Dracula Parrot,petsneons,Pet,Legendary,Halloween 2024,0.5,https://adoptmetradingvalues.com/images/2506.png
+2513,Marabou Stork,petsneons,Pet,Rare,Halloween 2024,0.18,https://adoptmetradingvalues.com/images/2513.png
+2514,Zombie Chick,petsneons,Pet,Rare,Halloween Chick Box,0.08,https://adoptmetradingvalues.com/images/2514.png
+2515,Ghost Chick,petsneons,Pet,Ultra-Rare,Halloween Chick Box,0.25,https://adoptmetradingvalues.com/images/2515.png
+2516,Evil Chick,petsneons,Pet,Legendary,Halloween Chick Box,0.95,https://adoptmetradingvalues.com/images/2516.png
+2524,Jekyll Hydra,petsneons,Pet,Legendary,Halloween 2024 (Robux),14.5,https://adoptmetradingvalues.com/images/2524.png
+2525,Headless Horse,petsneons,Pet,Ultra-Rare,Halloween 2024,0.7,https://adoptmetradingvalues.com/images/2525.png
+2550,Sugar Axolotl,petsneons,Pet,Legendary,Dia De Los Muertos 2024 (Robux),4.75,https://adoptmetradingvalues.com/images/2550.png
+2551,Grave Owl,petsneons,Pet,Ultra-Rare,Dia De Los Muertos 2024,0.45,https://adoptmetradingvalues.com/images/2551.png
+2552,Golden Jaguar,petsneons,Pet,Ultra-Rare,Dia De Los Muertos 2024,0.45,https://adoptmetradingvalues.com/images/2552.png
+2554,Hippogriff,petsneons,Pet,Legendary,November 2024 (Robux),1.85,https://adoptmetradingvalues.com/images/2554.png
+26,Queen Bee,petsneons,Pet,Legendary,Honey,1.6,https://adoptmetradingvalues.com/images/26.png
+2613,Fairy Bat Dragon,petsneons,Pet,Legendary,Winter 2024 (Robux),8.5,https://adoptmetradingvalues.com/images/2613.png
+2615,Ratatoskr,petsneons,Pet,Common,Winter 2024,0.04,https://adoptmetradingvalues.com/images/2615.png
+2616,Bauble Buddies,petsneons,Pet,Ultra-Rare,Winter 2024,0.5,https://adoptmetradingvalues.com/images/2616.png
+2631,Ice Cube,petsneons,Pet,Rare,Ice Tray,0.13,https://adoptmetradingvalues.com/images/2631.png
+2632,Cold Cube,petsneons,Pet,Ultra-Rare,Ice Tray,0.23,https://adoptmetradingvalues.com/images/2632.png
+2633,Berry Cool Cube,petsneons,Pet,Legendary,Ice Tray,0.9,https://adoptmetradingvalues.com/images/2633.png
+2635,Mistletroll,petsneons,Pet,Uncommon,Winter 2024,0.18,https://adoptmetradingvalues.com/images/2635.png
+2646,Merry Mistletroll,petsneons,Pet,Ultra-Rare,Golden Mistletoe,1.0,https://adoptmetradingvalues.com/images/2646.png
+2647,Naughty Mistletroll,petsneons,Pet,Legendary,Golden Mistletoe,2.75,https://adoptmetradingvalues.com/images/2647.png
+2648,Royal Mistletroll,petsneons,Pet,Legendary,Golden Mistletoe,8.0,https://adoptmetradingvalues.com/images/2648.png
+2650,Partridge,petsneons,Pet,Ultra-Rare,Winter 2024,0.55,https://adoptmetradingvalues.com/images/2650.png
+2652,Mr Whiskerpips,petsneons,Pet,Ultra-Rare,Winter 2024 (Advent Calendar),0.2,https://adoptmetradingvalues.com/images/2652.png
+2662,Frostclaw,petsneons,Pet,Legendary,Winter 2024,0.6,https://adoptmetradingvalues.com/images/2662.png
+2664,Winter Fawn,petsneons,Pet,Rare,Winter Deer Bait,0.15,https://adoptmetradingvalues.com/images/2664.png
+2665,Winter Doe,petsneons,Pet,Ultra-Rare,Winter Deer Bait,0.45,https://adoptmetradingvalues.com/images/2665.png
+2666,Winter Buck,petsneons,Pet,Legendary,Winter Deer Bait,1.0,https://adoptmetradingvalues.com/images/2666.png
+2667,Great Pyrenees,petsneons,Pet,Rare,Winter 2024,0.4,https://adoptmetradingvalues.com/images/2667.png
+2669,Aurora Fox,petsneons,Pet,Legendary,Winter 2024 (Robux),4.0,https://adoptmetradingvalues.com/images/2669.png
+2670,Frostbite Cub,petsneons,Pet,Ultra-Rare,Winter 2024,0.6,https://adoptmetradingvalues.com/images/2670.png
+2696,Blossom Snake,petsneons,Pet,Rare,Lunar New Year 2025,0.35,https://adoptmetradingvalues.com/images/2696.png
+2697,Gilded Snake,petsneons,Pet,Legendary,Lunar New Year 2025,1.25,https://adoptmetradingvalues.com/images/2697.png
+2698,Haetae,petsneons,Pet,Legendary,Lunar New Year 2025 (Robux),30.0,https://adoptmetradingvalues.com/images/2698.png
+27,Diamond Ladybug,petsneons,Pet,Legendary,Diamond Lavender,1.25,https://adoptmetradingvalues.com/images/27.png
+2701,Prism Snake,petsneons,Pet,Rare,Lunar New Year 2025,0.35,https://adoptmetradingvalues.com/images/2701.png
+2702,Royal Moon Egg,petsneons,Pet,Legendary,Lunar New Year 2025,0.55,https://adoptmetradingvalues.com/images/2702.png
+2706,Hopbop,petsneons,Pet,Common,Moon Egg,0.04,https://adoptmetradingvalues.com/images/2706.png
+2707,Snorgle,petsneons,Pet,Uncommon,Moon Egg,0.06,https://adoptmetradingvalues.com/images/2707.png
+2708,Moonpine,petsneons,Pet,Rare,Moon Egg,0.13,https://adoptmetradingvalues.com/images/2708.png
+2709,Zeopod,petsneons,Pet,Rare,Moon Egg,0.13,https://adoptmetradingvalues.com/images/2709.png
+2710,Starmite,petsneons,Pet,Ultra-Rare,Moon Egg,0.2,https://adoptmetradingvalues.com/images/2710.png
+2711,Puptune,petsneons,Pet,Ultra-Rare,Moon Egg,0.35,https://adoptmetradingvalues.com/images/2711.png
+2712,Dimension Drifter,petsneons,Pet,Legendary,Moon Egg,0.8,https://adoptmetradingvalues.com/images/2712.png
+2713,Sunglider,petsneons,Pet,Legendary,Moon Egg,1.1,https://adoptmetradingvalues.com/images/2713.png
+2714,Moon Egg,petsneons,Pet,Legendary,Nursery,0.13,https://adoptmetradingvalues.com/images/2714.png
+2715,Nebula Snake,petsneons,Pet,Rare,Lunar New Year 2025,0.35,https://adoptmetradingvalues.com/images/2715.png
+2716,Cupid Dragon,petsneons,Pet,Legendary,Valentine's Event 2025,5.7,https://adoptmetradingvalues.com/images/2716.png
+2717,Love Bird,petsneons,Pet,Rare,Valentine's Event 2025,0.65,https://adoptmetradingvalues.com/images/2717.png
+2718,Sweetheart Rat,petsneons,Pet,Rare,Valentine's Event 2025,0.6,https://adoptmetradingvalues.com/images/2718.png
+2730,Gaelic Fae,petsneons,Pet,Ultra-Rare,St Patrick's Day 2025 (Robux),2.15,https://adoptmetradingvalues.com/images/2730.png
+2731,Clover Cow,petsneons,Pet,Rare,St Patrick's Day 2025,0.35,https://adoptmetradingvalues.com/images/2731.png
+2737,Subzero Scorpion,petsneons,Pet,Rare,Subzero Popsicle Bait,0.65,https://adoptmetradingvalues.com/images/2737.png
+2738,Shiver Wolf,petsneons,Pet,Rare,Shiver Cone Bait,0.85,https://adoptmetradingvalues.com/images/2738.png
+2739,Icy Porcupine,petsneons,Pet,Ultra-Rare,Ice Soup Bait,0.45,https://adoptmetradingvalues.com/images/2739.png
+2740,Snowy Mammoth,petsneons,Pet,Ultra-Rare,Ice Soup Bait,0.45,https://adoptmetradingvalues.com/images/2740.png
+2741,Frozen Penguin,petsneons,Pet,Ultra-Rare,Ice Soup Bait,0.5,https://adoptmetradingvalues.com/images/2741.png
+2742,Frostbite Bear,petsneons,Pet,Legendary,Ice Dimension Baits,17.5,https://adoptmetradingvalues.com/images/2742.png
+2758,Tri-horned Treehopper,petsneons,Pet,Ultra-Rare,UGC Refresh March 2025,3.25,https://adoptmetradingvalues.com/images/2758.png
+2773,Sakura Spirit,petsneons,Pet,Legendary,Cherry Blossom Festival 2025,4.25,https://adoptmetradingvalues.com/images/2773.png
+2774,Bakeneko,petsneons,Pet,Common,Cherry Blossom Festival 2025,0.04,https://adoptmetradingvalues.com/images/2774.png
+2775,Kage Crow,petsneons,Pet,Ultra-Rare,Cherry Blossom Festival 2025,0.75,https://adoptmetradingvalues.com/images/2775.png
+2787,Kappakid,petsneons,Pet,Rare,Cherry Blossom Festival 2025,0.35,https://adoptmetradingvalues.com/images/2787.png
+2788,Super Saru,petsneons,Pet,Legendary,Cherry Blossom Festival 2025,1.0,https://adoptmetradingvalues.com/images/2788.png
+2794,Cabbit,petsneons,Pet,Ultra-Rare,Cherry Blossom Festival 2025 (Robux),4.0,https://adoptmetradingvalues.com/images/2794.png
+2795,Kaijunior,petsneons,Pet,Uncommon,Kaijunior Box,0.06,https://adoptmetradingvalues.com/images/2795.png
+2796,Toxic Kaijunior,petsneons,Pet,Ultra-Rare,Kaijunior Box,0.15,https://adoptmetradingvalues.com/images/2796.png
+2797,Primal Kaijunior,petsneons,Pet,Legendary,Kaijunior Box,0.9,https://adoptmetradingvalues.com/images/2797.png
+2798,Scorching Kaijunior,petsneons,Pet,Legendary,Kaijunior Box,2.35,https://adoptmetradingvalues.com/images/2798.png
+28,Blue Dog,petsneons,Pet,Uncommon,Blue Egg,11.5,https://adoptmetradingvalues.com/images/28.png
+2806,Mecha R4BBIT,petsneons,Pet,Rare,Cherry Blossom Festival 2025,0.4,https://adoptmetradingvalues.com/images/2806.png
+2807,Mirai Moth,petsneons,Pet,Ultra-Rare,Cherry Blossom Festival 2025,0.8,https://adoptmetradingvalues.com/images/2807.png
+2813,Glormy Dolphin,petsneons,Pet,Legendary,Return to the Moon Event,0.3,https://adoptmetradingvalues.com/images/2813.png
+2837,Gibbon,petsneons,Pet,Rare,Gibbon Fairground,0.04,https://adoptmetradingvalues.com/images/2837.png
+2838,Officer Gibbon,petsneons,Pet,Ultra-Rare,Gibbon Fairground,0.35,https://adoptmetradingvalues.com/images/2838.png
+2839,Firefighter Gibbon,petsneons,Pet,Ultra-Rare,Gibbon Fairground,0.35,https://adoptmetradingvalues.com/images/2839.png
+2840,Villain Gibbon,petsneons,Pet,Legendary,Gibbon Fairground,0.75,https://adoptmetradingvalues.com/images/2840.png
+2841,Hero Gibbon,petsneons,Pet,Legendary,Gibbon Fairground,2.75,https://adoptmetradingvalues.com/images/2841.png
+2842,Influencer Gibbon,petsneons,Pet,Legendary,Gibbon Fairground,1.0,https://adoptmetradingvalues.com/images/2842.png
+2843,Ringmaster Gibbon,petsneons,Pet,Ultra-Rare,Gibbon Fairground,0.45,https://adoptmetradingvalues.com/images/2843.png
+2865,Momma Moose,petsneons,Pet,Ultra-Rare,Maple Leaf Treat,1.0,https://adoptmetradingvalues.com/images/2865.png
+2866,Papa Moose,petsneons,Pet,Legendary,Maple Leaf Treat,12.0,https://adoptmetradingvalues.com/images/2866.png
+2867,Moose Calf,petsneons,Pet,Legendary,Maple Leaf Treat,6.2,https://adoptmetradingvalues.com/images/2867.png
+2869,Muskrat,petsneons,Pet,Uncommon,Camping Shop,0.18,https://adoptmetradingvalues.com/images/2869.png
+2870,Blue Butterfly,petsneons,Pet,Common,Butterfly Sanctuary 2025,0.06,https://adoptmetradingvalues.com/images/2870.png
+2871,Amber Butterfly,petsneons,Pet,Rare,Butterfly Sanctuary 2025,0.08,https://adoptmetradingvalues.com/images/2871.png
+2872,Seafoam Butterfly,petsneons,Pet,Ultra-Rare,Butterfly Sanctuary 2025,0.65,https://adoptmetradingvalues.com/images/2872.png
+2873,Prismatic Butterfly,petsneons,Pet,Legendary,Butterfly Sanctuary 2025,2.0,https://adoptmetradingvalues.com/images/2873.png
+2874,Vermilion Butterfly,petsneons,Pet,Ultra-Rare,Butterfly Sanctuary 2025,0.8,https://adoptmetradingvalues.com/images/2874.png
+2875,Violet Butterfly,petsneons,Pet,Legendary,Butterfly Sanctuary 2025,1.25,https://adoptmetradingvalues.com/images/2875.png
+2876,Orchid Butterfly,petsneons,Pet,Legendary,Butterfly Sanctuary 2025,48.0,https://adoptmetradingvalues.com/images/2876.png
+288,Cobra,petsneons,Pet,Legendary,Robux,0.85,https://adoptmetradingvalues.com/images/288.png
+2880,Moonbeam Butterfly,petsneons,Pet,Legendary,Butterfly Sanctuary 2025,1.5,https://adoptmetradingvalues.com/images/2880.png
+2893,Mermicorn,petsneons,Pet,Legendary,Summer Festival 2025 (Robux),6.7,https://adoptmetradingvalues.com/images/2893.png
+2894,Hammerhead Shark,petsneons,Pet,Uncommon,Summer Festival 2025,0.1,https://adoptmetradingvalues.com/images/2894.png
+2895,Seabed Creeper,petsneons,Pet,Ultra-Rare,Summer Festival 2025,0.6,https://adoptmetradingvalues.com/images/2895.png
+29,Brown Bear,petsneons,Pet,Rare,Jungle Egg,4.0,https://adoptmetradingvalues.com/images/29.png
+2905,Emperor Shrimp,petsneons,Pet,Rare,Summer Festival 2025,0.3,https://adoptmetradingvalues.com/images/2905.png
+2906,Coconut Friend,petsneons,Pet,Legendary,Summer Festival 2025,1.0,https://adoptmetradingvalues.com/images/2906.png
+2907,Priceless Shrimp,petsneons,Pet,Legendary,Summer Festival 2025,1.4,https://adoptmetradingvalues.com/images/2907.png
+2913,Kelp Crewmate,petsneons,Pet,Uncommon,Kelp Raider Box,0.06,https://adoptmetradingvalues.com/images/2913.png
+2914,Kelp Raider,petsneons,Pet,Rare,Kelp Raider Box,0.13,https://adoptmetradingvalues.com/images/2914.png
+2915,Kelp Hunter,petsneons,Pet,Ultra-Rare,Kelp Raider Box,0.35,https://adoptmetradingvalues.com/images/2915.png
+2916,Kelp Captain,petsneons,Pet,Legendary,Kelp Raider Box,1.7,https://adoptmetradingvalues.com/images/2916.png
+2917,Sea Slug,petsneons,Pet,Ultra-Rare,Summer Festival 2025 (Robux),5.7,https://adoptmetradingvalues.com/images/2917.png
+2923,Island Tarsier,petsneons,Pet,Common,Summer Festival 2025,0.04,https://adoptmetradingvalues.com/images/2923.png
+2924,Manta Ray,petsneons,Pet,Ultra-Rare,Summer Festival 2025,0.4,https://adoptmetradingvalues.com/images/2924.png
+2949,Wren,petsneons,Pet,Rare,40 Billion Visits,0.06,https://adoptmetradingvalues.com/images/2949.png
+2950,Tree Frog,petsneons,Pet,Uncommon,Aztec Egg,0.08,https://adoptmetradingvalues.com/images/2950.png
+2951,Water Opossum,petsneons,Pet,Rare,Aztec Egg,0.18,https://adoptmetradingvalues.com/images/2951.png
+2952,Chanekeh,petsneons,Pet,Rare,Aztec Egg,0.13,https://adoptmetradingvalues.com/images/2952.png
+2953,Onza,petsneons,Pet,Ultra-Rare,Aztec Egg,0.3,https://adoptmetradingvalues.com/images/2953.png
+2954,Ehecatl,petsneons,Pet,Ultra-Rare,Aztec Egg,0.23,https://adoptmetradingvalues.com/images/2954.png
+2955,Temple Friend,petsneons,Pet,Legendary,Aztec Egg,0.6,https://adoptmetradingvalues.com/images/2955.png
+2956,Quetzalcoatl,petsneons,Pet,Legendary,Aztec Egg,0.7,https://adoptmetradingvalues.com/images/2956.png
+2957,Royal Aztec Egg,petsneons,Pet,Legendary,Aztec Temple Trek Event,0.8,https://adoptmetradingvalues.com/images/2957.png
+2958,Aztec Egg,petsneons,Pet,Legendary,Nursery,0.1,https://adoptmetradingvalues.com/images/2958.png
+2959,Tegu,petsneons,Pet,Common,Aztec Egg,0.04,https://adoptmetradingvalues.com/images/2959.png
+2962,2025 Birthday Butterfly,petsneons,Pet,Uncommon,Adopt Me Birthday 2025,0.2,https://adoptmetradingvalues.com/images/2962.png
+2999,Munchkin Cat,petsneons,Pet,Rare,Homepass,1.0,https://adoptmetradingvalues.com/images/2999.png
+3,Bat Dragon,petsneons,Pet,Legendary,Halloween 2019 (Candy),415.0,https://adoptmetradingvalues.com/images/3.png
+30,Crocodile,petsneons,Pet,Ultra-Rare,Jungle Egg,11.5,https://adoptmetradingvalues.com/images/30.png
+3000,Mini Schnauzer,petsneons,Pet,Ultra-Rare,Homepass,1.0,https://adoptmetradingvalues.com/images/3000.png
+3022,Siamese Cat,petsneons,Pet,Ultra-Rare,Homepass,1.5,https://adoptmetradingvalues.com/images/3022.png
+3023,French Bulldog,petsneons,Pet,Rare,Homepass,0.65,https://adoptmetradingvalues.com/images/3023.png
+3024,Basic Egg,petsneons,Pet,Common,Pet Releaser,0.08,https://adoptmetradingvalues.com/images/3024.png
+3025,Crystal Egg,petsneons,Pet,Legendary,Pet Releaser,0.8,https://adoptmetradingvalues.com/images/3025.png
+3026,Emberlight,petsneons,Pet,Legendary,Crystal Egg,8.0,https://adoptmetradingvalues.com/images/3026.png
+3027,Giant Panda,petsneons,Pet,Legendary,Crystal Egg and Basic Egg,87.0,https://adoptmetradingvalues.com/images/3027.png
+3046,Patchy Bear,petsneons,Pet,Uncommon,Halloween 2025,0.06,https://adoptmetradingvalues.com/images/3046.png
+3047,Skelebat,petsneons,Pet,Ultra-Rare,Halloween 2025,0.45,https://adoptmetradingvalues.com/images/3047.png
+3048,Phantom Dragon,petsneons,Pet,Legendary,Halloween 2025 (Robux),6.7,https://adoptmetradingvalues.com/images/3048.png
+3049,Kitty Bat,petsneons,Pet,Legendary,Halloween 2025,0.9,https://adoptmetradingvalues.com/images/3049.png
+3055,Jumping Spider,petsneons,Pet,Uncommon,Spider Box,0.08,https://adoptmetradingvalues.com/images/3055.png
+3056,Tarantula,petsneons,Pet,Rare,Spider Box,0.13,https://adoptmetradingvalues.com/images/3056.png
+3057,Chilling Spider,petsneons,Pet,Ultra-Rare,Spider Box,0.35,https://adoptmetradingvalues.com/images/3057.png
+3058,Black Widow,petsneons,Pet,Legendary,Spider Box,1.25,https://adoptmetradingvalues.com/images/3058.png
+3060,The Black Dog,petsneons,Pet,Rare,Halloween 2025,0.3,https://adoptmetradingvalues.com/images/3060.png
+3079,Cryptid,petsneons,Pet,Legendary,Halloween 2025 (Robux),15.5,https://adoptmetradingvalues.com/images/3079.png
+3080,Slimingo,petsneons,Pet,Legendary,Halloween 2025,0.9,https://adoptmetradingvalues.com/images/3080.png
+3081,Aye Aye,petsneons,Pet,Common,Halloween 2025,0.04,https://adoptmetradingvalues.com/images/3081.png
+3084,DJ Snooze,petsneons,Pet,Rare,Halloween 2025,0.3,https://adoptmetradingvalues.com/images/3084.png
+3085,Ghostly Cat,petsneons,Pet,Ultra-Rare,Halloween 2025,0.55,https://adoptmetradingvalues.com/images/3085.png
+3090,Choco Penguin,petsneons,Pet,Ultra-Rare,Golden Goldfish,0.9,https://adoptmetradingvalues.com/images/3090.png
+3091,Vanilla Penguin,petsneons,Pet,Legendary,Golden Goldfish,5.2,https://adoptmetradingvalues.com/images/3091.png
+3092,Strawberry Penguin,petsneons,Pet,Legendary,Golden Goldfish,15.0,https://adoptmetradingvalues.com/images/3092.png
+3093,Dango Penguins,petsneons,Pet,Legendary,Crystal Egg,34.0,https://adoptmetradingvalues.com/images/3093.png
+3094,Shih Tzu,petsneons,Pet,Uncommon,Pet Shop,0.18,https://adoptmetradingvalues.com/images/3094.png
+31,Frost Fury,petsneons,Pet,Legendary,Christmas 2020 (Robux),5.2,https://adoptmetradingvalues.com/images/31.png
+32,Golden Dragon,petsneons,Pet,Legendary,Golden Egg,0.85,https://adoptmetradingvalues.com/images/32.png
+33,Golden Rat,petsneons,Pet,Legendary,Lunar New Year 2020 (Rat Box),1.5,https://adoptmetradingvalues.com/images/33.png
+34,Golden Unicorn,petsneons,Pet,Legendary,Golden Egg,1.0,https://adoptmetradingvalues.com/images/34.png
+35,Ninja Monkey,petsneons,Pet,Legendary,Monkey Fairground,1.7,https://adoptmetradingvalues.com/images/35.png
+36,Skele-Rex,petsneons,Pet,Legendary,Halloween 2020 (Candy),2.75,https://adoptmetradingvalues.com/images/36.png
+37,Wild Boar,petsneons,Pet,Uncommon,Safari Egg,1.55,https://adoptmetradingvalues.com/images/37.png
+38,Zombie Buffalo,petsneons,Pet,Ultra-Rare,Halloween 2019 (Candy),4.75,https://adoptmetradingvalues.com/images/38.png
+39,Cow,petsneons,Pet,Rare,Farm Egg,23.0,https://adoptmetradingvalues.com/images/39.png
+4,Frost Dragon,petsneons,Pet,Legendary,Christmas 2019 (Robux),150.0,https://adoptmetradingvalues.com/images/4.png
+40,Golden Griffin,petsneons,Pet,Legendary,Golden Egg,0.6,https://adoptmetradingvalues.com/images/40.png
+41,Black Panther,petsneons,Pet,Uncommon,Jungle Egg,1.5,https://adoptmetradingvalues.com/images/41.png
+42,Golden Penguin,petsneons,Pet,Legendary,Golden Goldfish,1.85,https://adoptmetradingvalues.com/images/42.png
+43,King Bee,petsneons,Pet,Legendary,Honey,1.05,https://adoptmetradingvalues.com/images/43.png
+44,Llama,petsneons,Pet,Ultra-Rare,Farm Egg,2.0,https://adoptmetradingvalues.com/images/44.png
+45,Rhino,petsneons,Pet,Rare,Jungle Egg,1.5,https://adoptmetradingvalues.com/images/45.png
+459,2021 Uplift Butterfly,petsneons,Pet,Uncommon,Adopt Me 4th Birthday,0.35,https://adoptmetradingvalues.com/images/459.png
+46,Snow Owl,petsneons,Pet,Legendary,Christmas 2020 (Gingerbread),1.25,https://adoptmetradingvalues.com/images/46.png
+47,Swan,petsneons,Pet,Rare,Christmas 2019 (Christmas Egg),1.4,https://adoptmetradingvalues.com/images/47.png
+48,Turkey,petsneons,Pet,Ultra-Rare,Farm Egg,2.0,https://adoptmetradingvalues.com/images/48.png
+49,Pig,petsneons,Pet,Rare,Farm Egg,5.7,https://adoptmetradingvalues.com/images/49.png
+5,Parrot,petsneons,Pet,Legendary,Jungle Egg,95.0,https://adoptmetradingvalues.com/images/5.png
+50,Pink Cat,petsneons,Pet,Uncommon,Pink Egg,4.75,https://adoptmetradingvalues.com/images/50.png
+51,Arctic Fox,petsneons,Pet,Ultra-Rare,Christmas 2019 (Christmas Egg),4.75,https://adoptmetradingvalues.com/images/51.png
+52,Dodo,petsneons,Pet,Legendary,Fossil Egg,1.5,https://adoptmetradingvalues.com/images/52.png
+53,T-Rex,petsneons,Pet,Legendary,Fossil Egg,1.5,https://adoptmetradingvalues.com/images/53.png
+54,Unicorn,petsneons,Pet,Legendary,Retired Egg,2.0,https://adoptmetradingvalues.com/images/54.png
+55,Golden Ladybug,petsneons,Pet,Legendary,Diamond Lavender,0.85,https://adoptmetradingvalues.com/images/55.png
+56,Guardian Lion,petsneons,Pet,Legendary,Robux,0.85,https://adoptmetradingvalues.com/images/56.png
+57,Reindeer,petsneons,Pet,Rare,Christmas 2019,1.4,https://adoptmetradingvalues.com/images/57.png
+58,Metal Ox,petsneons,Pet,Legendary,Lunar New Year 2021 (Ox Box),0.4,https://adoptmetradingvalues.com/images/58.png
+59,Capybara,petsneons,Pet,Uncommon,Jungle Egg,1.35,https://adoptmetradingvalues.com/images/59.png
+6,Owl,petsneons,Pet,Legendary,Farm Egg,120.0,https://adoptmetradingvalues.com/images/6.png
+60,Cerberus,petsneons,Pet,Legendary,Halloween 2020 (Robux),1.5,https://adoptmetradingvalues.com/images/60.png
+61,Dragon,petsneons,Pet,Legendary,Retired Egg,0.75,https://adoptmetradingvalues.com/images/61.png
+62,Griffin,petsneons,Pet,Legendary,Robux,0.75,https://adoptmetradingvalues.com/images/62.png
+63,Kitsune,petsneons,Pet,Legendary,Robux,1.15,https://adoptmetradingvalues.com/images/63.png
+64,Polar Bear,petsneons,Pet,Rare,Christmas 2019 (Christmas Egg),3.25,https://adoptmetradingvalues.com/images/64.png
+65,Robo Dog,petsneons,Pet,Legendary,Robux,0.85,https://adoptmetradingvalues.com/images/65.png
+66,Business Monkey,petsneons,Pet,Ultra-Rare,Monkey Fairground,0.85,https://adoptmetradingvalues.com/images/66.png
+67,Drake,petsneons,Pet,Uncommon,Farm Egg,1.05,https://adoptmetradingvalues.com/images/67.png
+68,Ghost Bunny,petsneons,Pet,Ultra-Rare,Halloween 2020 (Candy),1.3,https://adoptmetradingvalues.com/images/68.png
+69,Silly Duck,petsneons,Pet,Uncommon,Farm Egg,1.3,https://adoptmetradingvalues.com/images/69.png
+7,Evil Unicorn,petsneons,Pet,Legendary,Halloween 2019 (Candy),70.0,https://adoptmetradingvalues.com/images/7.png
+70,Toy Monkey,petsneons,Pet,Ultra-Rare,Monkey Fairground,1.0,https://adoptmetradingvalues.com/images/70.png
+705,Sasquatch,petsneons,Pet,Rare,Mythic Egg,0.13,https://adoptmetradingvalues.com/images/705.png
+706,Kirin,petsneons,Pet,Uncommon,Mythic Egg,0.15,https://adoptmetradingvalues.com/images/706.png
+707,Mythic Egg,petsneons,Pet,Legendary,Nursery,0.5,https://adoptmetradingvalues.com/images/707.png
+708,Merhorse,petsneons,Pet,Rare,Mythic Egg,0.13,https://adoptmetradingvalues.com/images/708.png
+709,Phoenix,petsneons,Pet,Legendary,Mythic Egg,1.4,https://adoptmetradingvalues.com/images/709.png
+71,Wolf,petsneons,Pet,Uncommon,Christmas 2019 (Christmas Egg),0.65,https://adoptmetradingvalues.com/images/71.png
+710,Wyvern,petsneons,Pet,Ultra-Rare,Mythic Egg,0.23,https://adoptmetradingvalues.com/images/710.png
+711,Wolpertinger,petsneons,Pet,Common,Mythic Egg,0.08,https://adoptmetradingvalues.com/images/711.png
+712,Hydra,petsneons,Pet,Ultra-Rare,Mythic Egg,0.2,https://adoptmetradingvalues.com/images/712.png
+713,Goldhorn,petsneons,Pet,Legendary,Mythic Egg,1.4,https://adoptmetradingvalues.com/images/713.png
+72,Yeti,petsneons,Pet,Ultra-Rare,Christmas 2020 (Gingerbread),1.0,https://adoptmetradingvalues.com/images/72.png
+73,Horse,petsneons,Pet,Ultra-Rare,Robux,0.9,https://adoptmetradingvalues.com/images/73.png
+74,Lynx,petsneons,Pet,Rare,Christmas 2020 (Gingerbread),0.5,https://adoptmetradingvalues.com/images/74.png
+75,Starfish,petsneons,Pet,Ultra-Rare,Star Rewards,0.25,https://adoptmetradingvalues.com/images/75.png
+76,Chicken,petsneons,Pet,Common,Farm Egg,1.25,https://adoptmetradingvalues.com/images/76.png
+763,Axolotl,petsneons,Pet,Legendary,Robux,1.35,https://adoptmetradingvalues.com/images/763.png
+77,Rat,petsneons,Pet,Rare,Lunar New Year 2020 (Rat Box),0.35,https://adoptmetradingvalues.com/images/77.png
+78,Toucan,petsneons,Pet,Ultra-Rare,Star Rewards,0.23,https://adoptmetradingvalues.com/images/78.png
+79,Albino Bat,petsneons,Pet,Ultra-Rare,Halloween 2020 (Bat Box),0.7,https://adoptmetradingvalues.com/images/79.png
+8,Crow,petsneons,Pet,Legendary,Farm Egg,80.0,https://adoptmetradingvalues.com/images/8.png
+80,Frog,petsneons,Pet,Ultra-Rare,Aussie Egg,0.7,https://adoptmetradingvalues.com/images/80.png
+81,Koala,petsneons,Pet,Ultra-Rare,Aussie Egg,0.7,https://adoptmetradingvalues.com/images/81.png
+82,Lunar Ox,petsneons,Pet,Ultra-Rare,Lunar New Year 2021 (Ox Box),0.23,https://adoptmetradingvalues.com/images/82.png
+83,Musk Ox,petsneons,Pet,Rare,Christmas 2020 (Gingerbread),0.35,https://adoptmetradingvalues.com/images/83.png
+84,Panda,petsneons,Pet,Ultra-Rare,Robux,0.65,https://adoptmetradingvalues.com/images/84.png
+85,Penguin,petsneons,Pet,Ultra-Rare,Golden Goldfish,0.35,https://adoptmetradingvalues.com/images/85.png
+86,Robin,petsneons,Pet,Common,Christmas 2019 (Christmas Egg),0.35,https://adoptmetradingvalues.com/images/86.png
+87,Sloth,petsneons,Pet,Ultra-Rare,Robux,0.25,https://adoptmetradingvalues.com/images/87.png
+88,Ladybug,petsneons,Pet,Ultra-Rare,Diamond Lavender,0.2,https://adoptmetradingvalues.com/images/88.png
+89,Australian Kelpie,petsneons,Pet,Rare,Aussie Egg,0.3,https://adoptmetradingvalues.com/images/89.png
+9,Diamond Dragon,petsneons,Pet,Legendary,Diamond Egg,1.1,https://adoptmetradingvalues.com/images/9.png
+90,Emu,petsneons,Pet,Rare,Aussie Egg,0.25,https://adoptmetradingvalues.com/images/90.png
+91,Monkey,petsneons,Pet,Rare,Monkey Fairground,0.3,https://adoptmetradingvalues.com/images/91.png
+92,Bee,petsneons,Pet,Ultra-Rare,Honey,0.2,https://adoptmetradingvalues.com/images/92.png
+93,Ginger Cat,petsneons,Pet,Ultra-Rare,Star Rewards,0.2,https://adoptmetradingvalues.com/images/93.png
+933,Halloween Blue Scorpion,petsneons,Pet,Uncommon,Halloween 2021,0.2,https://adoptmetradingvalues.com/images/933.png
+934,Halloween Evil Dachshund,petsneons,Pet,Rare,Halloween 2021,0.65,https://adoptmetradingvalues.com/images/934.png
+935,Halloween White Ghost Dragon,petsneons,Pet,Legendary,Halloween 2021 (Robux),3.7,https://adoptmetradingvalues.com/images/935.png
+936,Halloween White Mummy Cat,petsneons,Pet,Rare,Halloween 2021,0.3,https://adoptmetradingvalues.com/images/936.png
+937,Halloween White Skeleton Dog,petsneons,Pet,Ultra-Rare,Halloween 2021,0.45,https://adoptmetradingvalues.com/images/937.png
+938,Halloween Golden Mummy Cat,petsneons,Pet,Legendary,Halloween 2021,0.85,https://adoptmetradingvalues.com/images/938.png
+939,Halloween Black Mummy Cat,petsneons,Pet,Uncommon,Halloween 2021,0.2,https://adoptmetradingvalues.com/images/939.png
+94,Ox,petsneons,Pet,Rare,Lunar New Year 2021 (Ox Box),0.15,https://adoptmetradingvalues.com/images/94.png
+95,Snowman,petsneons,Pet,Uncommon,Christmas 2020 (Gingerbread),0.2,https://adoptmetradingvalues.com/images/95.png
+959,Puffin,petsneons,Pet,Ultra-Rare,Christmas 2021,4.75,https://adoptmetradingvalues.com/images/959.png
+96,Bat,petsneons,Pet,Uncommon,Halloween 2020 (Bat Box),0.2,https://adoptmetradingvalues.com/images/96.png
+960,Husky,petsneons,Pet,Rare,Christmas 2021,1.7,https://adoptmetradingvalues.com/images/960.png
+961,Walrus,petsneons,Pet,Common,Christmas 2021,0.15,https://adoptmetradingvalues.com/images/961.png
+962,Ice Golem,petsneons,Pet,Legendary,Christmas 2021 (Robux),2.35,https://adoptmetradingvalues.com/images/962.png
+963,St Bernard,petsneons,Pet,Ultra-Rare,Christmas 2021,0.65,https://adoptmetradingvalues.com/images/963.png
+964,Snow Leopard,petsneons,Pet,Uncommon,Christmas 2021,0.23,https://adoptmetradingvalues.com/images/964.png
+965,Golden Walrus,petsneons,Pet,Legendary,Christmas 2021,1.25,https://adoptmetradingvalues.com/images/965.png
+966,Summer Walrus,petsneons,Pet,Rare,Christmas 2021,0.3,https://adoptmetradingvalues.com/images/966.png
+97,Deinonychus,petsneons,Pet,Ultra-Rare,Fossil Egg,0.3,https://adoptmetradingvalues.com/images/97.png
+98,Dingo,petsneons,Pet,Uncommon,Aussie Egg,0.2,https://adoptmetradingvalues.com/images/98.png
+99,Sabertooth,petsneons,Pet,Ultra-Rare,Fossil Egg,0.3,https://adoptmetradingvalues.com/images/99.png
+996,Giant Black Scarab,petsneons,Pet,Ultra-Rare,Mud Ball,0.5,https://adoptmetradingvalues.com/images/996.png
+997,Giant Gold Scarab,petsneons,Pet,Legendary,Mud Ball,4.25,https://adoptmetradingvalues.com/images/997.png
+998,Giant Blue Scarab,petsneons,Pet,Ultra-Rare,Mud Ball,0.85,https://adoptmetradingvalues.com/images/998.png

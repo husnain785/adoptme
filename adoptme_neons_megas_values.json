@@ -1,0 +1,1582 @@
+{
+    "neons": {
+        "3": {
+            "name": "Neon Bat Dragon",
+            "base_name": "Bat Dragon",
+            "rarity": "Legendary",
+            "origin": "Halloween 2019 (Candy)",
+            "value": 415.0,
+            "image_url": "https://adoptmetradingvalues.com/images/3.png"
+        },
+        "1": {
+            "name": "Neon Shadow Dragon",
+            "base_name": "Shadow Dragon",
+            "rarity": "Legendary",
+            "origin": "Halloween 2019 (Robux)",
+            "value": 285.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1.png"
+        },
+        "2": {
+            "name": "Neon Giraffe",
+            "base_name": "Giraffe",
+            "rarity": "Legendary",
+            "origin": "Safari Egg",
+            "value": 460.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2.png"
+        },
+        "3027": {
+            "name": "Neon Giant Panda",
+            "base_name": "Giant Panda",
+            "rarity": "Legendary",
+            "origin": "Crystal Egg and Basic Egg",
+            "value": 370.0,
+            "image_url": "https://adoptmetradingvalues.com/images/3027.png"
+        },
+        "6": {
+            "name": "Neon Owl",
+            "base_name": "Owl",
+            "rarity": "Legendary",
+            "origin": "Farm Egg",
+            "value": 325.0,
+            "image_url": "https://adoptmetradingvalues.com/images/6.png"
+        },
+        "1241": {
+            "name": "Neon Diamond Butterfly",
+            "base_name": "Diamond Butterfly",
+            "rarity": "Legendary",
+            "origin": "Golden Leaf",
+            "value": 52.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1241.png"
+        },
+        "5": {
+            "name": "Neon Parrot",
+            "base_name": "Parrot",
+            "rarity": "Legendary",
+            "origin": "Jungle Egg",
+            "value": 205.0,
+            "image_url": "https://adoptmetradingvalues.com/images/5.png"
+        },
+        "1815": {
+            "name": "Neon Blazing Lion",
+            "base_name": "Blazing Lion",
+            "rarity": "Legendary",
+            "origin": "Campfire Cookie",
+            "value": 180.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1815.png"
+        },
+        "7": {
+            "name": "Neon Evil Unicorn",
+            "base_name": "Evil Unicorn",
+            "rarity": "Legendary",
+            "origin": "Halloween 2019 (Candy)",
+            "value": 153.0,
+            "image_url": "https://adoptmetradingvalues.com/images/7.png"
+        },
+        "1945": {
+            "name": "Neon Peppermint Penguin",
+            "base_name": "Peppermint Penguin",
+            "rarity": "Ultra-Rare",
+            "origin": "Winter 2023 (Robux)",
+            "value": 87.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1945.png"
+        },
+        "1928": {
+            "name": "Neon Chocolate Chip Bat Dragon",
+            "base_name": "Chocolate Chip Bat Dragon",
+            "rarity": "Legendary",
+            "origin": "Winter 2023 (Robux)",
+            "value": 62.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1928.png"
+        },
+        "2339": {
+            "name": "Neon Balloon Unicorn",
+            "base_name": "Balloon Unicorn",
+            "rarity": "Legendary",
+            "origin": "Summer State Fair 2024 (Robux)",
+            "value": 58.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2339.png"
+        },
+        "2866": {
+            "name": "Neon Papa Moose",
+            "base_name": "Papa Moose",
+            "rarity": "Legendary",
+            "origin": "Maple Leaf Treat",
+            "value": 54.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2866.png"
+        },
+        "15": {
+            "name": "Neon Albino Monkey",
+            "base_name": "Albino Monkey",
+            "rarity": "Legendary",
+            "origin": "Monkey Fairground",
+            "value": 46.0,
+            "image_url": "https://adoptmetradingvalues.com/images/15.png"
+        },
+        "124": {
+            "name": "Neon Blue Egg",
+            "base_name": "Blue Egg",
+            "rarity": "Rare",
+            "origin": "Easter 2019",
+            "value": 43.0,
+            "image_url": "https://adoptmetradingvalues.com/images/124.png"
+        },
+        "1603": {
+            "name": "Neon Goose",
+            "base_name": "Goose",
+            "rarity": "Rare",
+            "origin": "Spring Fest 2023 (Robux)",
+            "value": 41.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1603.png"
+        },
+        "3093": {
+            "name": "Neon Dango Penguins",
+            "base_name": "Dango Penguins",
+            "rarity": "Legendary",
+            "origin": "Crystal Egg",
+            "value": 34.0,
+            "image_url": "https://adoptmetradingvalues.com/images/3093.png"
+        },
+        "2613": {
+            "name": "Neon Fairy Bat Dragon",
+            "base_name": "Fairy Bat Dragon",
+            "rarity": "Legendary",
+            "origin": "Winter 2024 (Robux)",
+            "value": 31.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2613.png"
+        },
+        "1827": {
+            "name": "Neon Pelican",
+            "base_name": "Pelican",
+            "rarity": "Ultra-Rare",
+            "origin": "September 2023 (Robux)",
+            "value": 27.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1827.png"
+        },
+        "49": {
+            "name": "Neon Pig",
+            "base_name": "Pig",
+            "rarity": "Rare",
+            "origin": "Farm Egg",
+            "value": 17.0,
+            "image_url": "https://adoptmetradingvalues.com/images/49.png"
+        },
+        "1771": {
+            "name": "Neon Happy Clam",
+            "base_name": "Happy Clam",
+            "rarity": "Ultra-Rare",
+            "origin": "Summer Festival 2023",
+            "value": 14.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1771.png"
+        },
+        "48": {
+            "name": "Neon Turkey",
+            "base_name": "Turkey",
+            "rarity": "Ultra-Rare",
+            "origin": "Farm Egg",
+            "value": 8.25,
+            "image_url": "https://adoptmetradingvalues.com/images/48.png"
+        },
+        "1066": {
+            "name": "Neon Hawk",
+            "base_name": "Hawk",
+            "rarity": "Legendary",
+            "origin": "Woodland Egg",
+            "value": 5.65,
+            "image_url": "https://adoptmetradingvalues.com/images/1066.png"
+        },
+        "1098": {
+            "name": "Neon Black Springer Spaniel",
+            "base_name": "Black Springer Spaniel",
+            "rarity": "Ultra-Rare",
+            "origin": "Easter 2022",
+            "value": 4.5,
+            "image_url": "https://adoptmetradingvalues.com/images/1098.png"
+        },
+        "1168": {
+            "name": "Neon Diamond Albatross",
+            "base_name": "Diamond Albatross",
+            "rarity": "Legendary",
+            "origin": "Golden Clam",
+            "value": 3.5,
+            "image_url": "https://adoptmetradingvalues.com/images/1168.png"
+        },
+        "1814": {
+            "name": "Neon Ash Zebra",
+            "base_name": "Ash Zebra",
+            "rarity": "Common",
+            "origin": "Ash Zebra Bait",
+            "value": 2.25,
+            "image_url": "https://adoptmetradingvalues.com/images/1814.png"
+        },
+        "2403": {
+            "name": "Neon Peregrine Falcon",
+            "base_name": "Peregrine Falcon",
+            "rarity": "Ultra-Rare",
+            "origin": "Sunshine Games 2024",
+            "value": 2.15,
+            "image_url": "https://adoptmetradingvalues.com/images/2403.png"
+        },
+        "2552": {
+            "name": "Neon Golden Jaguar",
+            "base_name": "Golden Jaguar",
+            "rarity": "Ultra-Rare",
+            "origin": "Dia De Los Muertos 2024",
+            "value": 2.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2552.png"
+        },
+        "936": {
+            "name": "Neon Halloween White Mummy Cat",
+            "base_name": "Halloween White Mummy Cat",
+            "rarity": "Rare",
+            "origin": "Halloween 2021",
+            "value": 1.9,
+            "image_url": "https://adoptmetradingvalues.com/images/936.png"
+        },
+        "1800": {
+            "name": "Neon Black Kite",
+            "base_name": "Black Kite",
+            "rarity": "Ultra-Rare",
+            "origin": "Urban Egg",
+            "value": 1.85,
+            "image_url": "https://adoptmetradingvalues.com/images/1800.png"
+        },
+        "960": {
+            "name": "Neon Husky",
+            "base_name": "Husky",
+            "rarity": "Rare",
+            "origin": "Christmas 2021",
+            "value": 1.7,
+            "image_url": "https://adoptmetradingvalues.com/images/960.png"
+        },
+        "1069": {
+            "name": "Neon Fallow Deer",
+            "base_name": "Fallow Deer",
+            "rarity": "Legendary",
+            "origin": "Woodland Egg",
+            "value": 1.6,
+            "image_url": "https://adoptmetradingvalues.com/images/1069.png"
+        },
+        "37": {
+            "name": "Neon Wild Boar",
+            "base_name": "Wild Boar",
+            "rarity": "Uncommon",
+            "origin": "Safari Egg",
+            "value": 1.55,
+            "image_url": "https://adoptmetradingvalues.com/images/37.png"
+        },
+        "1391": {
+            "name": "Neon Chickatrice",
+            "base_name": "Chickatrice",
+            "rarity": "Uncommon",
+            "origin": "Halloween 2022",
+            "value": 1.5,
+            "image_url": "https://adoptmetradingvalues.com/images/1391.png"
+        },
+        "712": {
+            "name": "Neon Hydra",
+            "base_name": "Hydra",
+            "rarity": "Ultra-Rare",
+            "origin": "Mythic Egg",
+            "value": 1.45,
+            "image_url": "https://adoptmetradingvalues.com/images/712.png"
+        },
+        "88": {
+            "name": "Neon Ladybug",
+            "base_name": "Ladybug",
+            "rarity": "Ultra-Rare",
+            "origin": "Diamond Lavender",
+            "value": 1.4,
+            "image_url": "https://adoptmetradingvalues.com/images/88.png"
+        },
+        "91": {
+            "name": "Neon Monkey",
+            "base_name": "Monkey",
+            "rarity": "Rare",
+            "origin": "Monkey Fairground",
+            "value": 1.35,
+            "image_url": "https://adoptmetradingvalues.com/images/91.png"
+        },
+        "69": {
+            "name": "Neon Silly Duck",
+            "base_name": "Silly Duck",
+            "rarity": "Uncommon",
+            "origin": "Farm Egg",
+            "value": 1.3,
+            "image_url": "https://adoptmetradingvalues.com/images/69.png"
+        },
+        "708": {
+            "name": "Neon Merhorse",
+            "base_name": "Merhorse",
+            "rarity": "Rare",
+            "origin": "Mythic Egg",
+            "value": 1.25,
+            "image_url": "https://adoptmetradingvalues.com/images/708.png"
+        },
+        "2250": {
+            "name": "Neon Blue Jay",
+            "base_name": "Blue Jay",
+            "rarity": "Rare",
+            "origin": "Garden Egg",
+            "value": 1.2,
+            "image_url": "https://adoptmetradingvalues.com/images/2250.png"
+        },
+        "1171": {
+            "name": "Neon Golden Albatross",
+            "base_name": "Golden Albatross",
+            "rarity": "Legendary",
+            "origin": "Golden Clam",
+            "value": 1.1,
+            "image_url": "https://adoptmetradingvalues.com/images/1171.png"
+        },
+        "1236": {
+            "name": "Neon Yellow Butterfly",
+            "base_name": "Yellow Butterfly",
+            "rarity": "Rare",
+            "origin": "Leaf",
+            "value": 1.05,
+            "image_url": "https://adoptmetradingvalues.com/images/1236.png"
+        },
+        "2516": {
+            "name": "Neon Evil Chick",
+            "base_name": "Evil Chick",
+            "rarity": "Legendary",
+            "origin": "Halloween Chick Box",
+            "value": 0.95,
+            "image_url": "https://adoptmetradingvalues.com/images/2516.png"
+        },
+        "2332": {
+            "name": "Neon Orange Betta Fish",
+            "base_name": "Orange Betta Fish",
+            "rarity": "Rare",
+            "origin": "Summer State Fair 2024",
+            "value": 0.9,
+            "image_url": "https://adoptmetradingvalues.com/images/2332.png"
+        },
+        "66": {
+            "name": "Neon Business Monkey",
+            "base_name": "Business Monkey",
+            "rarity": "Ultra-Rare",
+            "origin": "Monkey Fairground",
+            "value": 0.85,
+            "image_url": "https://adoptmetradingvalues.com/images/66.png"
+        },
+        "3055": {
+            "name": "Neon Jumping Spider",
+            "base_name": "Jumping Spider",
+            "rarity": "Uncommon",
+            "origin": "Spider Box",
+            "value": 0.8,
+            "image_url": "https://adoptmetradingvalues.com/images/3055.png"
+        },
+        "2840": {
+            "name": "Neon Villain Gibbon",
+            "base_name": "Villain Gibbon",
+            "rarity": "Legendary",
+            "origin": "Gibbon Fairground",
+            "value": 0.75,
+            "image_url": "https://adoptmetradingvalues.com/images/2840.png"
+        },
+        "1540": {
+            "name": "Neon Bali Starling",
+            "base_name": "Bali Starling",
+            "rarity": "Common",
+            "origin": "Southeast Asia Egg",
+            "value": 0.7,
+            "image_url": "https://adoptmetradingvalues.com/images/1540.png"
+        },
+        "963": {
+            "name": "Neon St Bernard",
+            "base_name": "St Bernard",
+            "rarity": "Ultra-Rare",
+            "origin": "Christmas 2021",
+            "value": 0.65,
+            "image_url": "https://adoptmetradingvalues.com/images/963.png"
+        },
+        "2774": {
+            "name": "Neon Bakeneko",
+            "base_name": "Bakeneko",
+            "rarity": "Common",
+            "origin": "Cherry Blossom Festival 2025",
+            "value": 0.6,
+            "image_url": "https://adoptmetradingvalues.com/images/2774.png"
+        },
+        "2702": {
+            "name": "Neon Royal Moon Egg",
+            "base_name": "Royal Moon Egg",
+            "rarity": "Legendary",
+            "origin": "Lunar New Year 2025",
+            "value": 0.55,
+            "image_url": "https://adoptmetradingvalues.com/images/2702.png"
+        },
+        "2455": {
+            "name": "Neon Hummingbird",
+            "base_name": "Hummingbird",
+            "rarity": "Ultra-Rare",
+            "origin": "Golden Petunia",
+            "value": 0.5,
+            "image_url": "https://adoptmetradingvalues.com/images/2455.png"
+        },
+        "2156": {
+            "name": "Neon Elasmosaurus",
+            "base_name": "Elasmosaurus",
+            "rarity": "Ultra-Rare",
+            "origin": "Fossil Isle 2024",
+            "value": 0.45,
+            "image_url": "https://adoptmetradingvalues.com/images/2156.png"
+        },
+        "2806": {
+            "name": "Neon Mecha R4BBIT",
+            "base_name": "Mecha R4BBIT",
+            "rarity": "Rare",
+            "origin": "Cherry Blossom Festival 2025",
+            "value": 0.4,
+            "image_url": "https://adoptmetradingvalues.com/images/2806.png"
+        },
+        "1831": {
+            "name": "Neon Undead Elk",
+            "base_name": "Undead Elk",
+            "rarity": "Rare",
+            "origin": "Halloween 2023",
+            "value": 0.35,
+            "image_url": "https://adoptmetradingvalues.com/images/1831.png"
+        },
+        "3084": {
+            "name": "Neon DJ Snooze",
+            "base_name": "DJ Snooze",
+            "rarity": "Rare",
+            "origin": "Halloween 2025",
+            "value": 0.3,
+            "image_url": "https://adoptmetradingvalues.com/images/3084.png"
+        },
+        "1605": {
+            "name": "Neon Fool Egg",
+            "base_name": "Fool Egg",
+            "rarity": "Legendary",
+            "origin": "April Fools Day 2023",
+            "value": 0.28,
+            "image_url": "https://adoptmetradingvalues.com/images/1605.png"
+        },
+        "1218": {
+            "name": "Neon Ant",
+            "base_name": "Ant",
+            "rarity": "Common",
+            "origin": "Regular Egg",
+            "value": 0.25,
+            "image_url": "https://adoptmetradingvalues.com/images/1218.png"
+        },
+        "1924": {
+            "name": "Neon Longhorn Cow",
+            "base_name": "Longhorn Cow",
+            "rarity": "Rare",
+            "origin": "Farm Theme 2023",
+            "value": 0.23,
+            "image_url": "https://adoptmetradingvalues.com/images/1924.png"
+        },
+        "1549": {
+            "name": "Neon Komodo Dragon",
+            "base_name": "Komodo Dragon",
+            "rarity": "Ultra-Rare",
+            "origin": "Southeast Asia Egg",
+            "value": 0.2,
+            "image_url": "https://adoptmetradingvalues.com/images/1549.png"
+        },
+        "1478": {
+            "name": "Neon Bloodhound",
+            "base_name": "Bloodhound",
+            "rarity": "Rare",
+            "origin": "UGC Pet Refresh January 2023",
+            "value": 0.18,
+            "image_url": "https://adoptmetradingvalues.com/images/1478.png"
+        },
+        "2796": {
+            "name": "Neon Toxic Kaijunior",
+            "base_name": "Toxic Kaijunior",
+            "rarity": "Ultra-Rare",
+            "origin": "Kaijunior Box",
+            "value": 0.15,
+            "image_url": "https://adoptmetradingvalues.com/images/2796.png"
+        },
+        "2952": {
+            "name": "Neon Chanekeh",
+            "base_name": "Chanekeh",
+            "rarity": "Rare",
+            "origin": "Aztec Egg",
+            "value": 0.13,
+            "image_url": "https://adoptmetradingvalues.com/images/2952.png"
+        },
+        "1726": {
+            "name": "Neon Liger",
+            "base_name": "Liger",
+            "rarity": "Common",
+            "origin": "Danger Egg",
+            "value": 0.1,
+            "image_url": "https://adoptmetradingvalues.com/images/1726.png"
+        },
+        "1729": {
+            "name": "Neon Angler Fish",
+            "base_name": "Angler Fish",
+            "rarity": "Uncommon",
+            "origin": "Danger Egg",
+            "value": 0.08,
+            "image_url": "https://adoptmetradingvalues.com/images/1729.png"
+        },
+        "2949": {
+            "name": "Neon Wren",
+            "base_name": "Wren",
+            "rarity": "Rare",
+            "origin": "40 Billion Visits",
+            "value": 0.06,
+            "image_url": "https://adoptmetradingvalues.com/images/2949.png"
+        },
+        "2010": {
+            "name": "Neon Armadillo",
+            "base_name": "Armadillo",
+            "rarity": "Common",
+            "origin": "Desert Egg",
+            "value": 0.05,
+            "image_url": "https://adoptmetradingvalues.com/images/2010.png"
+        },
+        "2837": {
+            "name": "Neon Gibbon",
+            "base_name": "Gibbon",
+            "rarity": "Rare",
+            "origin": "Gibbon Fairground",
+            "value": 0.04,
+            "image_url": "https://adoptmetradingvalues.com/images/2837.png"
+        },
+        "118": {
+            "name": "Neon Snow Cat",
+            "base_name": "Snow Cat",
+            "rarity": "Uncommon",
+            "origin": "Retired Egg",
+            "value": 0.02,
+            "image_url": "https://adoptmetradingvalues.com/images/118.png"
+        },
+        "122": {
+            "name": "Neon Otter",
+            "base_name": "Otter",
+            "rarity": "Common",
+            "origin": "Retired Egg",
+            "value": 0.01,
+            "image_url": "https://adoptmetradingvalues.com/images/122.png"
+        }
+    },
+    "megas": {
+        "3": {
+            "name": "Mega Bat Dragon",
+            "base_name": "Bat Dragon",
+            "rarity": "Legendary",
+            "origin": "Halloween 2019 (Candy)",
+            "value": 2960.0,
+            "image_url": "https://adoptmetradingvalues.com/images/3.png"
+        },
+        "1": {
+            "name": "Mega Shadow Dragon",
+            "base_name": "Shadow Dragon",
+            "rarity": "Legendary",
+            "origin": "Halloween 2019 (Robux)",
+            "value": 1815.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1.png"
+        },
+        "2": {
+            "name": "Mega Giraffe",
+            "base_name": "Giraffe",
+            "rarity": "Legendary",
+            "origin": "Safari Egg",
+            "value": 190.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2.png"
+        },
+        "3027": {
+            "name": "Mega Giant Panda",
+            "base_name": "Giant Panda",
+            "rarity": "Legendary",
+            "origin": "Crystal Egg and Basic Egg",
+            "value": 1515.0,
+            "image_url": "https://adoptmetradingvalues.com/images/3027.png"
+        },
+        "6": {
+            "name": "Mega Owl",
+            "base_name": "Owl",
+            "rarity": "Legendary",
+            "origin": "Farm Egg",
+            "value": 1215.0,
+            "image_url": "https://adoptmetradingvalues.com/images/6.png"
+        },
+        "4": {
+            "name": "Mega Frost Dragon",
+            "base_name": "Frost Dragon",
+            "rarity": "Legendary",
+            "origin": "Christmas 2019 (Robux)",
+            "value": 150.0,
+            "image_url": "https://adoptmetradingvalues.com/images/4.png"
+        },
+        "2339": {
+            "name": "Mega Balloon Unicorn",
+            "base_name": "Balloon Unicorn",
+            "rarity": "Legendary",
+            "origin": "Summer State Fair 2024 (Robux)",
+            "value": 840.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2339.png"
+        },
+        "2876": {
+            "name": "Mega Orchid Butterfly",
+            "base_name": "Orchid Butterfly",
+            "rarity": "Legendary",
+            "origin": "Butterfly Sanctuary 2025",
+            "value": 48.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2876.png"
+        },
+        "8": {
+            "name": "Mega Crow",
+            "base_name": "Crow",
+            "rarity": "Legendary",
+            "origin": "Farm Egg",
+            "value": 195.0,
+            "image_url": "https://adoptmetradingvalues.com/images/8.png"
+        },
+        "5": {
+            "name": "Mega Parrot",
+            "base_name": "Parrot",
+            "rarity": "Legendary",
+            "origin": "Jungle Egg",
+            "value": 95.0,
+            "image_url": "https://adoptmetradingvalues.com/images/5.png"
+        },
+        "3093": {
+            "name": "Mega Dango Penguins",
+            "base_name": "Dango Penguins",
+            "rarity": "Legendary",
+            "origin": "Crystal Egg",
+            "value": 650.0,
+            "image_url": "https://adoptmetradingvalues.com/images/3093.png"
+        },
+        "1241": {
+            "name": "Mega Diamond Butterfly",
+            "base_name": "Diamond Butterfly",
+            "rarity": "Legendary",
+            "origin": "Golden Leaf",
+            "value": 635.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1241.png"
+        },
+        "19": {
+            "name": "Mega Dalmatian",
+            "base_name": "Dalmatian",
+            "rarity": "Ultra-Rare",
+            "origin": "Christmas 2019 (Robux)",
+            "value": 600.0,
+            "image_url": "https://adoptmetradingvalues.com/images/19.png"
+        },
+        "7": {
+            "name": "Mega Evil Unicorn",
+            "base_name": "Evil Unicorn",
+            "rarity": "Legendary",
+            "origin": "Halloween 2019 (Candy)",
+            "value": 575.0,
+            "image_url": "https://adoptmetradingvalues.com/images/7.png"
+        },
+        "2698": {
+            "name": "Mega Haetae",
+            "base_name": "Haetae",
+            "rarity": "Legendary",
+            "origin": "Lunar New Year 2025 (Robux)",
+            "value": 125.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2698.png"
+        },
+        "1827": {
+            "name": "Mega Pelican",
+            "base_name": "Pelican",
+            "rarity": "Ultra-Rare",
+            "origin": "September 2023 (Robux)",
+            "value": 430.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1827.png"
+        },
+        "1945": {
+            "name": "Mega Peppermint Penguin",
+            "base_name": "Peppermint Penguin",
+            "rarity": "Ultra-Rare",
+            "origin": "Winter 2023 (Robux)",
+            "value": 23.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1945.png"
+        },
+        "2742": {
+            "name": "Mega Frostbite Bear",
+            "base_name": "Frostbite Bear",
+            "rarity": "Legendary",
+            "origin": "Ice Dimension Baits",
+            "value": 345.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2742.png"
+        },
+        "1738": {
+            "name": "Mega Hot Doggo",
+            "base_name": "Hot Doggo",
+            "rarity": "Legendary",
+            "origin": "Summer Festival 2023 (Robux)",
+            "value": 310.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1738.png"
+        },
+        "3092": {
+            "name": "Mega Strawberry Penguin",
+            "base_name": "Strawberry Penguin",
+            "rarity": "Legendary",
+            "origin": "Golden Goldfish",
+            "value": 70.0,
+            "image_url": "https://adoptmetradingvalues.com/images/3092.png"
+        },
+        "1398": {
+            "name": "Mega Undead Jousting Horse",
+            "base_name": "Undead Jousting Horse",
+            "rarity": "Legendary",
+            "origin": "Halloween 2022 (Robux)",
+            "value": 270.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1398.png"
+        },
+        "3079": {
+            "name": "Mega Cryptid",
+            "base_name": "Cryptid",
+            "rarity": "Legendary",
+            "origin": "Halloween 2025 (Robux)",
+            "value": 65.0,
+            "image_url": "https://adoptmetradingvalues.com/images/3079.png"
+        },
+        "17": {
+            "name": "Mega Flamingo",
+            "base_name": "Flamingo",
+            "rarity": "Ultra-Rare",
+            "origin": "Safari Egg",
+            "value": 68.0,
+            "image_url": "https://adoptmetradingvalues.com/images/17.png"
+        },
+        "14": {
+            "name": "Mega Monkey King",
+            "base_name": "Monkey King",
+            "rarity": "Legendary",
+            "origin": "Monkey Fairground",
+            "value": 255.0,
+            "image_url": "https://adoptmetradingvalues.com/images/14.png"
+        },
+        "1928": {
+            "name": "Mega Chocolate Chip Bat Dragon",
+            "base_name": "Chocolate Chip Bat Dragon",
+            "rarity": "Legendary",
+            "origin": "Winter 2023 (Robux)",
+            "value": 245.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1928.png"
+        },
+        "2306": {
+            "name": "Mega Mini Pig",
+            "base_name": "Mini Pig",
+            "rarity": "Ultra-Rare",
+            "origin": "Summer State Fair 2024 (Robux)",
+            "value": 230.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2306.png"
+        },
+        "15": {
+            "name": "Mega Albino Monkey",
+            "base_name": "Albino Monkey",
+            "rarity": "Legendary",
+            "origin": "Monkey Fairground",
+            "value": 185.0,
+            "image_url": "https://adoptmetradingvalues.com/images/15.png"
+        },
+        "1603": {
+            "name": "Mega Goose",
+            "base_name": "Goose",
+            "rarity": "Rare",
+            "origin": "Spring Fest 2023 (Robux)",
+            "value": 175.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1603.png"
+        },
+        "3026": {
+            "name": "Mega Emberlight",
+            "base_name": "Emberlight",
+            "rarity": "Legendary",
+            "origin": "Crystal Egg",
+            "value": 37.0,
+            "image_url": "https://adoptmetradingvalues.com/images/3026.png"
+        },
+        "2078": {
+            "name": "Mega Pirate Ghost Capuchin Monkey",
+            "base_name": "Pirate Ghost Capuchin Monkey",
+            "rarity": "Legendary",
+            "origin": "Capuchin Boxes",
+            "value": 165.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2078.png"
+        },
+        "30": {
+            "name": "Mega Crocodile",
+            "base_name": "Crocodile",
+            "rarity": "Ultra-Rare",
+            "origin": "Jungle Egg",
+            "value": 155.0,
+            "image_url": "https://adoptmetradingvalues.com/images/30.png"
+        },
+        "1973": {
+            "name": "Mega Christmas Pudding Pup",
+            "base_name": "Christmas Pudding Pup",
+            "rarity": "Ultra-Rare",
+            "origin": "Christmas Pudding Pup Bait",
+            "value": 145.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1973.png"
+        },
+        "18": {
+            "name": "Mega Lion",
+            "base_name": "Lion",
+            "rarity": "Ultra-Rare",
+            "origin": "Safari Egg",
+            "value": 140.0,
+            "image_url": "https://adoptmetradingvalues.com/images/18.png"
+        },
+        "1588": {
+            "name": "Mega Border Collie",
+            "base_name": "Border Collie",
+            "rarity": "Rare",
+            "origin": "Spring Fest 2023 (Robux)",
+            "value": 135.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1588.png"
+        },
+        "2867": {
+            "name": "Mega Moose Calf",
+            "base_name": "Moose Calf",
+            "rarity": "Legendary",
+            "origin": "Maple Leaf Treat",
+            "value": 130.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2867.png"
+        },
+        "1760": {
+            "name": "Mega Tortuga de la Isla",
+            "base_name": "Tortuga de la Isla",
+            "rarity": "Ultra-Rare",
+            "origin": "Summer Festival 2023 (Robux)",
+            "value": 128.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1760.png"
+        },
+        "1174": {
+            "name": "Mega Goat",
+            "base_name": "Goat",
+            "rarity": "Ultra-Rare",
+            "origin": "Pride Event 2022 (Robux)",
+            "value": 123.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1174.png"
+        },
+        "1604": {
+            "name": "Mega Tio De Nadal",
+            "base_name": "Tio De Nadal",
+            "rarity": "Legendary",
+            "origin": "April Fools Day 2023 (Robux)",
+            "value": 120.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1604.png"
+        },
+        "1480": {
+            "name": "Mega Winged Tiger",
+            "base_name": "Winged Tiger",
+            "rarity": "Legendary",
+            "origin": "Lunar New Year 2023 (Robux)",
+            "value": 118.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1480.png"
+        },
+        "1569": {
+            "name": "Mega Emperor Gorilla",
+            "base_name": "Emperor Gorilla",
+            "rarity": "Legendary",
+            "origin": "Premium Gorilla Box",
+            "value": 118.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1569.png"
+        },
+        "16": {
+            "name": "Mega Turtle",
+            "base_name": "Turtle",
+            "rarity": "Legendary",
+            "origin": "Aussie Egg",
+            "value": 116.0,
+            "image_url": "https://adoptmetradingvalues.com/images/16.png"
+        },
+        "1238": {
+            "name": "Mega Purple Butterfly",
+            "base_name": "Purple Butterfly",
+            "rarity": "Ultra-Rare",
+            "origin": "Leaf",
+            "value": 115.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1238.png"
+        },
+        "1993": {
+            "name": "Mega Jellyfish",
+            "base_name": "Jellyfish",
+            "rarity": "Ultra-Rare",
+            "origin": "UGC Rewards Update January 2024",
+            "value": 110.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1993.png"
+        },
+        "997": {
+            "name": "Mega Giant Gold Scarab",
+            "base_name": "Giant Gold Scarab",
+            "rarity": "Legendary",
+            "origin": "Mud Ball",
+            "value": 105.0,
+            "image_url": "https://adoptmetradingvalues.com/images/997.png"
+        },
+        "1740": {
+            "name": "Mega Many Mackerel",
+            "base_name": "Many Mackerel",
+            "rarity": "Ultra-Rare",
+            "origin": "Summer Festival 2023",
+            "value": 103.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1740.png"
+        },
+        "2550": {
+            "name": "Mega Sugar Axolotl",
+            "base_name": "Sugar Axolotl",
+            "rarity": "Legendary",
+            "origin": "Dia De Los Muertos 2024 (Robux)",
+            "value": 102.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2550.png"
+        },
+        "24": {
+            "name": "Mega Meerkat",
+            "base_name": "Meerkat",
+            "rarity": "Uncommon",
+            "origin": "Safari Egg",
+            "value": 100.0,
+            "image_url": "https://adoptmetradingvalues.com/images/24.png"
+        },
+        "20": {
+            "name": "Mega Kangaroo",
+            "base_name": "Kangaroo",
+            "rarity": "Legendary",
+            "origin": "Aussie Egg",
+            "value": 93.0,
+            "image_url": "https://adoptmetradingvalues.com/images/20.png"
+        },
+        "1479": {
+            "name": "Mega Glacier Moth",
+            "base_name": "Glacier Moth",
+            "rarity": "Ultra-Rare",
+            "origin": "UGC Pet Refresh January 2023",
+            "value": 93.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1479.png"
+        },
+        "2492": {
+            "name": "Mega Grim Dragon",
+            "base_name": "Grim Dragon",
+            "rarity": "Legendary",
+            "origin": "Halloween 2024 (Robux)",
+            "value": 5.7,
+            "image_url": "https://adoptmetradingvalues.com/images/2492.png"
+        },
+        "1926": {
+            "name": "Mega Alpaca",
+            "base_name": "Alpaca",
+            "rarity": "Ultra-Rare",
+            "origin": "Farm Theme 2023",
+            "value": 88.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1926.png"
+        },
+        "21": {
+            "name": "Mega Platypus",
+            "base_name": "Platypus",
+            "rarity": "Ultra-Rare",
+            "origin": "Jungle Egg",
+            "value": 86.0,
+            "image_url": "https://adoptmetradingvalues.com/images/21.png"
+        },
+        "1602": {
+            "name": "Mega Field Mouse",
+            "base_name": "Field Mouse",
+            "rarity": "Legendary",
+            "origin": "Spring Fest 2023",
+            "value": 85.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1602.png"
+        },
+        "2773": {
+            "name": "Mega Sakura Spirit",
+            "base_name": "Sakura Spirit",
+            "rarity": "Legendary",
+            "origin": "Cherry Blossom Festival 2025",
+            "value": 83.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2773.png"
+        },
+        "2059": {
+            "name": "Mega Diamond Hamster",
+            "base_name": "Diamond Hamster",
+            "rarity": "Legendary",
+            "origin": "Golden Corn",
+            "value": 83.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2059.png"
+        },
+        "1234": {
+            "name": "Mega Golden Chow-Chow",
+            "base_name": "Golden Chow-Chow",
+            "rarity": "Legendary",
+            "origin": "Golden Bone",
+            "value": 80.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1234.png"
+        },
+        "50": {
+            "name": "Mega Pink Cat",
+            "base_name": "Pink Cat",
+            "rarity": "Uncommon",
+            "origin": "Pink Egg",
+            "value": 77.0,
+            "image_url": "https://adoptmetradingvalues.com/images/50.png"
+        },
+        "1990": {
+            "name": "Mega Kookaburra",
+            "base_name": "Kookaburra",
+            "rarity": "Ultra-Rare",
+            "origin": "Aussie Zone Update",
+            "value": 75.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1990.png"
+        },
+        "29": {
+            "name": "Mega Brown Bear",
+            "base_name": "Brown Bear",
+            "rarity": "Rare",
+            "origin": "Jungle Egg",
+            "value": 72.0,
+            "image_url": "https://adoptmetradingvalues.com/images/29.png"
+        },
+        "2017": {
+            "name": "Mega Midnight Dragon",
+            "base_name": "Midnight Dragon",
+            "rarity": "Legendary",
+            "origin": "Lunar New Year 2024 (Robux)",
+            "value": 68.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2017.png"
+        },
+        "935": {
+            "name": "Mega Halloween White Ghost Dragon",
+            "base_name": "Halloween White Ghost Dragon",
+            "rarity": "Legendary",
+            "origin": "Halloween 2021 (Robux)",
+            "value": 63.0,
+            "image_url": "https://adoptmetradingvalues.com/images/935.png"
+        },
+        "1862": {
+            "name": "Mega Slime",
+            "base_name": "Slime",
+            "rarity": "Ultra-Rare",
+            "origin": "Halloween 2023",
+            "value": 60.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1862.png"
+        },
+        "1208": {
+            "name": "Mega Diamond King Penguin",
+            "base_name": "Diamond King Penguin",
+            "rarity": "Legendary",
+            "origin": "Golden Goldfish",
+            "value": 13.5,
+            "image_url": "https://adoptmetradingvalues.com/images/1208.png"
+        },
+        "2338": {
+            "name": "Mega Majestic Pony",
+            "base_name": "Majestic Pony",
+            "rarity": "Legendary",
+            "origin": "Summer State Fair 2024",
+            "value": 57.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2338.png"
+        },
+        "2039": {
+            "name": "Mega Flaming Fox",
+            "base_name": "Flaming Fox",
+            "rarity": "Ultra-Rare",
+            "origin": "Burnt Bites and Baked Alaska Baits",
+            "value": 55.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2039.png"
+        },
+        "1586": {
+            "name": "Mega Wood Pigeon",
+            "base_name": "Wood Pigeon",
+            "rarity": "Ultra-Rare",
+            "origin": "Spring Fest 2023",
+            "value": 53.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1586.png"
+        },
+        "962": {
+            "name": "Mega Ice Golem",
+            "base_name": "Ice Golem",
+            "rarity": "Legendary",
+            "origin": "Christmas 2021 (Robux)",
+            "value": 12.5,
+            "image_url": "https://adoptmetradingvalues.com/images/962.png"
+        },
+        "1776": {
+            "name": "Mega African Wild Dog",
+            "base_name": "African Wild Dog",
+            "rarity": "Ultra-Rare",
+            "origin": "UGC Rewards Update July 2023",
+            "value": 50.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1776.png"
+        },
+        "1469": {
+            "name": "Mega Ice Wolf",
+            "base_name": "Ice Wolf",
+            "rarity": "Ultra-Rare",
+            "origin": "Winter 2022 (Robux)",
+            "value": 49.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1469.png"
+        },
+        "2450": {
+            "name": "Mega Glormy Hound",
+            "base_name": "Glormy Hound",
+            "rarity": "Legendary",
+            "origin": "Galactic Pass (Shards)",
+            "value": 47.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2450.png"
+        },
+        "44": {
+            "name": "Mega Llama",
+            "base_name": "Llama",
+            "rarity": "Ultra-Rare",
+            "origin": "Farm Egg",
+            "value": 9.0,
+            "image_url": "https://adoptmetradingvalues.com/images/44.png"
+        },
+        "60": {
+            "name": "Mega Cerberus",
+            "base_name": "Cerberus",
+            "rarity": "Legendary",
+            "origin": "Halloween 2020 (Robux)",
+            "value": 44.0,
+            "image_url": "https://adoptmetradingvalues.com/images/60.png"
+        },
+        "960": {
+            "name": "Mega Husky",
+            "base_name": "Husky",
+            "rarity": "Rare",
+            "origin": "Christmas 2021",
+            "value": 42.0,
+            "image_url": "https://adoptmetradingvalues.com/images/960.png"
+        },
+        "763": {
+            "name": "Mega Axolotl",
+            "base_name": "Axolotl",
+            "rarity": "Legendary",
+            "origin": "Robux",
+            "value": 40.0,
+            "image_url": "https://adoptmetradingvalues.com/images/763.png"
+        },
+        "1526": {
+            "name": "Mega Firefly",
+            "base_name": "Firefly",
+            "rarity": "Legendary",
+            "origin": "Camping Shop Refresh 2023 (Robux)",
+            "value": 8.5,
+            "image_url": "https://adoptmetradingvalues.com/images/1526.png"
+        },
+        "28": {
+            "name": "Mega Blue Dog",
+            "base_name": "Blue Dog",
+            "rarity": "Uncommon",
+            "origin": "Blue Egg",
+            "value": 38.0,
+            "image_url": "https://adoptmetradingvalues.com/images/28.png"
+        },
+        "2875": {
+            "name": "Mega Violet Butterfly",
+            "base_name": "Violet Butterfly",
+            "rarity": "Legendary",
+            "origin": "Butterfly Sanctuary 2025",
+            "value": 36.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2875.png"
+        },
+        "1239": {
+            "name": "Mega Orange Butterfly",
+            "base_name": "Orange Butterfly",
+            "rarity": "Ultra-Rare",
+            "origin": "Golden Leaf",
+            "value": 35.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1239.png"
+        },
+        "1172": {
+            "name": "Mega Winged Horse",
+            "base_name": "Winged Horse",
+            "rarity": "Legendary",
+            "origin": "Robux",
+            "value": 33.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1172.png"
+        },
+        "2404": {
+            "name": "Mega Cheetah",
+            "base_name": "Cheetah",
+            "rarity": "Legendary",
+            "origin": "Sunshine Games 2024",
+            "value": 32.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2404.png"
+        },
+        "33": {
+            "name": "Mega Golden Rat",
+            "base_name": "Golden Rat",
+            "rarity": "Legendary",
+            "origin": "Lunar New Year 2020 (Rat Box)",
+            "value": 30.0,
+            "image_url": "https://adoptmetradingvalues.com/images/33.png"
+        },
+        "125": {
+            "name": "Mega Pink Egg",
+            "base_name": "Pink Egg",
+            "rarity": "Rare",
+            "origin": "Special",
+            "value": 28.0,
+            "image_url": "https://adoptmetradingvalues.com/images/125.png"
+        },
+        "1567": {
+            "name": "Mega Karate Gorilla",
+            "base_name": "Karate Gorilla",
+            "rarity": "Ultra-Rare",
+            "origin": "Gorilla Box",
+            "value": 27.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1567.png"
+        },
+        "2456": {
+            "name": "Mega Golden Hummingbird",
+            "base_name": "Golden Hummingbird",
+            "rarity": "Legendary",
+            "origin": "Golden Petunia",
+            "value": 26.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2456.png"
+        },
+        "43": {
+            "name": "Mega King Bee",
+            "base_name": "King Bee",
+            "rarity": "Legendary",
+            "origin": "Honey",
+            "value": 25.0,
+            "image_url": "https://adoptmetradingvalues.com/images/43.png"
+        },
+        "2788": {
+            "name": "Mega Super Saru",
+            "base_name": "Super Saru",
+            "rarity": "Legendary",
+            "origin": "Cherry Blossom Festival 2025",
+            "value": 24.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2788.png"
+        },
+        "1855": {
+            "name": "Mega Evil Rock",
+            "base_name": "Evil Rock",
+            "rarity": "Rare",
+            "origin": "Halloween 2023 (Robux)",
+            "value": 23.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1855.png"
+        },
+        "959": {
+            "name": "Mega Puffin",
+            "base_name": "Puffin",
+            "rarity": "Ultra-Rare",
+            "origin": "Christmas 2021",
+            "value": 22.0,
+            "image_url": "https://adoptmetradingvalues.com/images/959.png"
+        },
+        "2504": {
+            "name": "Mega Scarebear",
+            "base_name": "Scarebear",
+            "rarity": "Legendary",
+            "origin": "Halloween 2024",
+            "value": 21.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2504.png"
+        },
+        "1975": {
+            "name": "Mega Harp Seal",
+            "base_name": "Harp Seal",
+            "rarity": "Uncommon",
+            "origin": "Winter 2023",
+            "value": 21.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1975.png"
+        },
+        "1703": {
+            "name": "Mega Caelum Cervi",
+            "base_name": "Caelum Cervi",
+            "rarity": "Legendary",
+            "origin": "Pride Update 2023 (Robux)",
+            "value": 20.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1703.png"
+        },
+        "1944": {
+            "name": "Mega Fleur De Ice",
+            "base_name": "Fleur De Ice",
+            "rarity": "Legendary",
+            "origin": "Winter 2023",
+            "value": 19.5,
+            "image_url": "https://adoptmetradingvalues.com/images/1944.png"
+        },
+        "1866": {
+            "name": "Mega English Sheepdog",
+            "base_name": "English Sheepdog",
+            "rarity": "Rare",
+            "origin": "Farm Theme 2023",
+            "value": 3.7,
+            "image_url": "https://adoptmetradingvalues.com/images/1866.png"
+        },
+        "2337": {
+            "name": "Mega Pretty Pony",
+            "base_name": "Pretty Pony",
+            "rarity": "Ultra-Rare",
+            "origin": "Summer State Fair 2024",
+            "value": 18.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2337.png"
+        },
+        "65": {
+            "name": "Mega Robo Dog",
+            "base_name": "Robo Dog",
+            "rarity": "Legendary",
+            "origin": "Robux",
+            "value": 17.5,
+            "image_url": "https://adoptmetradingvalues.com/images/65.png"
+        },
+        "2906": {
+            "name": "Mega Coconut Friend",
+            "base_name": "Coconut Friend",
+            "rarity": "Legendary",
+            "origin": "Summer Festival 2025",
+            "value": 16.5,
+            "image_url": "https://adoptmetradingvalues.com/images/2906.png"
+        },
+        "963": {
+            "name": "Mega St Bernard",
+            "base_name": "St Bernard",
+            "rarity": "Ultra-Rare",
+            "origin": "Christmas 2021",
+            "value": 16.0,
+            "image_url": "https://adoptmetradingvalues.com/images/963.png"
+        },
+        "1736": {
+            "name": "Mega Owlbear",
+            "base_name": "Owlbear",
+            "rarity": "Legendary",
+            "origin": "Danger Egg",
+            "value": 15.5,
+            "image_url": "https://adoptmetradingvalues.com/images/1736.png"
+        },
+        "2667": {
+            "name": "Mega Great Pyrenees",
+            "base_name": "Great Pyrenees",
+            "rarity": "Rare",
+            "origin": "Winter 2024",
+            "value": 15.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2667.png"
+        },
+        "938": {
+            "name": "Mega Halloween Golden Mummy Cat",
+            "base_name": "Halloween Golden Mummy Cat",
+            "rarity": "Legendary",
+            "origin": "Halloween 2021",
+            "value": 14.5,
+            "image_url": "https://adoptmetradingvalues.com/images/938.png"
+        },
+        "22": {
+            "name": "Mega Elephant",
+            "base_name": "Elephant",
+            "rarity": "Rare",
+            "origin": "Safari Egg",
+            "value": 13.0,
+            "image_url": "https://adoptmetradingvalues.com/images/22.png"
+        },
+        "2866": {
+            "name": "Mega Papa Moose",
+            "base_name": "Papa Moose",
+            "rarity": "Legendary",
+            "origin": "Maple Leaf Treat",
+            "value": 12.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2866.png"
+        },
+        "2650": {
+            "name": "Mega Partridge",
+            "base_name": "Partridge",
+            "rarity": "Ultra-Rare",
+            "origin": "Winter 2024",
+            "value": 11.5,
+            "image_url": "https://adoptmetradingvalues.com/images/2650.png"
+        },
+        "2955": {
+            "name": "Mega Temple Friend",
+            "base_name": "Temple Friend",
+            "rarity": "Legendary",
+            "origin": "Aztec Egg",
+            "value": 11.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2955.png"
+        },
+        "80": {
+            "name": "Mega Frog",
+            "base_name": "Frog",
+            "rarity": "Ultra-Rare",
+            "origin": "Aussie Egg",
+            "value": 10.5,
+            "image_url": "https://adoptmetradingvalues.com/images/80.png"
+        },
+        "1766": {
+            "name": "Mega Castle Hermit Crab",
+            "base_name": "Castle Hermit Crab",
+            "rarity": "Rare",
+            "origin": "Hermit Crab Box",
+            "value": 10.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1766.png"
+        },
+        "1473": {
+            "name": "Mega Gingerbread Reindeer",
+            "base_name": "Gingerbread Reindeer",
+            "rarity": "Ultra-Rare",
+            "origin": "Winter 2022",
+            "value": 9.5,
+            "image_url": "https://adoptmetradingvalues.com/images/1473.png"
+        },
+        "1201": {
+            "name": "Mega Zodiac Minion Chick",
+            "base_name": "Zodiac Minion Chick",
+            "rarity": "Legendary",
+            "origin": "Zodiac Minion Egg",
+            "value": 8.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1201.png"
+        },
+        "1768": {
+            "name": "Mega Pirate Hermit Crab",
+            "base_name": "Pirate Hermit Crab",
+            "rarity": "Legendary",
+            "origin": "Hermit Crab Box",
+            "value": 7.4,
+            "image_url": "https://adoptmetradingvalues.com/images/1768.png"
+        },
+        "136": {
+            "name": "Mega Peacock",
+            "base_name": "Peacock",
+            "rarity": "Legendary",
+            "origin": "Robux",
+            "value": 6.7,
+            "image_url": "https://adoptmetradingvalues.com/images/136.png"
+        },
+        "59": {
+            "name": "Mega Capybara",
+            "base_name": "Capybara",
+            "rarity": "Uncommon",
+            "origin": "Jungle Egg",
+            "value": 6.2,
+            "image_url": "https://adoptmetradingvalues.com/images/59.png"
+        },
+        "12": {
+            "name": "Mega Diamond Griffin",
+            "base_name": "Diamond Griffin",
+            "rarity": "Legendary",
+            "origin": "Diamond Egg",
+            "value": 5.85,
+            "image_url": "https://adoptmetradingvalues.com/images/12.png"
+        },
+        "1617": {
+            "name": "Mega Sunrise Duckling",
+            "base_name": "Sunrise Duckling",
+            "rarity": "Legendary",
+            "origin": "Duckling Box",
+            "value": 5.2,
+            "image_url": "https://adoptmetradingvalues.com/images/1617.png"
+        },
+        "1236": {
+            "name": "Mega Yellow Butterfly",
+            "base_name": "Yellow Butterfly",
+            "rarity": "Rare",
+            "origin": "Leaf",
+            "value": 5.0,
+            "image_url": "https://adoptmetradingvalues.com/images/1236.png"
+        },
+        "2962": {
+            "name": "Mega 2025 Birthday Butterfly",
+            "base_name": "2025 Birthday Butterfly",
+            "rarity": "Uncommon",
+            "origin": "Adopt Me Birthday 2025",
+            "value": 4.75,
+            "image_url": "https://adoptmetradingvalues.com/images/2962.png"
+        },
+        "2248": {
+            "name": "Mega Mole",
+            "base_name": "Mole",
+            "rarity": "Uncommon",
+            "origin": "Garden Egg",
+            "value": 4.25,
+            "image_url": "https://adoptmetradingvalues.com/images/2248.png"
+        },
+        "2153": {
+            "name": "Mega Brachiosaurus",
+            "base_name": "Brachiosaurus",
+            "rarity": "Common",
+            "origin": "Fossil Isle 2024",
+            "value": 4.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2153.png"
+        },
+        "2869": {
+            "name": "Mega Muskrat",
+            "base_name": "Muskrat",
+            "rarity": "Uncommon",
+            "origin": "Camping Shop",
+            "value": 3.75,
+            "image_url": "https://adoptmetradingvalues.com/images/2869.png"
+        },
+        "1293": {
+            "name": "Mega Dugong",
+            "base_name": "Dugong",
+            "rarity": "Common",
+            "origin": "Japan Egg",
+            "value": 3.65,
+            "image_url": "https://adoptmetradingvalues.com/images/1293.png"
+        },
+        "112": {
+            "name": "Mega Rabbit",
+            "base_name": "Rabbit",
+            "rarity": "Rare",
+            "origin": "Retired Egg",
+            "value": 3.25,
+            "image_url": "https://adoptmetradingvalues.com/images/112.png"
+        },
+        "100": {
+            "name": "Mega Bandicoot",
+            "base_name": "Bandicoot",
+            "rarity": "Common",
+            "origin": "Aussie Egg",
+            "value": 3.0,
+            "image_url": "https://adoptmetradingvalues.com/images/100.png"
+        },
+        "2054": {
+            "name": "Mega Diamond Mahi Mahi",
+            "base_name": "Diamond Mahi Mahi",
+            "rarity": "Legendary",
+            "origin": "Mahi Spinning Rod",
+            "value": 2.75,
+            "image_url": "https://adoptmetradingvalues.com/images/2054.png"
+        },
+        "2813": {
+            "name": "Mega Glormy Dolphin",
+            "base_name": "Glormy Dolphin",
+            "rarity": "Legendary",
+            "origin": "Return to the Moon Event",
+            "value": 2.5,
+            "image_url": "https://adoptmetradingvalues.com/images/2813.png"
+        },
+        "1925": {
+            "name": "Mega Rooster",
+            "base_name": "Rooster",
+            "rarity": "Ultra-Rare",
+            "origin": "Farm Theme 2023",
+            "value": 2.35,
+            "image_url": "https://adoptmetradingvalues.com/images/1925.png"
+        },
+        "3081": {
+            "name": "Mega Aye Aye",
+            "base_name": "Aye Aye",
+            "rarity": "Common",
+            "origin": "Halloween 2025",
+            "value": 2.3,
+            "image_url": "https://adoptmetradingvalues.com/images/3081.png"
+        },
+        "1046": {
+            "name": "Mega Abyssinian Cat",
+            "base_name": "Abyssinian Cat",
+            "rarity": "Rare",
+            "origin": "Desert Weather Map",
+            "value": 1.15,
+            "image_url": "https://adoptmetradingvalues.com/images/1046.png"
+        },
+        "2666": {
+            "name": "Mega Winter Buck",
+            "base_name": "Winter Buck",
+            "rarity": "Legendary",
+            "origin": "Winter Deer Bait",
+            "value": 1.0,
+            "image_url": "https://adoptmetradingvalues.com/images/2666.png"
+        }
+    }
+}

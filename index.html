@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cassy's Enhanced Adopt Me Trade Calculator</title>
+    <style>
+        /* ==========================================================================
+       style.css
+       Theme color: #f6a6b2 (soft pastel pink)
+       Enhanced by Gemini
+       ========================================================================== */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+
+        /* -----------------------------------------
+       GLOBAL / RESET
+       ----------------------------------------- */
+        :root {
+            --theme-pink: #f6a6b2;
+            --theme-pink-light: #fff8fa;
+            --theme-pink-dark: #c47887;
+            --border-color: #fbdde3;
+            --shadow-color: rgba(246, 166, 178, 0.15);
+            --slot-size: 90px;
+            --cols: 4;
+        }
+
+        * {
+            box-sizing: border-box;
+            text-transform: uppercase;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: var(--theme-pink-light);
+            color: #333;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        /* -----------------------------------------
+       HEADER
+       ----------------------------------------- */
+        header {
+            text-align: center;
+            padding: 24px 0;
+            color: var(--theme-pink);
+            font-size: 32px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            margin-bottom: 6px;
+            text-shadow: 0 2px 4px var(--shadow-color);
+        }
+
+        /* -----------------------------------------
+       WRAPPER
+       ----------------------------------------- */
+        .wrap {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 50px;
+        }
+
+        /* ==========================================================================
+       SCORES & FAIRNESS
+       ========================================================================== */
+        .score-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+
+        .score {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 160px;
+        }
+
+        .score .num {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--theme-pink);
+        }
+
+        .score .label {
+            font-size: 11px;
+            color: var(--theme-pink-dark);
+            font-weight: 700;
+        }
+
+        /* FAIRNESS BAR */
+        .fairness-wrap {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 8px;
+            min-width: 280px;
+        }
+
+        .fair-labels {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            font-weight: 800;
+            color: var(--theme-pink);
+            font-size: 11px;
+            padding: 0 6px;
+        }
+
+        .fair-bar {
+            width: 100%;
+            height: 16px;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .fair-bar-track {
+            width: 100%;
+            height: 4px;
+            background: #ffeef2;
+            border-radius: 4px;
+        }
+
+        .fair-pointer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 18px;
+            height: 18px;
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            background: #fff;
+            border: 3px solid var(--theme-pink);
+            box-shadow: 0 4px 12px var(--shadow-color);
+            transition: left 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+        }
+
+        .result-indicator {
+            text-align: center;
+            font-weight: 800;
+            color: var(--theme-pink);
+            font-size: 14px;
+            padding: 6px 12px;
+            border-radius: 10px;
+            background: #fff;
+            border: 1px solid var(--border-color);
+            min-width: 80px;
+            transition: all 0.3s ease;
+        }
+
+        .result-indicator.win {
+            color: #2ecc71;
+            border-color: #a3e9c3;
+        }
+
+        .result-indicator.lose {
+            color: #e74c3c;
+            border-color: #f5b7b1;
+        }
+
+        /* ==========================================================================
+       TRADE AREA
+       ========================================================================== */
+        .trade-area {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            flex-wrap: wrap;
+            padding: 10px 0;
+        }
+
+        .trade-panel {
+            background: #fff;
+            border-radius: 20px;
+            padding: 20px;
+            width: 440px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.06);
+            border: 1px solid #f3e2e5;
+        }
+
+        .panel-head,
+        .panel-foot {
+            font-weight: 800;
+            color: var(--theme-pink);
+            padding: 0 6px;
+        }
+
+        .panel-head {
+            margin-bottom: 12px;
+        }
+
+        .panel-foot {
+            margin-top: 12px;
+        }
+
+        /* ==========================================================================
+       SLOTS
+       ========================================================================== */
+        .slots-container {
+            display: grid;
+            grid-template-columns: repeat(var(--cols), 1fr);
+            gap: 12px;
+            min-height: calc((var(--slot-size) * 2) + 24px);
+            overflow-y: auto;
+            padding: 6px;
+            max-height: 400px;
+            background: #fffdfd;
+            border-radius: 12px;
+        }
+
+        .slot {
+            border: 2px solid var(--border-color);
+            background: var(--theme-pink-light);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            position: relative;
+            width: 100%;
+            padding-bottom: 100%;
+            height: 0;
+        }
+
+        .slot-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        .slot:hover {
+            border-color: var(--theme-pink);
+            transform: scale(1.03);
+        }
+
+        .slot.filled {
+            background: #fff8fa;
+            border-color: var(--theme-pink);
+        }
+
+        .slot.filled img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            transition: transform 0.2s ease;
+        }
+
+        .slot.filled:hover img {
+            transform: scale(0.9);
+        }
+
+        /* Add Button */
+        .add-btn {
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--theme-pink);
+            background: #fff;
+            border: 2px dashed var(--border-color);
+            border-radius: 10px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+        }
+
+        .add-btn:hover {
+            transform: scale(1.05);
+            background: var(--theme-pink-light);
+            border-color: var(--theme-pink);
+        }
+
+        /* ==========================================================================
+       MODALS (GENERAL) & DRAWER
+       ========================================================================== */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.35);
+            backdrop-filter: blur(4px);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1500;
+            padding: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .modal-overlay.show {
+            display: flex;
+            opacity: 1;
+        }
+
+        .modal-dialog {
+            transform: scale(0.95);
+            transition: transform 0.3s ease;
+        }
+
+        .modal-overlay.show .modal-dialog {
+            transform: scale(1);
+        }
+
+        /* DRAWER STYLES */
+        .drawer {
+            width: 920px;
+            max-width: calc(100% - 40px);
+            height: 640px;
+            background: linear-gradient(180deg, #fff, #fffafc);
+            border-radius: 22px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            border: 2px solid #ffd5de;
+        }
+
+        .drawer-categories {
+            width: 200px;
+            background: linear-gradient(180deg, #fff, #fffafc);
+            border-right: 1px solid #f3d7db;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            align-items: stretch;
+            overflow-y: auto;
+        }
+
+        .cat-btn {
+            background: #fff;
+            border: 2px solid #f1c8d0;
+            padding: 14px;
+            border-radius: 999px;
+            font-weight: 800;
+            color: #b56a75;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 15px;
+        }
+
+        .cat-btn:hover {
+            transform: translateY(-3px);
+            border-color: var(--theme-pink);
+            color: var(--theme-pink);
+        }
+
+        .cat-btn.active {
+            background: var(--theme-pink);
+            color: #fff;
+            border-color: var(--theme-pink);
+            box-shadow: 0 4px 12px var(--shadow-color);
+        }
+
+        .drawer-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 18px 20px;
+            position: relative;
+        }
+
+        .drawer-search input {
+            width: 100%;
+            padding: 12px 18px;
+            border-radius: 24px;
+            border: 2px solid #efe0e4;
+            outline: none;
+            font-size: 14px;
+            text-transform: uppercase;
+            transition: border-color 0.2s;
+        }
+
+        .drawer-search input:focus {
+            border-color: var(--theme-pink);
+        }
+
+        .drawer-search input::placeholder {
+            color: var(--theme-pink);
+            font-weight: 600;
+        }
+
+        .drawer-items-wrap {
+            flex: 1;
+            overflow: auto;
+            padding: 14px 4px 4px 4px;
+        }
+
+        .drawer-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 18px;
+            justify-items: center;
+        }
+
+        .drawer-item {
+            width: 150px;
+            height: 170px;
+            background: #fff;
+            border-radius: 14px;
+            border: 1px solid #f4d9de;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            text-align: center;
+        }
+
+        .drawer-item:hover {
+            transform: translateY(-6px);
+            background: #fff7f8;
+            border-color: #ffdfe6;
+            box-shadow: 0 8px 24px var(--shadow-color);
+        }
+
+        .drawer-item small {
+            color: var(--theme-pink-dark);
+            font-size: 12px;
+            font-weight: 800;
+            margin-top: 6px;
+            height: 30px;
+            overflow: hidden;
+        }
+
+        .drawer-item .img-wrap {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .drawer-item .img-wrap img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+        }
+
+        .drawer-item .value {
+            color: var(--theme-pink);
+            font-weight: 800;
+            font-size: 13px;
+            margin-bottom: 6px;
+        }
+
+        /* MODAL STYLES (QUANTITY & PET) */
+        .modal-content {
+            width: 360px;
+            background: #fff;
+            border-radius: 16px;
+            padding: 24px;
+            border: 2px solid #ffd5de;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18);
+            text-align: center;
+        }
+
+        .modal-content h3 {
+            color: var(--theme-pink);
+            margin: 0 0 8px 0;
+            font-weight: 800;
+            font-size: 20px;
+        }
+
+        .modal-content p {
+            color: var(--theme-pink-dark);
+            margin: 0 0 16px 0;
+            font-size: 14px;
+            text-transform: none;
+        }
+
+        .modal-actions {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .modal-btn {
+            padding: 12px 22px;
+            border-radius: 12px;
+            font-weight: 800;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .modal-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cancel-btn {
+            background: #fff;
+            color: var(--theme-pink-dark);
+            border: 2px solid #f3d7db;
+        }
+
+        .add-btn-pink {
+            background: linear-gradient(90deg, #ffd5de, var(--theme-pink));
+            color: #fff;
+        }
+
+        /* QUANTITY MODAL SPECIFIC */
+        .quantity-input {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .quantity-input button {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            border: none;
+            background: var(--theme-pink);
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+            transition: background 0.2s ease;
+        }
+
+        .quantity-input button:hover {
+            background: #f895a3;
+        }
+
+        .quantity-input input {
+            width: 80px;
+            height: 44px;
+            text-align: center;
+            border-radius: 10px;
+            border: 2px solid var(--theme-pink);
+            font-weight: 800;
+            font-size: 18px;
+            outline: none;
+        }
+
+        /* NEW PET OPTIONS MODAL */
+        .pet-options-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: stretch;
+            /* Full width */
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .checkbox-label {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 12px;
+            background: var(--theme-pink-light);
+            border-radius: 10px;
+            border: 2px solid var(--border-color);
+            transition: all 0.2s ease;
+        }
+
+        .checkbox-label:hover {
+            border-color: var(--theme-pink);
+        }
+
+        .checkbox-label input[type="checkbox"] {
+            display: none;
+            /* Hide original checkbox */
+        }
+
+        .checkbox-label .custom-check {
+            width: 20px;
+            height: 20px;
+            border: 2px solid var(--theme-pink);
+            border-radius: 6px;
+            margin-right: 12px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s;
+        }
+
+        .checkbox-label .custom-check::after {
+            content: '✔';
+            color: white;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .checkbox-label input:checked+.custom-check {
+            background: var(--theme-pink);
+        }
+
+        .checkbox-label input:checked+.custom-check::after {
+            opacity: 1;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            color: white;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            margin-right: 8px;
+        }
+
+        .icon.fly {
+            background: #3498db;
+        }
+
+        .icon.ride {
+            background: #e74c3c;
+        }
+
+
+        /* FOOTER, SCROLLBARS, RESPONSIVE */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            background: #fff;
+            border-top: 1px solid #f5d8dd;
+            margin-top: 40px;
+        }
+
+        footer h2 {
+            color: var(--theme-pink);
+            font-weight: 800;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-btn {
+            background: var(--theme-pink);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 14px;
+            text-decoration: none;
+            box-shadow: 0 4px 12px var(--shadow-color);
+            transition: all 0.3s ease;
+        }
+
+        .social-btn:hover {
+            background: #ffb9c5;
+            transform: translateY(-4px);
+            box-shadow: 0 6px 16px var(--shadow-color);
+        }
+
+        .drawer-close {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            width: 38px;
+            height: 38px;
+            background: var(--theme-pink);
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            font-size: 24px;
+            font-weight: 800;
+            line-height: 1;
+            cursor: pointer;
+            z-index: 2100;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        }
+
+        .drawer-close:hover {
+            background: #ffb9c5;
+            transform: scale(1.1) rotate(90deg);
+        }
+
+        /* SCROLLBARS */
+        .drawer-items-wrap::-webkit-scrollbar,
+        .slots-container::-webkit-scrollbar,
+        .drawer-categories::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .drawer-items-wrap::-webkit-scrollbar-thumb,
+        .slots-container::-webkit-scrollbar-thumb,
+        .drawer-categories::-webkit-scrollbar-thumb {
+            background: var(--theme-pink);
+            border-radius: 10px;
+        }
+
+        .drawer-items-wrap::-webkit-scrollbar-track,
+        .slots-container::-webkit-scrollbar-track,
+        .drawer-categories::-webkit-scrollbar-track {
+            background: #fff0f2;
+        }
+
+        @media (max-width: 980px) {
+            .drawer {
+                width: 100%;
+                height: 86vh;
+            }
+
+            .drawer-categories {
+                width: 160px;
+                padding: 14px;
+            }
+
+            .drawer-items {
+                grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            }
+
+            .trade-panel {
+                width: 100%;
+                max-width: 440px;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .trade-area {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .drawer {
+                height: 92vh;
+            }
+
+            .drawer-categories {
+                display: none;
+            }
+
+            .drawer-items {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            header {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CASSY'S ADOPT ME TRADE CALCULATOR</h1>
+    </header>
+
+    <div class="wrap">
+        <div class="score-row">
+            <div class="score">
+                <div class="num" id="your-score">0.00</div>
+                <div class="label">YOUR OFFER</div>
+            </div>
+            <div class="fairness-wrap">
+                <div class="fair-labels">
+                    <span>LOSE</span>
+                    <span>FAIR</span>
+                    <span>WIN</span>
+                </div>
+                <div class="fair-bar">
+                    <div class="fair-bar-track"></div>
+                    <div class="fair-pointer" id="fair-pointer"></div>
+                </div>
+                <div class="result-indicator" id="result-indicator">FAIR</div>
+            </div>
+            <div class="score">
+                <div class="num" id="their-score">0.00</div>
+                <div class="label">THEIR OFFER</div>
+            </div>
+        </div>
+        <div class="trade-area">
+            <div class="trade-panel">
+                <div class="panel-head">YOUR OFFER</div>
+                <div class="slots-container" id="your-grid"></div>
+                <div class="panel-foot">TOTAL: <span id="your-total">0.00</span></div>
+            </div>
+            <div class="trade-panel">
+                <div class="panel-head">THEIR OFFER</div>
+                <div class="slots-container" id="their-grid"></div>
+                <div class="panel-foot">TOTAL: <span id="their-total">0.00</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Drawer (Item Selection) Modal -->
+    <div class="modal-overlay" id="drawer-overlay">
+        <div class="drawer modal-dialog" id="drawer">
+            <button class="drawer-close" id="drawer-close">&times;</button>
+            <aside class="drawer-categories" id="drawer-categories-list"></aside>
+            <div class="drawer-content">
+                <div class="drawer-search">
+                    <input type="text" id="drawer-search" placeholder="SEARCH ITEMS..." />
+                </div>
+                <div class="drawer-items-wrap">
+                    <div class="drawer-items" id="drawer-items"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pet Options Modal -->
+    <div class="modal-overlay" id="pet-options-modal">
+        <div class="modal-content modal-dialog">
+            <h3 id="pet-options-title">Pet Options</h3>
+            <div class="pet-options-form">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="pet-fly-check">
+                    <span class="custom-check"></span>
+                    <span class="icon fly">F</span> Fly Potion
+                </label>
+                <label class="checkbox-label">
+                    <input type="checkbox" id="pet-ride-check">
+                    <span class="custom-check"></span>
+                    <span class="icon ride">R</span> Ride Potion
+                </label>
+            </div>
+            <div class="modal-actions">
+                <button class="modal-btn cancel-btn" id="pet-options-cancel">Cancel</button>
+                <button class="modal-btn add-btn-pink" id="pet-options-confirm">Confirm</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quantity Modal -->
+    <div class="modal-overlay" id="quantity-modal">
+        <div class="modal-content modal-dialog">
+            <h3 id="quantity-title">Add Item</h3>
+            <p id="quantity-sub">How many would you like to add?</p>
+            <div class="quantity-input">
+                <button id="qty-minus">−</button>
+                <input type="number" id="qty-number" value="1" min="1" max="18" />
+                <button id="qty-plus">+</button>
+            </div>
+            <div class="modal-actions">
+                <button class="modal-btn cancel-btn" id="qty-cancel">Cancel</button>
+                <button class="modal-btn add-btn-pink" id="qty-confirm">Add</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // --- DOM ELEMENT REFERENCES ---
+            const yourGrid = document.getElementById("your-grid");
+            const theirGrid = document.getElementById("their-grid");
+            const resultIndicator = document.getElementById("result-indicator");
+            const yourTotalSpan = document.getElementById("your-total");
+            const theirTotalSpan = document.getElementById("their-total");
+            const yourScore = document.getElementById("your-score");
+            const theirScore = document.getElementById("their-score");
+            const fairPointer = document.getElementById("fair-pointer");
+
+            // Drawer
+            const drawerOverlay = document.getElementById("drawer-overlay");
+            const drawerItems = document.getElementById("drawer-items");
+            const drawerSearch = document.getElementById("drawer-search");
+            const drawerCategoriesList = document.getElementById('drawer-categories-list');
+            const drawerCloseBtn = document.getElementById("drawer-close");
+
+            // Pet Options Modal
+            const petOptionsModal = document.getElementById('pet-options-modal');
+            const petOptionsTitle = document.getElementById('pet-options-title');
+            const petFlyCheck = document.getElementById('pet-fly-check');
+            const petRideCheck = document.getElementById('pet-ride-check');
+            const petOptionsCancel = document.getElementById('pet-options-cancel');
+            const petOptionsConfirm = document.getElementById('pet-options-confirm');
+
+            // Quantity Modal
+            const qtyModal = document.getElementById("quantity-modal");
+            const qtyTitle = document.getElementById("quantity-title");
+            const qtyNumber = document.getElementById("qty-number");
+            const qtyPlus = document.getElementById("qty-plus");
+            const qtyMinus = document.getElementById("qty-minus");
+            const qtyCancel = document.getElementById("qty-cancel");
+            const qtyConfirm = document.getElementById("qty-confirm");
+
+            // --- CONFIGURATION & STATE ---
+            const SLOTS_PER_SIDE = 18;
+            const PET_CATEGORIES = ['pets', 'neons', 'megas'];
+            const MULTIPLIERS = { ride: 1.05, fly: 1.1 };
+            const FAIR_THRESHOLD = 0.1;
+
+            let allItemsData = [];
+            let allCategories = [];
+            let activeGrid = null;
+            let selectedItem = null;
+            let selectedPetOptions = {};
+            let activeCategory = null;
+
+            // --- DATA LOADING ---
+            async function loadData() {
+                try {
+                    const response = await fetch('adoptme_values.json');
+                    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+                    const data = await response.json();
+
+                    allItemsData = [];
+                    const categorySet = new Set();
+
+                    // *** FIX: Correctly parse the nested JSON structure ***
+                    for (const category in data) {
+                        if (category === 'petsneons' && typeof data[category] === 'object') {
+                            // Handle nested 'neons' and 'megas'
+                            for (const subCategory in data[category]) { // e.g., 'neons', 'megas'
+                                categorySet.add(subCategory);
+                                const items = data[category][subCategory];
+                                for (const id in items) {
+                                    allItemsData.push({ id, category: subCategory, ...items[id] });
+                                }
+                            }
+                        } else {
+                            // Handle regular categories
+                            categorySet.add(category);
+                            for (const id in data[category]) {
+                                allItemsData.push({ id, category, ...data[category][id] });
+                            }
+                        }
+                    }
+                    allCategories = [...categorySet].sort();
+
+                    if (allCategories.length > 0) {
+                        activeCategory = allCategories[0];
+                    }
+
+                    initialize();
+                } catch (error) {
+                    console.error("Failed to load item data:", error);
+                    alert("Error loading adoptme_values.json. Please ensure the file is in the same directory and is formatted correctly.");
+                }
+            }
+
+            // --- INITIALIZATION ---
+            function initialize() {
+                buildSlots(yourGrid);
+                buildSlots(theirGrid);
+                renderCategoryButtons();
+                setupEventListeners();
+                updateTotals();
+            }
+
+            function buildSlots(grid) {
+                grid.innerHTML = "";
+                for (let i = 0; i < SLOTS_PER_SIDE; i++) {
+                    const slot = document.createElement("div");
+                    slot.classList.add("slot");
+                    slot.innerHTML = '<div class="slot-content"></div>';
+                    grid.appendChild(slot);
+                }
+                updateAddButton(grid);
+            }
+
+            function renderCategoryButtons() {
+                drawerCategoriesList.innerHTML = '';
+                allCategories.forEach(cat => {
+                    const btn = document.createElement('button');
+                    btn.className = 'cat-btn';
+                    btn.dataset.cat = cat;
+                    // Prettify category names for display
+                    let displayName = cat.replace(/_/g, ' ');
+                    if (displayName === 'pets') displayName = 'Pets';
+                    if (displayName === 'neons') displayName = 'Neon Pets';
+                    if (displayName === 'megas') displayName = 'Mega Pets';
+                    btn.textContent = displayName;
+
+                    if (cat === activeCategory) btn.classList.add('active');
+                    btn.addEventListener('click', () => {
+                        activeCategory = cat;
+                        document.querySelectorAll('.cat-btn').forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        renderDrawerItems();
+                    });
+                    drawerCategoriesList.appendChild(btn);
+                });
+            }
+
+            // --- EVENT LISTENERS ---
+            function setupEventListeners() {
+                drawerOverlay.onclick = e => { if (e.target === drawerOverlay) closeAllModals(); };
+                drawerCloseBtn.onclick = closeAllModals;
+                drawerSearch.oninput = () => renderDrawerItems(true);
+
+                petOptionsConfirm.onclick = handlePetOptionsConfirm;
+                petOptionsCancel.onclick = () => petOptionsModal.classList.remove('show');
+
+                qtyPlus.onclick = () => qtyNumber.value = Math.min(SLOTS_PER_SIDE, +qtyNumber.value + 1);
+                qtyMinus.onclick = () => qtyNumber.value = Math.max(1, +qtyNumber.value - 1);
+                qtyCancel.onclick = () => qtyModal.classList.remove("show");
+                qtyConfirm.onclick = handleQuantityConfirm;
+            }
+
+            // --- MODAL & DRAWER FLOW ---
+            function openDrawer() {
+                drawerOverlay.classList.add("show");
+                renderDrawerItems();
+            }
+
+            function closeAllModals() {
+                drawerOverlay.classList.remove("show");
+                petOptionsModal.classList.remove("show");
+                qtyModal.classList.remove("show");
+            }
+
+            function handleItemSelection(item) {
+                selectedItem = item;
+                closeAllModals(); // Close the drawer first
+
+                // *** ENHANCEMENT: Simplified pet logic. Only ask for Fly/Ride. ***
+                if (PET_CATEGORIES.includes(item.category)) {
+                    showPetOptionsModal(item);
+                } else {
+                    selectedPetOptions = {}; // Reset options for non-pets
+                    showQuantityModal(item);
+                }
+            }
+
+            function showPetOptionsModal(item) {
+                petOptionsTitle.textContent = `Options for ${item.name}`;
+                petFlyCheck.checked = false;
+                petRideCheck.checked = false;
+                petOptionsModal.classList.add('show');
+            }
+
+            function handlePetOptionsConfirm() {
+                selectedPetOptions = {
+                    fly: petFlyCheck.checked,
+                    ride: petRideCheck.checked,
+                };
+                petOptionsModal.classList.remove('show');
+                showQuantityModal(selectedItem);
+            }
+
+            function showQuantityModal(item) {
+                qtyTitle.textContent = `Add ${item.name}`;
+                qtyNumber.value = 1;
+                qtyModal.classList.add("show");
+            }
+
+            function handleQuantityConfirm() {
+                const quantity = parseInt(qtyNumber.value) || 1;
+                qtyModal.classList.remove("show");
+                if (!selectedItem || !activeGrid) return;
+
+                const finalValue = calculateItemValue(selectedItem, selectedPetOptions);
+                addMultipleItems(selectedItem, quantity, finalValue, activeGrid);
+            }
+
+            // --- RENDER & UI LOGIC ---
+            function renderDrawerItems(isSearch = false) {
+                if (!activeCategory) return;
+                const query = drawerSearch.value.trim().toLowerCase();
+                const filtered = allItemsData.filter(item =>
+                    item.category === activeCategory && (query === "" || item.name.toLowerCase().includes(query))
+                );
+
+                drawerItems.innerHTML = !filtered.length ? `<p style="grid-column: 1 / -1; text-align: center; color: #f6a6b2;">No items found</p>` : '';
+
+                filtered.forEach(item => {
+                    const el = document.createElement("div");
+                    el.className = "drawer-item";
+                    el.innerHTML = `
+                    <small>${escapeHtml(item.name)}</small>
+                    <div class="img-wrap"><img src="${item.image_url}" alt="${escapeHtml(item.name)}" loading="lazy"></div>
+                    <div class="value">${item.value.toFixed(2)}</div>
+                `;
+                    el.onclick = () => handleItemSelection(item);
+                    drawerItems.appendChild(el);
+                });
+
+                if (isSearch) {
+                    drawerItems.scrollTop = 0;
+                }
+            }
+
+            // --- TRADE GRID & VALUE CALCULATION ---
+            function addMultipleItems(item, quantity, finalValue, grid) {
+                const emptySlots = Array.from(grid.children).filter(s => !s.classList.contains("filled"));
+                for (let i = 0; i < quantity && i < emptySlots.length; i++) {
+                    addItemToSlot(emptySlots[i], item, finalValue, grid);
+                }
+                updateAddButton(grid);
+            }
+
+            function addItemToSlot(slot, item, finalValue, grid) {
+                slot.classList.add("filled");
+                slot.dataset.value = finalValue;
+                slot.dataset.itemId = item.id;
+                slot.querySelector('.slot-content').innerHTML = `<img src="${item.image_url}" alt="${escapeHtml(item.name)}">`;
+                slot.onclick = () => removeItem(slot, grid);
+                updateTotals();
+            }
+
+            function removeItem(slot, grid) {
+                slot.classList.remove("filled");
+                delete slot.dataset.value;
+                delete slot.dataset.itemId;
+                slot.querySelector('.slot-content').innerHTML = '';
+                slot.onclick = null;
+                reorderGrid(grid);
+            }
+
+            function reorderGrid(grid) {
+                const filledData = Array.from(grid.querySelectorAll(".filled")).map(s => ({
+                    value: s.dataset.value,
+                    itemId: s.dataset.itemId,
+                    html: s.querySelector('.slot-content').innerHTML
+                }));
+                buildSlots(grid);
+                const newSlots = grid.children;
+                filledData.forEach((data, i) => {
+                    const slot = newSlots[i];
+                    slot.classList.add('filled');
+                    Object.assign(slot.dataset, { value: data.value, itemId: data.itemId });
+                    slot.querySelector('.slot-content').innerHTML = data.html;
+                    slot.onclick = () => removeItem(slot, grid);
+                });
+                updateAddButton(grid);
+                updateTotals();
+            }
+
+            function updateAddButton(grid) {
+                // Clear any existing add buttons and their listeners
+                const oldAddSlot = Array.from(grid.children).find(slot => slot.querySelector('.add-btn'));
+                if (oldAddSlot) {
+                    oldAddSlot.querySelector('.slot-content').innerHTML = '';
+                    oldAddSlot.onclick = null;
+                }
+
+                const filledCount = grid.querySelectorAll(".filled").length;
+                if (filledCount >= SLOTS_PER_SIDE) return;
+
+                const targetSlot = grid.children[filledCount];
+                if (targetSlot) {
+                    targetSlot.querySelector('.slot-content').innerHTML = `<div class="add-btn">+</div>`;
+                    targetSlot.onclick = () => {
+                        activeGrid = grid;
+                        openDrawer();
+                    };
+                }
+            }
+
+            function calculateItemValue(item, options) {
+                let value = item.value;
+                // Value from JSON is already correct for regular/neon/mega
+                // We just need to apply fly/ride multipliers
+                if (options) {
+                    if (options.fly) value *= MULTIPLIERS.fly;
+                    if (options.ride) value *= MULTIPLIERS.ride;
+                }
+                return value;
+            }
+
+            function updateTotals() {
+                const yourTotal = sumGridValues(yourGrid);
+                const theirTotal = sumGridValues(theirGrid);
+                yourTotalSpan.textContent = yourTotal.toFixed(2);
+                theirTotalSpan.textContent = theirTotal.toFixed(2);
+                yourScore.textContent = yourTotal.toFixed(2);
+                theirScore.textContent = theirTotal.toFixed(2);
+                updateFairness(yourTotal, theirTotal);
+            }
+
+            function sumGridValues(grid) {
+                return Array.from(grid.children)
+                    .reduce((total, slot) => total + (parseFloat(slot.dataset.value) || 0), 0);
+            }
+
+            function updateFairness(your, their) {
+                const total = your + their;
+                let pointerPercent = 50;
+                if (total > 0) {
+                    pointerPercent = (their / total) * 100;
+                }
+                pointerPercent = Math.max(2, Math.min(98, pointerPercent));
+                fairPointer.style.left = `${pointerPercent}%`;
+
+                resultIndicator.classList.remove('win', 'lose');
+                if (total === 0) {
+                    resultIndicator.textContent = "FAIR";
+                    return;
+                }
+                // Calculate ratio against the higher value for a consistent threshold check
+                const ratio = Math.abs(their - your) / Math.max(your, their, 1);
+                if (ratio <= FAIR_THRESHOLD) {
+                    resultIndicator.textContent = "FAIR";
+                } else if (their > your) {
+                    resultIndicator.textContent = "WIN";
+                    resultIndicator.classList.add('win');
+                } else {
+                    resultIndicator.textContent = "LOSE";
+                    resultIndicator.classList.add('lose');
+                }
+            }
+
+            function escapeHtml(text) {
+                const map = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' };
+                return String(text).replace(/[&<>"']/g, s => map[s]);
+            }
+
+            // --- START THE APP ---
+            loadData();
+        });
+    </script>
+</body>
+
+</html>
