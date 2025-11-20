@@ -38,9 +38,7 @@
             margin: 0;
             padding: 0;
             font-family: 'Nunito', sans-serif;
-            background: var(--bg-body);
             color: var(--text-main);
-            min-height: 100vh;
             overflow-x: hidden;
             overscroll-behavior-y: none;
         }
@@ -1430,6 +1428,37 @@
 
             init();
         });
+        let lastHeight = 0;
+
+        function sendHeight() {
+            if (window.parent) {
+                // We measure the wrapper, NOT the body, to avoid margin collapse issues
+                const wrapper = document.getElementById("app-wrapper");
+                const height = wrapper.scrollHeight;
+
+                // Only send message if height changed by more than 2 pixels
+                // This ignores micro-adjustments that cause loops
+                if (Math.abs(height - lastHeight) > 2) {
+                    lastHeight = height;
+                    window.parent.postMessage({ height: height }, "*");
+                }
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            // Initial Send
+            sendHeight();
+
+            // Use ResizeObserver instead of MutationObserver
+            // This detects actual size changes, not just code changes
+            const resizeObserver = new ResizeObserver(() => {
+                sendHeight();
+            });
+
+            // Observe the Wrapper
+            resizeObserver.observe(document.getElementById("app-wrapper"));
+        });
+
     </script>
 </body>
 
