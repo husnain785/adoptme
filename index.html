@@ -7,198 +7,202 @@
     <title>Adopt Me Trade Calculator</title>
     <style>
         /* ==========================================================================
-           THEME: CANDY POP & CLEAN DEPTH
+           THEME: PREMIUM GLASS & PASTEL POP
            ========================================================================== */
-        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800;900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800;900&display=swap');
 
         :root {
-            --bg-body: #f4f7fc;
-            --primary-grad: linear-gradient(135deg, #ff7eb3 0%, #ff758c 100%);
-            --primary-shadow: 0 8px 20px rgba(255, 117, 140, 0.4);
-            --accent-blue: #4facfe;
-            --card-bg: #ffffff;
-            --card-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.08);
-            --text-dark: #2d3436;
-            --text-gray: #636e72;
-            --border-radius: 24px;
-            --slot-bg: #f1f2f6;
+            --bg-body: #f0f4f8;
+            --primary-grad: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --primary-light: #764ba2;
+            --accent-cyan: #00cec9;
+            --accent-pink: #fd79a8;
+            --card-bg: rgba(255, 255, 255, 0.95);
+            --card-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.06);
+            --text-main: #2d3436;
+            --text-light: #636e72;
+            --radius-xl: 28px;
+            --radius-md: 18px;
+            --slot-bg: #ffffff;
             --cols: 4;
         }
 
         * {
             box-sizing: border-box;
             -webkit-tap-highlight-color: transparent;
+            outline: none;
         }
 
+        html,
         body {
             margin: 0;
             padding: 0;
             font-family: 'Nunito', sans-serif;
             background: var(--bg-body);
-            color: var(--text-dark);
+            color: var(--text-main);
             min-height: 100vh;
             overflow-x: hidden;
-            /* Prevent horizontal scroll */
+            overscroll-behavior-y: none;
         }
 
-        /* CLASS TO LOCK BODY SCROLL WHEN MODAL IS OPEN */
         body.modal-open {
-            overflow: hidden !important;
-            height: 100vh;
+            overflow: hidden;
+            position: fixed;
+            width: 100%;
+            height: 100dvh;
         }
 
-        .bg-decoration {
+        .bg-blob {
             position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background:
-                radial-gradient(circle at 15% 50%, rgba(255, 126, 179, 0.08), transparent 25%),
-                radial-gradient(circle at 85% 30%, rgba(79, 172, 254, 0.08), transparent 25%);
+            border-radius: 50%;
+            filter: blur(80px);
             z-index: -1;
-            pointer-events: none;
+            opacity: 0.6;
+        }
+
+        .bg-1 {
+            top: -10%;
+            left: -10%;
+            width: 50vw;
+            height: 50vw;
+            background: #ffeaa7;
+        }
+
+        .bg-2 {
+            bottom: -10%;
+            right: -10%;
+            width: 50vw;
+            height: 50vw;
+            background: #74b9ff;
+        }
+
+        .bg-3 {
+            top: 40%;
+            left: 40%;
+            width: 30vw;
+            height: 30vw;
+            background: #ff7675;
+            opacity: 0.4;
         }
 
         .wrap {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            padding-bottom: 100px;
-            /* Space for mobile scrolling */
+            padding-bottom: 80px;
         }
 
-        /* ==========================================================================
-           HEADER
-           ========================================================================== */
+        /* === HEADER === */
         header {
             text-align: center;
-            padding: 40px 0 30px;
+            padding: 20px 0 30px;
         }
 
         h1 {
             margin: 0;
-            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-size: clamp(1.8rem, 5vw, 3rem);
             font-weight: 900;
-            background: var(--primary-grad);
+            background: linear-gradient(to right, #0984e3, #e84393);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            filter: drop-shadow(0 4px 10px rgba(255, 117, 140, 0.2));
+            letter-spacing: -1px;
         }
 
-        /* ==========================================================================
-           SCOREBOARD
-           ========================================================================== */
+        /* === SCOREBOARD === */
         .scoreboard-wrap {
             display: flex;
-            justify-content: center;
+            gap: 15px;
+            margin-bottom: 25px;
             align-items: stretch;
-            gap: 25px;
-            margin-bottom: 40px;
         }
 
         .score-card {
             flex: 1;
             background: var(--card-bg);
-            border-radius: var(--border-radius);
+            border-radius: var(--radius-xl);
             box-shadow: var(--card-shadow);
-            padding: 25px;
+            padding: 20px;
             text-align: center;
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            transition: transform 0.3s ease;
-        }
-
-        .score-card:hover {
-            transform: translateY(-5px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 0;
         }
 
         .score-label {
-            font-size: 0.9rem;
+            font-size: 0.75rem;
             font-weight: 800;
             color: #b2bec3;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
-            margin-bottom: 10px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+            white-space: nowrap;
         }
 
         .score-val {
-            font-size: clamp(2.5rem, 4vw, 3.5rem);
+            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
             font-weight: 900;
-            color: var(--text-dark);
-            line-height: 1;
-            margin-bottom: 15px;
-        }
-
-        .score-val.highlight {
-            background: var(--primary-grad);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .stats-row {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
+            color: var(--text-main);
+            line-height: 1.1;
+            margin-bottom: 8px;
         }
 
         .stat-badge {
-            background: #f4f7fc;
-            padding: 8px 16px;
-            border-radius: 50px;
-            font-size: 0.8rem;
-            font-weight: 800;
-            color: var(--text-gray);
+            display: inline-block;
+            background: #f1f2f6;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--text-light);
+            white-space: nowrap;
         }
 
-        .stat-badge b {
-            color: var(--text-dark);
-        }
-
-        /* FAIRNESS METER */
         .fairness-card {
-            flex: 1.2;
+            flex: 1.4;
+            background: var(--card-bg);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--card-shadow);
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background: #fff;
-            border-radius: var(--border-radius);
-            box-shadow: var(--card-shadow);
-            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.6);
         }
 
         .result-pill {
-            font-size: 1.8rem;
+            font-size: clamp(1.2rem, 3vw, 1.6rem);
             font-weight: 900;
-            padding: 10px 40px;
-            border-radius: 20px;
+            padding: 10px 30px;
+            border-radius: 50px;
             background: #f8f9fa;
             color: #dfe6e9;
-            margin-bottom: 20px;
-            transition: all 0.4s;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+            white-space: nowrap;
         }
 
         .result-pill.win {
-            background: #d4edda;
-            color: #27ae60;
-            transform: scale(1.1);
+            background: #00b894;
+            color: #fff;
         }
 
         .result-pill.fair {
-            background: #fff3cd;
-            color: #f39c12;
+            background: #fdcb6e;
+            color: #fff;
         }
 
         .result-pill.lose {
-            background: #f8d7da;
-            color: #c0392b;
+            background: #ff7675;
+            color: #fff;
         }
 
         .meter-track {
             width: 100%;
-            height: 18px;
-            background: #ecf0f1;
+            height: 12px;
+            background: #dfe6e9;
             border-radius: 10px;
             position: relative;
             overflow: hidden;
@@ -207,7 +211,7 @@
         .meter-gradient {
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, #ff7675 0%, #ffeaa7 45%, #ffeaa7 55%, #55efc4 100%);
+            background: linear-gradient(90deg, #ff7675 0%, #fdcb6e 45%, #fdcb6e 55%, #00b894 100%);
         }
 
         .meter-pointer {
@@ -215,48 +219,82 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 26px;
-            height: 26px;
+            width: 20px;
+            height: 20px;
             background: #fff;
-            border: 5px solid var(--text-dark);
+            border: 3px solid var(--text-main);
             border-radius: 50%;
-            transition: left 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+            transition: left 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
-        /* ==========================================================================
-           TRADE GRIDS
-           ========================================================================== */
+        .unit-wrap {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .unit-switcher {
+            background: #fff;
+            padding: 5px;
+            border-radius: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            display: flex;
+            gap: 4px;
+        }
+
+        .unit-btn {
+            border: none;
+            background: transparent;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-weight: 800;
+            font-family: inherit;
+            font-size: 0.85rem;
+            color: var(--text-light);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .unit-btn.active {
+            background: var(--text-main);
+            color: #fff;
+        }
+
         .trade-row {
             display: flex;
-            gap: 30px;
+            gap: 20px;
         }
 
         .trade-panel {
             flex: 1;
             background: var(--card-bg);
-            border-radius: var(--border-radius);
+            border-radius: var(--radius-xl);
             box-shadow: var(--card-shadow);
-            padding: 25px;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
         }
 
         .panel-head {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 20px;
-            font-weight: 900;
-            font-size: 1.1rem;
+            margin-bottom: 15px;
+            font-weight: 800;
+            color: var(--text-main);
+            font-size: 1rem;
         }
 
         .slots-grid {
             display: grid;
             grid-template-columns: repeat(var(--cols), 1fr);
-            gap: 12px;
+            gap: 8px;
         }
 
         .slot {
             aspect-ratio: 1;
             background: var(--slot-bg);
-            border-radius: 18px;
+            border-radius: 14px;
+            border: 2px solid transparent;
             position: relative;
             cursor: pointer;
             transition: all 0.2s ease;
@@ -264,42 +302,59 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
-            box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.03);
         }
 
         .slot.empty {
-            background: #fff;
-            border: 2px dashed #dfe6e9;
+            background: rgba(255, 255, 255, 0.5);
+            border: 2px dashed #d1d8e0;
             box-shadow: none;
         }
 
         .slot.add-ready {
-            border: 2px solid #81ecec;
-            background: #e0fbfb;
+            border: 2px solid var(--accent-cyan);
+            background: rgba(0, 206, 201, 0.05);
             animation: pulseSlot 2s infinite;
         }
 
-        @keyframes pulseSlot {
-            0% {
-                border-color: rgba(129, 236, 236, 0.4);
-            }
+        .slot.filled {
+            background: #fff;
+            border: 1px solid #f1f2f6;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            animation: popIn 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
 
-            50% {
-                border-color: rgba(129, 236, 236, 1);
+        @keyframes popIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
             }
 
             100% {
-                border-color: rgba(129, 236, 236, 0.4);
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        @keyframes pulseSlot {
+
+            0%,
+            100% {
+                border-color: rgba(0, 206, 201, 0.4);
+            }
+
+            50% {
+                border-color: rgba(0, 206, 201, 1);
             }
         }
 
         .add-symbol {
-            font-size: 24px;
-            color: #dfe6e9;
+            font-size: 20px;
+            color: #d1d8e0;
         }
 
         .slot.add-ready .add-symbol {
-            color: #00cec9;
+            color: var(--accent-cyan);
             font-weight: 900;
         }
 
@@ -311,28 +366,30 @@
 
         .tag-row {
             position: absolute;
-            bottom: 4px;
+            bottom: 3px;
             left: 0;
             width: 100%;
             display: flex;
             justify-content: center;
-            gap: 3px;
+            gap: 2px;
+            pointer-events: none;
         }
 
         .tag {
-            font-size: 10px;
+            font-size: 8px;
             font-weight: 900;
             color: #fff;
-            padding: 2px 6px;
-            border-radius: 6px;
+            padding: 2px 4px;
+            border-radius: 3px;
+            line-height: 1;
         }
 
         .tag.n {
-            background: #00d2ff;
+            background: #0984e3;
         }
 
         .tag.m {
-            background: linear-gradient(45deg, #ff00aa, #ba00ff);
+            background: linear-gradient(45deg, #e056fd, #686de0);
         }
 
         .tag.f {
@@ -344,31 +401,29 @@
         }
 
         .panel-foot {
-            margin-top: 20px;
+            margin-top: 15px;
             text-align: right;
-            font-size: 1.2rem;
+            font-size: 1rem;
             font-weight: 800;
+            color: var(--text-main);
         }
 
-        /* ==========================================================================
-           FIXED SCROLLING DRAWER (MODAL)
-           ========================================================================== */
+        /* === DRAWER / MODAL === */
         .modal-backdrop {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(45, 52, 54, 0.6);
-            backdrop-filter: blur(8px);
+            background: rgba(45, 52, 54, 0.5);
+            backdrop-filter: blur(5px);
             z-index: 2000;
-            /* High z-index */
             display: none;
             opacity: 0;
-            transition: opacity 0.3s;
+            transition: opacity 0.2s ease;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            overscroll-behavior: contain;
         }
 
         .modal-backdrop.active {
@@ -378,158 +433,232 @@
 
         .drawer-box {
             width: 1000px;
-            max-width: 100%;
-            height: 700px;
-            max-height: 85vh;
-            /* Keep some space around */
+            max-width: 95%;
+            height: 80vh;
             background: #fff;
-            border-radius: 30px;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            border-radius: 32px;
+            box-shadow: 0 25px 80px -10px rgba(0, 0, 0, 0.2);
             display: flex;
             overflow: hidden;
-            /* Important: prevents box itself from scrolling */
             position: relative;
+            /* DEFAULT DESKTOP: SIDEBAR LEFT, GRID RIGHT */
+            flex-direction: row;
         }
 
-        /* SIDEBAR */
+        /* SIDEBAR (Desktop Default) */
         .drawer-sidebar {
-            width: 260px;
+            width: 250px;
             background: #f8f9fa;
-            padding: 30px 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            border-right: 1px solid #edf2f7;
+            overflow-y: auto;
+            flex-shrink: 0;
+        }
+
+        /* CONTROLS AREA */
+        .sidebar-controls {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e2e8f0;
             display: flex;
             flex-direction: column;
             gap: 10px;
-            border-right: 1px solid #edf2f7;
-            overflow-y: auto;
-            /* Allow sidebar to scroll independently if needed */
+            overflow: auto;
+        }
+
+        .sidebar-controls::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* View Toggle */
+        .view-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: var(--text-light);
+        }
+
+        .switch {
+            position: relative;
+            width: 40px;
+            height: 22px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #dfe6e9;
+            transition: .3s;
+            border-radius: 24px;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 16px;
+            width: 16px;
+            left: 3px;
+            bottom: 3px;
+            background-color: white;
+            transition: .3s;
+            border-radius: 50%;
+        }
+
+        input:checked+.slider {
+            background-color: var(--primary-light);
+        }
+
+        input:checked+.slider:before {
+            transform: translateX(18px);
+        }
+
+        /* Rarity Grid (Desktop) */
+        .rarity-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6px;
+        }
+
+        .rarity-btn {
+            border: 1px solid #e2e8f0;
+            background: #fff;
+            padding: 6px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.7rem;
+            color: var(--text-light);
+            white-space: nowrap;
+        }
+
+        .rarity-btn.active {
+            background: var(--primary-light);
+            color: #fff;
+            border-color: var(--primary-light);
+        }
+
+        /* Categories (Desktop) */
+        #drawer-categories-list {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
         }
 
         .nav-btn {
             width: 100%;
-            padding: 14px 20px;
+            padding: 10px 15px;
             border: none;
             background: transparent;
             text-align: left;
-            font-family: 'Nunito', sans-serif;
+            font-family: inherit;
             font-weight: 700;
-            font-size: 1rem;
-            color: var(--text-gray);
+            font-size: 0.9rem;
+            color: var(--text-light);
             cursor: pointer;
-            border-radius: 16px;
-            transition: all 0.2s ease;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-shrink: 0;
-        }
-
-        .nav-btn:hover {
-            background: #fff;
-            color: var(--accent-blue);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            border-radius: 12px;
+            white-space: nowrap;
         }
 
         .nav-btn.active {
-            background: var(--primary-grad);
-            color: #fff;
-            box-shadow: var(--primary-shadow);
+            background: #fff;
+            color: var(--primary-light);
+            font-weight: 900;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
 
         /* CONTENT AREA */
         .drawer-content {
             flex: 1;
-            padding: 20px 30px;
             display: flex;
             flex-direction: column;
             background: #fff;
+            position: relative;
             height: 100%;
-            /* Full height of parent */
             overflow: hidden;
-            /* Stops scroll bubbling */
+        }
+
+        .search-area {
+            padding: 15px 20px;
+            border-bottom: 1px solid #f1f2f6;
+            flex-shrink: 0;
         }
 
         .search-wrap {
-            flex-shrink: 0;
-            /* Prevent search from shrinking */
             position: relative;
-            margin-bottom: 20px;
         }
 
         .search-input {
             width: 100%;
-            padding: 16px 20px 16px 50px;
+            padding: 12px 20px 12px 40px;
             border: 2px solid #f1f2f6;
-            border-radius: 18px;
-            font-size: 1rem;
+            border-radius: 14px;
+            font-size: 0.95rem;
             font-weight: 700;
-            outline: none;
+            background: #f8f9fa;
         }
 
         .search-icon {
             position: absolute;
-            left: 20px;
+            left: 14px;
             top: 50%;
             transform: translateY(-50%);
             color: #b2bec3;
         }
 
-        /* THE GRID SCROLL FIX */
+        /* ITEMS GRID */
         .items-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-            gap: 20px;
-
-            /* SCROLL MAGIC */
-            flex: 1;
-            /* Take all remaining space */
-            min-height: 0;
-            /* Allow shrinking inside flex container */
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 12px;
+            padding: 20px;
+            padding-bottom: 140px;
             overflow-y: auto;
-            /* Scroll vertically */
-
-            padding: 5px;
-            padding-right: 10px;
-        }
-
-        .items-grid::-webkit-scrollbar {
-            width: 6px;
-        }
-
-        .items-grid::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        .items-grid::-webkit-scrollbar-thumb {
-            background: #dfe6e9;
-            border-radius: 10px;
+            flex: 1;
+            overscroll-behavior: contain;
         }
 
         .item-card {
             background: #fff;
             border: 1px solid #f1f2f6;
-            border-radius: 20px;
-            padding: 15px;
+            border-radius: 16px;
+            padding: 10px;
             text-align: center;
             cursor: pointer;
-            transition: all 0.2s ease;
-            height: 160px;
-            /* Fixed height for consistency */
+            height: 140px;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            position: relative;
+        }
+
+        .item-card.active {
+            border: 2px solid var(--primary-light);
+            background: #f8f6fa;
         }
 
         .item-card:hover {
-            border-color: var(--accent-blue);
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transform: translateY(-3px);
         }
 
         .item-img-wrap {
-            height: 70px;
+            flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
+            min-height: 0;
         }
 
         .item-img-wrap img {
@@ -539,9 +668,10 @@
         }
 
         .item-name {
-            font-size: 0.8rem;
+            font-size: 0.7rem;
             font-weight: 800;
-            color: var(--text-dark);
+            color: var(--text-main);
+            margin-top: 6px;
             overflow: hidden;
             display: -webkit-box;
             -webkit-line-clamp: 2;
@@ -549,262 +679,376 @@
         }
 
         .item-val-badge {
-            font-size: 0.75rem;
-            font-weight: 800;
-            color: var(--accent-blue);
-            background: rgba(79, 172, 254, 0.1);
-            padding: 2px 8px;
-            border-radius: 6px;
-            align-self: center;
+            position: absolute;
+            top: 6px;
+            right: 6px;
+            font-size: 0.65rem;
+            font-weight: 900;
+            color: var(--primary-light);
+            background: rgba(118, 75, 162, 0.1);
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+
+        .items-grid.standard-view {
+            grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+            gap: 8px;
+        }
+
+        .items-grid.standard-view .item-card {
+            height: 70px;
+            padding: 5px;
+            justify-content: center;
+        }
+
+        .items-grid.standard-view .item-name,
+        .items-grid.standard-view .item-val-badge {
+            display: none;
         }
 
         .drawer-close {
             position: absolute;
-            top: 15px;
-            right: 15px;
-            width: 40px;
-            height: 40px;
+            top: 10px;
+            right: 10px;
+            width: 32px;
+            height: 32px;
             background: #f1f2f6;
             border-radius: 50%;
             border: none;
             cursor: pointer;
-            font-size: 1.5rem;
-            color: var(--text-gray);
-            z-index: 10;
+            font-size: 1.2rem;
+            color: var(--text-light);
             display: flex;
             align-items: center;
             justify-content: center;
+            z-index: 50;
         }
 
-        .drawer-close:hover {
-            background: #ff7675;
-            color: #fff;
-        }
-
-        /* POPUPS */
-        .popup {
-            background: #fff;
-            width: 400px;
-            max-width: 90%;
-            border-radius: 30px;
-            padding: 35px;
-            text-align: center;
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
-            transform: scale(0.9);
-            opacity: 0;
-            transition: all 0.3s;
-        }
-
-        .modal-backdrop.active .popup {
-            transform: scale(1);
-            opacity: 1;
-        }
-
-        .option-group {
-            margin-bottom: 20px;
-            text-align: left;
-        }
-
-        .group-label {
-            font-size: 0.8rem;
-            font-weight: 800;
-            color: #b2bec3;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-            display: block;
-        }
-
-        .pills-row {
+        /* BOTTOM PANEL */
+        .bottom-panel {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            padding: 15px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
             display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transform: translateY(150%);
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            z-index: 100;
+        }
+
+        .bottom-panel.active {
+            transform: translateY(0);
+        }
+
+        .panel-left {
+            display: flex;
+            align-items: center;
             gap: 10px;
         }
 
-        .check-pill {
-            flex: 1;
-            position: relative;
+        .panel-img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
         }
 
-        .check-pill input {
+        .panel-info h4 {
+            margin: 0;
+            font-size: 0.9rem;
+            font-weight: 900;
+            color: var(--text-main);
+        }
+
+        .panel-info span {
+            font-size: 0.7rem;
+            font-weight: 700;
+            color: var(--text-light);
+        }
+
+        .panel-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .toggle-group {
+            display: flex;
+            background: #f1f2f6;
+            padding: 3px;
+            border-radius: 12px;
+        }
+
+        .toggle-opt input {
             display: none;
         }
 
-        .check-pill span {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 45px;
-            border: 2px solid #f1f2f6;
-            border-radius: 12px;
+        .toggle-opt span {
+            display: block;
+            padding: 6px 12px;
+            border-radius: 9px;
+            font-size: 0.75rem;
             font-weight: 800;
-            color: var(--text-gray);
-            cursor: pointer;
+            color: var(--text-light);
             transition: 0.2s;
         }
 
-        .check-pill input:checked+span {
-            border-color: transparent;
+        .toggle-opt.neon input:checked+span {
+            background: #0984e3;
             color: #fff;
-            transform: translateY(-2px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
         }
 
-        .c-neon input:checked+span {
-            background: #00d2ff;
+        .toggle-opt.mega input:checked+span {
+            background: linear-gradient(135deg, #e056fd, #686de0);
+            color: #fff;
         }
 
-        .c-mega input:checked+span {
-            background: linear-gradient(135deg, #ff00aa, #ba00ff);
+        .toggle-opt.reg input:checked+span {
+            background: #fff;
+            color: var(--text-main);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
         }
 
-        .c-reg input:checked+span {
-            background: var(--text-dark);
-        }
-
-        .c-fly input:checked+span {
-            background: #74b9ff;
-        }
-
-        .c-ride input:checked+span {
-            background: #ff7675;
-        }
-
-        .action-row {
+        .potion-checks {
             display: flex;
-            gap: 15px;
-            margin-top: 30px;
+            gap: 5px;
         }
 
-        .btn {
-            flex: 1;
-            padding: 15px;
-            border: none;
-            border-radius: 15px;
-            font-weight: 800;
-            cursor: pointer;
+        .potion-btn input {
+            display: none;
         }
 
-        .btn-ghost {
+        .potion-btn span {
+            width: 32px;
+            height: 32px;
+            border-radius: 10px;
             background: #f1f2f6;
-            color: var(--text-gray);
-        }
-
-        .btn-fill {
-            background: var(--primary-grad);
-            color: #fff;
-            box-shadow: var(--primary-shadow);
-        }
-
-        .qty-ctrl {
+            color: #b2bec3;
+            font-weight: 900;
+            font-size: 0.75rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 20px;
-            margin: 30px 0;
+            transition: 0.2s;
         }
 
-        .qty-btn {
-            width: 50px;
-            height: 50px;
+        .potion-btn.fly input:checked+span {
+            background: #74b9ff;
+            color: #fff;
+        }
+
+        .potion-btn.ride input:checked+span {
+            background: #ff7675;
+            color: #fff;
+        }
+
+        .panel-add-btn {
+            background: var(--text-main);
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
             border-radius: 14px;
-            border: none;
-            background: #f1f2f6;
-            font-size: 1.5rem;
-            font-weight: 900;
+            font-weight: 800;
+            font-size: 0.85rem;
             cursor: pointer;
+            box-shadow: 0 4px 10px rgba(45, 52, 54, 0.2);
         }
 
-        .qty-val {
-            font-size: 2.5rem;
-            font-weight: 900;
-            width: 80px;
-            text-align: center;
-            border: none;
-            color: var(--text-dark);
-        }
+        /* ==========================================================================
+           MOBILE RESPONSIVE LOGIC (The Magic Switch)
+           ========================================================================== */
+        @media (max-width: 768px) {
+            :root {
+                --cols: 3;
+            }
 
-        /* RESPONSIVE */
-        @media (max-width: 1024px) {
+            .wrap {
+                padding: 15px;
+                padding-bottom: 100px;
+            }
+
             .scoreboard-wrap {
-                flex-wrap: wrap;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
             }
 
             .fairness-card {
+                grid-column: 1 / -1;
                 order: -1;
-                width: 100%;
-                flex: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            :root {
-                --cols: 4;
-            }
-
-            .drawer-box {
-                flex-direction: column;
-                height: 95vh;
-                max-height: 95vh;
-            }
-
-            .drawer-sidebar {
-                width: 100%;
-                flex-direction: row;
-                overflow-x: auto;
                 padding: 15px;
-                border-right: none;
-                border-bottom: 1px solid #f1f2f6;
-                flex-shrink: 0;
-                height: 70px;
-            }
-
-            .nav-btn {
-                width: auto;
-                white-space: nowrap;
-                padding: 8px 20px;
-                border-radius: 50px;
-                background: #fff;
-                border: 1px solid #f1f2f6;
-            }
-
-            .nav-btn.active {
-                border-color: transparent;
             }
 
             .trade-row {
                 flex-direction: column;
             }
 
-            h1 {
-                font-size: 2rem;
+            /* 1. Layout Switch: Sidebar goes to TOP */
+            .drawer-box {
+                flex-direction: column;
+                width: 100%;
+                height: 90dvh;
+                max-height: 90dvh;
+                border-radius: 24px 24px 0 0;
+                position: absolute;
+                bottom: 0;
             }
-        }
 
-        @media (max-width: 480px) {
-            :root {
-                --cols: 3;
+            /* 2. Sidebar becomes Horizontal Header */
+            .drawer-sidebar {
+                width: 100%;
+                height: auto;
+                flex-direction: column;
+                /* Stack Controls on top of Categories */
+                padding: 10px 15px;
+                border-right: none;
+                border-bottom: 1px solid #f1f2f6;
+                overflow: visible;
+                /* Allow children to scroll horizontally */
+            }
+
+            /* 3. Horizontal Rarity Filters */
+            .sidebar-controls {
+                border: none;
+                margin: 0;
+                padding: 0 0 10px 0;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .view-toggle {
+                display: none;
+                /* Hide toggle on mobile to save space */
+            }
+
+            .rarity-grid {
+                display: flex;
+                /* Switch from Grid to Flex */
+                overflow-x: auto;
+                gap: 8px;
+                width: 100%;
+                padding-bottom: 5px;
+                scrollbar-width: none;
+                /* Hide scrollbar */
+            }
+
+            .rarity-grid::-webkit-scrollbar {
+                display: none;
+            }
+
+            .rarity-btn {
+                flex-shrink: 0;
+                padding: 8px 16px;
+                border-radius: 20px;
+                font-size: 0.8rem;
+            }
+
+            /* 4. Horizontal Categories */
+            #drawer-categories-list {
+                display: flex;
+                flex-direction: row;
+                /* Horizontal */
+                overflow-x: auto;
+                gap: 8px;
+                width: 100%;
+                padding-bottom: 5px;
+                scrollbar-width: none;
+            }
+
+            #drawer-categories-list::-webkit-scrollbar {
+                display: none;
+            }
+
+            .nav-btn {
+                width: auto;
+                flex-shrink: 0;
+                padding: 8px 16px;
+                border: 1px solid #f1f2f6;
+                background: #fff;
+                border-radius: 20px;
+            }
+
+            .nav-btn.active {
+                border-color: transparent;
+            }
+
+            /* 5. Bottom Panel Stacked */
+            .bottom-panel {
+                flex-direction: column;
+                gap: 15px;
+                padding: 20px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                border-radius: 24px 24px 0 0;
+                border: none;
+                border-top: 1px solid #f1f2f6;
+                background: #fff;
+            }
+
+            .panel-left {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .panel-controls {
+                flex-direction: column;
+                width: 100%;
+                gap: 15px;
+            }
+
+            .toggle-group {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .toggle-opt {
+                flex: 1;
+                text-align: center;
+            }
+
+            .toggle-opt span {
+                width: 100%;
+            }
+
+            .row-mobile {
+                display: flex;
+                gap: 10px;
+                width: 100%;
+                justify-content: center;
+            }
+
+            .panel-add-btn {
+                width: 100%;
+                padding: 14px;
+                font-size: 1rem;
             }
 
             .items-grid {
-                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                padding-bottom: 250px;
             }
         }
     </style>
 </head>
 
 <body>
-
-    <div class="bg-decoration"></div>
+    <div class="bg-blob bg-1"></div>
+    <div class="bg-blob bg-2"></div>
+    <div class="bg-blob bg-3"></div>
 
     <div class="wrap">
-
         <div class="scoreboard-wrap">
             <div class="score-card">
                 <div class="score-label">You Give</div>
-                <div class="score-val highlight" id="your-score">0.00</div>
-                <div class="stats-row">
-                    <div class="stat-badge">Frosts: <b id="your-frosts">0</b></div>
-                    <div class="stat-badge">Sharks: <b id="your-sharks">0</b></div>
-                </div>
+                <div class="score-val" id="your-score">0.00</div>
+                <div class="stat-badge"><span class="unit-label">Sharks</span>: <b id="your-units">0</b></div>
             </div>
             <div class="fairness-card">
                 <div class="result-pill fair" id="result-indicator">FAIR</div>
@@ -815,11 +1059,15 @@
             </div>
             <div class="score-card">
                 <div class="score-label">They Give</div>
-                <div class="score-val highlight" id="their-score">0.00</div>
-                <div class="stats-row">
-                    <div class="stat-badge">Frosts: <b id="their-frosts">0</b></div>
-                    <div class="stat-badge">Sharks: <b id="their-sharks">0</b></div>
-                </div>
+                <div class="score-val" id="their-score">0.00</div>
+                <div class="stat-badge"><span class="unit-label">Sharks</span>: <b id="their-units">0</b></div>
+            </div>
+        </div>
+
+        <div class="unit-wrap">
+            <div class="unit-switcher">
+                <button class="unit-btn active" data-unit="shark">Sharks</button>
+                <button class="unit-btn" data-unit="frost">Frosts</button>
             </div>
         </div>
 
@@ -827,72 +1075,86 @@
             <div class="trade-panel">
                 <div class="panel-head"><span>Your Offer</span><span>Max 18</span></div>
                 <div class="slots-grid" id="your-grid"></div>
-                <div class="panel-foot">Total: <span id="your-total">0.00</span></div>
+                <div class="panel-foot">Value: <span id="your-total">0.00</span></div>
             </div>
             <div class="trade-panel">
                 <div class="panel-head"><span>Their Offer</span><span>Max 18</span></div>
                 <div class="slots-grid" id="their-grid"></div>
-                <div class="panel-foot">Total: <span id="their-total">0.00</span></div>
+                <div class="panel-foot">Value: <span id="their-total">0.00</span></div>
             </div>
         </div>
     </div>
 
-    <!-- DRAWER MODAL -->
+    <!-- DRAWER -->
     <div class="modal-backdrop" id="drawer-overlay">
         <div class="drawer-box">
             <button class="drawer-close" id="drawer-close">&times;</button>
-            <aside class="drawer-sidebar" id="drawer-categories-list"></aside>
+
+            <aside class="drawer-sidebar">
+                <div class="sidebar-controls">
+                    <div class="view-toggle">
+                        <span>Compact</span>
+                        <label class="switch">
+                            <input type="checkbox" id="view-toggle-checkbox">
+                            <span class="slider"></span>
+                        </label>
+                        <span>Detail</span>
+                    </div>
+                    <div class="rarity-filters" id="rarity-filters-container">
+                        <div class="rarity-grid">
+                            <button class="rarity-btn active" data-rarity="all">All</button>
+                            <button class="rarity-btn" data-rarity="legendary">Leg</button>
+                            <button class="rarity-btn" data-rarity="ultra rare">Ultra</button>
+                            <button class="rarity-btn" data-rarity="rare">Rare</button>
+                            <button class="rarity-btn" data-rarity="uncommon">Unc</button>
+                            <button class="rarity-btn" data-rarity="common">Com</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="drawer-categories-list">
+                    <!-- Categories injected via JS -->
+                </div>
+            </aside>
+
             <div class="drawer-content">
-                <div class="search-wrap">
-                    <span class="search-icon">🔍</span>
-                    <input type="text" class="search-input" id="drawer-search" placeholder="Search for pets..." />
+                <div class="search-area">
+                    <div class="search-wrap">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" class="search-input" id="drawer-search" placeholder="Search items..." />
+                    </div>
                 </div>
+
                 <div class="items-grid" id="drawer-items"></div>
-            </div>
-        </div>
-    </div>
 
-    <!-- PET OPTIONS -->
-    <div class="modal-backdrop" id="pet-options-modal">
-        <div class="popup">
-            <h3 id="pet-options-title">Customize Pet</h3>
-            <div class="option-group">
-                <span class="group-label">Type</span>
-                <div class="pills-row">
-                    <label class="check-pill c-reg"><input type="radio" name="pet_version" value="rvalue"
-                            checked><span>Normal</span></label>
-                    <label class="check-pill c-neon"><input type="radio" name="pet_version"
-                            value="nvalue"><span>Neon</span></label>
-                    <label class="check-pill c-mega"><input type="radio" name="pet_version"
-                            value="mvalue"><span>Mega</span></label>
-                </div>
-            </div>
-            <div class="option-group">
-                <span class="group-label">Potions</span>
-                <div class="pills-row">
-                    <label class="check-pill c-fly"><input type="checkbox" id="check-fly"><span>Fly</span></label>
-                    <label class="check-pill c-ride"><input type="checkbox" id="check-ride"><span>Ride</span></label>
-                </div>
-            </div>
-            <div class="action-row">
-                <button class="btn btn-ghost" id="pet-options-cancel">Cancel</button>
-                <button class="btn btn-fill" id="pet-options-confirm">Next</button>
-            </div>
-        </div>
-    </div>
+                <!-- FLOATING PET CUSTOMIZER -->
+                <div class="bottom-panel" id="bottom-selection-panel">
+                    <div class="panel-left">
+                        <img src="" alt="" class="panel-img" id="panel-img">
+                        <div class="panel-info">
+                            <h4 id="panel-name">Pet Name</h4>
+                            <span>Select Variant</span>
+                        </div>
+                    </div>
 
-    <!-- QUANTITY -->
-    <div class="modal-backdrop" id="quantity-modal">
-        <div class="popup">
-            <h3 id="quantity-title">Quantity</h3>
-            <div class="qty-ctrl">
-                <button class="qty-btn" id="qty-minus">-</button>
-                <input type="text" class="qty-val" id="qty-number" value="1" readonly />
-                <button class="qty-btn" id="qty-plus">+</button>
-            </div>
-            <div class="action-row">
-                <button class="btn btn-ghost" id="qty-cancel">Cancel</button>
-                <button class="btn btn-fill" id="qty-confirm">Add</button>
+                    <div class="panel-controls">
+                        <div class="toggle-group">
+                            <label class="toggle-opt reg"><input type="radio" name="p_ver" value="rvalue"
+                                    checked><span>Reg</span></label>
+                            <label class="toggle-opt neon"><input type="radio" name="p_ver"
+                                    value="nvalue"><span>Neon</span></label>
+                            <label class="toggle-opt mega"><input type="radio" name="p_ver"
+                                    value="mvalue"><span>Mega</span></label>
+                        </div>
+
+                        <div class="row-mobile">
+                            <div class="potion-checks">
+                                <label class="potion-btn fly"><input type="checkbox" id="p_fly"><span>F</span></label>
+                                <label class="potion-btn ride"><input type="checkbox" id="p_ride"><span>R</span></label>
+                            </div>
+                            <button class="panel-add-btn" id="panel-add-btn">Add</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -902,7 +1164,10 @@
             let FROST_VALUE = 160.0;
             let SHARK_VALUE = 1.0;
             const MAX_SLOTS = 18;
-            let allData = [], categories = [], activeCategory = "", activeGrid = null, selectedItem = null, selectedPetConfig = null;
+            let allData = [], categories = [], activeCategory = "", activeGrid = null, selectedItem = null;
+            let isDetailedView = false;
+            let activeRarity = 'all';
+            let currentUnit = 'shark';
 
             const dom = {
                 yourGrid: document.getElementById("your-grid"),
@@ -911,10 +1176,9 @@
                 theirTotal: document.getElementById("their-total"),
                 yourScore: document.getElementById("your-score"),
                 theirScore: document.getElementById("their-score"),
-                yourFrosts: document.getElementById("your-frosts"),
-                yourSharks: document.getElementById("your-sharks"),
-                theirFrosts: document.getElementById("their-frosts"),
-                theirSharks: document.getElementById("their-sharks"),
+                yourUnits: document.getElementById("your-units"),
+                theirUnits: document.getElementById("their-units"),
+                unitLabels: document.querySelectorAll(".unit-label"),
                 fairPointer: document.getElementById("fair-pointer"),
                 fairIndicator: document.getElementById("result-indicator"),
                 drawerOverlay: document.getElementById("drawer-overlay"),
@@ -922,42 +1186,47 @@
                 drawerSearch: document.getElementById("drawer-search"),
                 drawerCats: document.getElementById("drawer-categories-list"),
                 drawerClose: document.getElementById("drawer-close"),
-                petModal: document.getElementById("pet-options-modal"),
-                petTitle: document.getElementById("pet-options-title"),
-                petConfirm: document.getElementById("pet-options-confirm"),
-                petCancel: document.getElementById("pet-options-cancel"),
-                checkFly: document.getElementById("check-fly"),
-                checkRide: document.getElementById("check-ride"),
-                qtyModal: document.getElementById("quantity-modal"),
-                qtyTitle: document.getElementById("quantity-title"),
-                qtyInput: document.getElementById("qty-number"),
-                qtyPlus: document.getElementById("qty-plus"),
-                qtyMinus: document.getElementById("qty-minus"),
-                qtyConfirm: document.getElementById("qty-confirm"),
-                qtyCancel: document.getElementById("qty-cancel")
+                viewToggle: document.getElementById("view-toggle-checkbox"),
+                rarityFiltersContainer: document.getElementById("rarity-filters-container"),
+                rarityButtons: document.querySelectorAll(".rarity-btn"),
+                unitButtons: document.querySelectorAll(".unit-btn"),
+                bottomPanel: document.getElementById("bottom-selection-panel"),
+                panelImg: document.getElementById("panel-img"),
+                panelName: document.getElementById("panel-name"),
+                panelAddBtn: document.getElementById("panel-add-btn"),
+                checkFly: document.getElementById("p_fly"),
+                checkRide: document.getElementById("p_ride"),
             };
 
             async function init() {
+                const defaultData = [
+                    { name: "Frost Dragon", type: "pets", rarity: "legendary", rvalue: 160, image: "https://static.wikia.nocookie.net/adoptme/images/8/82/Frost_Dragon.png", nvalue: 500, mvalue: 1500 },
+                    { name: "Shadow Dragon", type: "pets", rarity: "legendary", rvalue: 250, image: "https://static.wikia.nocookie.net/adoptme/images/e/e0/Shadow_Dragon.png", nvalue: 800, mvalue: 2500 },
+                    { name: "Unicorn", type: "pets", rarity: "legendary", rvalue: 3, image: "https://static.wikia.nocookie.net/adoptme/images/e/e9/Unicorn.png", nvalue: 12, mvalue: 40 },
+                    { name: "Cat", type: "pets", rarity: "common", rvalue: 0.1, image: "https://static.wikia.nocookie.net/adoptme/images/9/9d/Cat.png" },
+                    { name: "Sandwich", type: "food", value: 0.01, image: "https://static.wikia.nocookie.net/adoptme/images/9/9e/Sandwich.png" }
+                ];
+
                 try {
-                    const [d, g] = await Promise.all([fetch('data.json'), fetch('Gag.json')]);
-                    if (!d.ok || !g.ok) throw new Error("Files missing");
-                    const rawD = await d.json(); const rawG = await g.json();
+                    const [d, g] = await Promise.all([fetch('data.json').catch(e => e), fetch('Gag.json').catch(e => e)]);
+                    if ((!d.ok && !d.json) || (!g.ok && !g.json)) throw new Error("Files missing");
+                    const rawD = d.ok ? await d.json() : [];
+                    const rawG = g.ok ? await g.json() : [];
                     const proc = (o) => Object.values(o).map(i => ({ ...i, value: i.value || i.rvalue || 0 }));
                     allData = [...proc(rawD), ...proc(rawG)];
-                    const frost = allData.find(i => i.name === "Frost Dragon");
-                    if (frost) FROST_VALUE = frost.rvalue || 160;
-                    const types = new Set(allData.map(i => i.type).filter(Boolean));
-                    categories = Array.from(types).sort();
-                    activeCategory = categories.includes('pets') ? 'pets' : categories[0];
-                    setupUI();
+                    if (allData.length === 0) allData = defaultData;
                 } catch (e) {
-                    allData = [
-                        { name: "Frost Dragon", type: "pets", rvalue: 160, image: "https://static.wikia.nocookie.net/adoptme/images/8/82/Frost_Dragon.png", nvalue: 500, mvalue: 1500 },
-                        { name: "Shadow Dragon", type: "pets", rvalue: 250, image: "https://static.wikia.nocookie.net/adoptme/images/e/e0/Shadow_Dragon.png", nvalue: 800, mvalue: 2500 },
-                        { name: "Sandwich", type: "food", value: 0.1, image: "https://static.wikia.nocookie.net/adoptme/images/9/9e/Sandwich.png" }
-                    ];
-                    categories = ['pets', 'food']; activeCategory = 'pets'; setupUI();
+                    allData = defaultData;
                 }
+
+                const frost = allData.find(i => i.name === "Frost Dragon");
+                if (frost) FROST_VALUE = frost.rvalue || 160;
+
+                const types = new Set(allData.map(i => i.type).filter(Boolean));
+                categories = Array.from(types).sort((a, b) => a === 'pets' ? -1 : b === 'pets' ? 1 : a.localeCompare(b));
+                activeCategory = categories.length > 0 ? categories[0] : 'pets';
+
+                setupUI();
             }
 
             function setupUI() {
@@ -971,10 +1240,18 @@
                         activeCategory = cat;
                         document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
                         btn.classList.add('active');
+
+                        if (dom.rarityFiltersContainer) {
+                            dom.rarityFiltersContainer.style.display = (activeCategory === 'pets') ? 'block' : 'none';
+                        }
+
                         renderDrawerItems();
+                        dom.bottomPanel.classList.remove('active');
+                        document.querySelectorAll('.item-card').forEach(c => c.classList.remove('active'));
                     };
                     dom.drawerCats.appendChild(btn);
                 });
+
                 [dom.yourGrid, dom.theirGrid].forEach(g => {
                     g.innerHTML = '';
                     for (let i = 0; i < MAX_SLOTS; i++) {
@@ -985,102 +1262,133 @@
                     updateGridState(g);
                 });
                 setupEvents();
+                calculate();
             }
 
             function setupEvents() {
-                const close = () => {
+                const closeDrawer = () => {
                     dom.drawerOverlay.classList.remove('active');
-                    document.body.classList.remove('modal-open'); // UNLOCK SCROLL
+                    document.body.classList.remove('modal-open');
+                    dom.bottomPanel.classList.remove('active');
                 };
-                dom.drawerClose.onclick = close;
-                dom.drawerOverlay.onclick = (e) => { if (e.target === dom.drawerOverlay) close(); };
+                dom.drawerClose.onclick = closeDrawer;
+                dom.drawerOverlay.onclick = (e) => { if (e.target === dom.drawerOverlay) closeDrawer(); };
                 dom.drawerSearch.oninput = renderDrawerItems;
-                dom.petCancel.onclick = () => { dom.petModal.classList.remove('active'); document.body.classList.remove('modal-open'); };
-                dom.petConfirm.onclick = confirmPetOptions;
-                dom.qtyCancel.onclick = () => { dom.qtyModal.classList.remove('active'); document.body.classList.remove('modal-open'); };
-                dom.qtyMinus.onclick = () => dom.qtyInput.value = Math.max(1, parseInt(dom.qtyInput.value) - 1);
-                dom.qtyPlus.onclick = () => dom.qtyInput.value = Math.min(MAX_SLOTS, parseInt(dom.qtyInput.value) + 1);
-                dom.qtyConfirm.onclick = confirmQty;
+
+                dom.viewToggle.onchange = (e) => { isDetailedView = e.target.checked; renderDrawerItems(); };
+
+                dom.rarityButtons.forEach(btn => {
+                    btn.onclick = () => {
+                        dom.rarityButtons.forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        activeRarity = btn.dataset.rarity;
+                        renderDrawerItems();
+                    };
+                });
+                dom.unitButtons.forEach(btn => {
+                    btn.onclick = () => {
+                        dom.unitButtons.forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        currentUnit = btn.dataset.unit;
+                        calculate();
+                    };
+                });
+
+                dom.panelAddBtn.onclick = () => {
+                    addPetFromPanel();
+                    closeDrawer();
+                }
             }
 
             function openDrawer(grid) {
                 activeGrid = grid;
                 dom.drawerOverlay.classList.add('active');
-                document.body.classList.add('modal-open'); // LOCK SCROLL
+                document.body.classList.add('modal-open');
                 dom.drawerSearch.value = '';
+                dom.bottomPanel.classList.remove('active');
                 renderDrawerItems();
             }
 
             function renderDrawerItems() {
                 const q = dom.drawerSearch.value.toLowerCase();
-                const f = allData.filter(i => i.type === activeCategory && i.name.toLowerCase().includes(q)).sort((a, b) => (b.value || 0) - (a.value || 0));
+                let filteredData = allData.filter(i => i.type === activeCategory && i.name.toLowerCase().includes(q));
+                if (activeCategory === 'pets' && activeRarity !== 'all') {
+                    filteredData = filteredData.filter(i => i.rarity === activeRarity);
+                }
+                const f = filteredData.sort((a, b) => (b.value || 0) - (a.value || 0));
+
                 dom.drawerItems.innerHTML = '';
+                if (!isDetailedView) dom.drawerItems.classList.add('standard-view');
+                else dom.drawerItems.classList.remove('standard-view');
+
                 f.forEach(item => {
-                    const d = document.createElement('div'); d.className = 'item-card';
-                    d.innerHTML = `<div class="item-img-wrap"><img src="${item.image}" loading="lazy"></div><div class="item-name">${item.name}</div><div class="item-val-badge">${(item.value || 0).toFixed(1)}</div>`;
-                    d.onclick = () => selectItem(item);
+                    const d = document.createElement('div');
+                    d.className = 'item-card';
+                    let html = `<div class="item-img-wrap"><img src="${item.image}" loading="lazy"></div>`;
+                    html += `<div class="item-name">${item.name}</div>`;
+                    html += `<div class="item-val-badge">${(item.value || 0).toFixed(1)}</div>`;
+                    d.innerHTML = html;
+                    d.onclick = () => selectItem(item, d);
                     dom.drawerItems.appendChild(d);
                 });
             }
 
-            function selectItem(item) {
+            function selectItem(item, cardElement) {
                 selectedItem = item;
-                dom.drawerOverlay.classList.remove('active');
-                // Keep body locked because we open another modal immediately
+                document.querySelectorAll('.item-card').forEach(c => c.classList.remove('active'));
+
                 if (item.type === 'pets') {
-                    document.querySelector('input[name="pet_version"][value="rvalue"]').checked = true;
-                    dom.checkFly.checked = false; dom.checkRide.checked = false;
-                    dom.petTitle.textContent = item.name;
-                    dom.petModal.classList.add('active');
+                    cardElement.classList.add('active');
+                    dom.panelName.textContent = item.name;
+                    dom.panelImg.src = item.image;
+                    document.querySelector('input[name="p_ver"][value="rvalue"]').checked = true;
+                    dom.checkFly.checked = false;
+                    dom.checkRide.checked = false;
+                    dom.bottomPanel.classList.add('active');
                 } else {
-                    selectedPetConfig = null; openQty();
+                    addItems(activeGrid, item, item.value || 0, '');
+                    dom.drawerOverlay.classList.remove('active');
+                    document.body.classList.remove('modal-open');
                 }
             }
 
-            function confirmPetOptions() {
-                const v = document.querySelector('input[name="pet_version"]:checked').value;
-                selectedPetConfig = { version: v, isFly: dom.checkFly.checked, isRide: dom.checkRide.checked };
-                dom.petModal.classList.remove('active');
-                openQty();
-            }
-
-            function openQty() {
-                dom.qtyTitle.textContent = selectedItem.name;
-                dom.qtyInput.value = 1;
-                dom.qtyModal.classList.add('active');
-            }
-
-            function confirmQty() {
-                const qty = parseInt(dom.qtyInput.value);
-                dom.qtyModal.classList.remove('active');
-                document.body.classList.remove('modal-open'); // UNLOCK SCROLL
+            function addPetFromPanel() {
+                const v = document.querySelector('input[name="p_ver"]:checked').value;
+                const isFly = dom.checkFly.checked;
+                const isRide = dom.checkRide.checked;
 
                 let val = selectedItem.value || 0, tags = '';
-                if (selectedPetConfig) {
-                    const { version, isFly, isRide } = selectedPetConfig;
-                    let pk = ""; if (isFly && isRide) pk = "fly&ride"; else if (isFly) pk = "fly"; else if (isRide) pk = "ride"; else pk = "nopotion";
-                    let lk = version; if (pk !== "nopotion") lk += ` - ${pk}`; else if (selectedItem[`${version} - nopotion`]) lk = `${version} - nopotion`;
-                    if (selectedItem[lk] !== undefined) val = selectedItem[lk]; else if (selectedItem[version] !== undefined) val = selectedItem[version];
-                    if (version === 'nvalue') tags += `<span class="tag n">N</span>`;
-                    if (version === 'mvalue') tags += `<span class="tag m">M</span>`;
-                    if (isFly) tags += `<span class="tag f">F</span>`;
-                    if (isRide) tags += `<span class="tag r">R</span>`;
-                }
-                addItems(activeGrid, selectedItem, val, qty, tags);
+
+                if (v === 'nvalue' && selectedItem.nvalue) val = selectedItem.nvalue;
+                else if (v === 'mvalue' && selectedItem.mvalue) val = selectedItem.mvalue;
+                else val = selectedItem.rvalue || selectedItem.value || 0;
+
+                if (v === 'nvalue') tags += `<span class="tag n">N</span>`;
+                if (v === 'mvalue') tags += `<span class="tag m">M</span>`;
+                if (isFly) tags += `<span class="tag f">F</span>`;
+                if (isRide) tags += `<span class="tag r">R</span>`;
+
+                addItems(activeGrid, selectedItem, val, tags);
             }
 
-            function addItems(grid, item, val, qty, tags) {
-                const empty = Array.from(grid.children).filter(s => s.classList.contains('empty'));
-                const count = Math.min(qty, empty.length);
-                for (let i = 0; i < count; i++) {
-                    const s = empty[i]; s.className = 'slot filled'; s.dataset.value = val;
+            function addItems(grid, item, val, tags) {
+                const emptySlots = Array.from(grid.children).filter(s => s.classList.contains('empty'));
+                if (emptySlots.length > 0) {
+                    const s = emptySlots[0];
+                    s.className = 'slot filled';
+                    s.dataset.value = val;
                     s.innerHTML = `<img src="${item.image}"><div class="tag-row">${tags}</div>`;
                     s.onclick = () => {
-                        s.className = 'slot empty'; s.dataset.value = 0; s.innerHTML = `<span class="add-symbol">+</span>`;
-                        s.onclick = null; updateGridState(grid); calculate();
+                        s.className = 'slot empty';
+                        s.dataset.value = 0;
+                        s.innerHTML = `<span class="add-symbol">+</span>`;
+                        s.onclick = null;
+                        updateGridState(grid);
+                        calculate();
                     };
+                    updateGridState(grid);
+                    calculate();
                 }
-                updateGridState(grid); calculate();
             }
 
             function updateGridState(grid) {
@@ -1089,7 +1397,11 @@
                     s.classList.remove('add-ready');
                     if (s.classList.contains('empty')) {
                         s.onclick = null;
-                        if (!found) { found = true; s.classList.add('add-ready'); s.onclick = () => openDrawer(grid); }
+                        if (!found) {
+                            found = true;
+                            s.classList.add('add-ready');
+                            s.onclick = () => openDrawer(grid);
+                        }
                     }
                 });
             }
@@ -1099,14 +1411,18 @@
                 const v1 = sum(dom.yourGrid), v2 = sum(dom.theirGrid);
                 dom.yourTotal.textContent = v1.toFixed(2); dom.theirTotal.textContent = v2.toFixed(2);
                 dom.yourScore.textContent = v1.toFixed(2); dom.theirScore.textContent = v2.toFixed(2);
-                dom.yourFrosts.textContent = (v1 / FROST_VALUE).toFixed(2); dom.yourSharks.textContent = (v1 / SHARK_VALUE).toFixed(2);
-                dom.theirFrosts.textContent = (v2 / FROST_VALUE).toFixed(2); dom.theirSharks.textContent = (v2 / SHARK_VALUE).toFixed(2);
+
+                const unitValue = currentUnit === 'frost' ? FROST_VALUE : SHARK_VALUE;
+                const unitLabel = currentUnit === 'frost' ? 'Frosts' : 'Sharks';
+                dom.yourUnits.textContent = (v1 / unitValue).toFixed(2);
+                dom.theirUnits.textContent = (v2 / unitValue).toFixed(2);
+                dom.unitLabels.forEach(label => label.textContent = unitLabel);
 
                 const t = v1 + v2; let pct = 50, s = "FAIR", sc = "fair";
                 if (t > 0) pct = (v2 / t) * 100; pct = Math.max(5, Math.min(95, pct));
                 dom.fairPointer.style.left = `${pct}%`;
                 if (t > 0) {
-                    const d = v2 - v1, r = Math.abs(d) / Math.max(v1, v2);
+                    const d = v2 - v1, r = Math.abs(d) / Math.max(v1, v2, 1);
                     if (r > 0.1) { if (d > 0) { s = "WIN"; sc = "win"; } else { s = "LOSE"; sc = "lose"; } }
                 }
                 dom.fairIndicator.textContent = s; dom.fairIndicator.className = `result-pill ${sc}`;
