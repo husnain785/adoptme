@@ -25,6 +25,7 @@
             --radius-md: 18px;
             --slot-bg: #ffe5e5;
             --cols: 3;
+            /* 3x3 Grid */
         }
 
         * {
@@ -41,6 +42,7 @@
             color: var(--text-main);
             overflow-x: hidden;
             overscroll-behavior-y: none;
+            background-color: var(--bg-body);
         }
 
         body.modal-open {
@@ -54,64 +56,22 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            /* padding-bottom: 80px; */
         }
 
-        /* === SCOREBOARD === */
+        /* === SCOREBOARD (Top Summary) === */
         .scoreboard-wrap {
             display: flex;
             gap: 15px;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             align-items: stretch;
             flex-direction: column;
-        }
-
-        .meter-labels {
-            display: flex;
-            justify-content: space-between;
-            font-size: 0.75rem;
-            font-weight: 800;
-            color: #b2bec3;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .meter-labels span {
-            color: #b2bec3;
-        }
-
-        .score-line {
-            display: flex;
-            align-items: baseline;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .score-val {
-            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
-            font-weight: 900;
-            color: var(--text-main);
-            line-height: 1.1;
-            margin-bottom: 8px;
-        }
-
-        .score-label {
-            font-size: 0.75rem;
-            font-weight: 800;
-            color: #b2bec3;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            white-space: nowrap;
-        }
-
-        .score-separator {
-            font-size: 1.5rem;
-            color: #b2bec3;
+            opacity: 0.8;
+            transform: scale(0.95);
         }
 
         .meter-track {
             width: 100%;
-            height: 12px;
+            height: 8px;
             background: #dfe6e9;
             border-radius: 10px;
             position: relative;
@@ -129,19 +89,19 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 20px;
-            height: 20px;
+            width: 16px;
+            height: 16px;
             background: #fff;
             border: 3px solid var(--text-main);
             border-radius: 50%;
             transition: left 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
         }
 
+        /* === UNIT SWITCHER === */
         .unit-wrap {
             display: flex;
             justify-content: center;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             align-items: center;
         }
 
@@ -154,17 +114,12 @@
             margin-right: 10px;
         }
 
-        .arrow {
-            color: #b2bec3;
-        }
-
         .unit-switcher {
             background: none;
             padding: 5px;
             border-radius: 40px;
             display: flex;
             gap: 4px;
-            box-shadow: none;
         }
 
         .unit-btn {
@@ -179,11 +134,6 @@
             transition: all 0.2s;
         }
 
-        .unit-btn:hover {
-            opacity: 1 !important;
-            transform: scale(1.05);
-        }
-
         .unit-btn.shark {
             background: linear-gradient(135deg, #ff8c00 0%, #ff4500 100%);
         }
@@ -194,16 +144,18 @@
 
         .unit-btn.active {
             opacity: 1;
+            transform: scale(1.05);
         }
 
         .unit-btn:not(.active) {
-            opacity: 0.7;
+            opacity: 0.6;
         }
 
+        /* === TRADE AREA === */
         .trade-row {
             display: flex;
-            gap: 20px;
-            align-items: center;
+            gap: 15px;
+            align-items: stretch;
             justify-content: center;
         }
 
@@ -212,14 +164,90 @@
             background: var(--card-bg);
             border-radius: var(--radius-xl);
             box-shadow: var(--card-shadow);
-            padding: 10px;
+            padding: 15px;
             border: 1px solid rgba(255, 255, 255, 0.5);
+            max-width: 400px;
+            display: flex;
+            flex-direction: column;
         }
 
+        /* === MIDDLE SECTION (Desktop) === */
+        .result-middle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            text-align: center;
+            z-index: 5;
+            flex-shrink: 0;
+        }
+
+        .result-badge {
+            background: #fff;
+            padding: 10px;
+            border-radius: 20px;
+            font-weight: 900;
+            font-size: 1.2rem;
+            color: #b2bec3;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            margin-bottom: 10px;
+            width: 100%;
+            border: 2px solid #f1f2f6;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .result-badge.win {
+            background: #00b894;
+            color: #fff;
+            border-color: #00b894;
+        }
+
+        .result-badge.fair {
+            background: #fdcb6e;
+            color: #fff;
+            border-color: #fdcb6e;
+        }
+
+        .result-badge.lose {
+            background: #ff7675;
+            color: #fff;
+            border-color: #ff7675;
+        }
+
+        .vs-circle {
+            width: 40px;
+            height: 40px;
+            background: #dfe6e9;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 800;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+
+        .diff-display {
+            font-size: 0.85rem;
+            font-weight: 800;
+            color: var(--text-light);
+            background: rgba(255, 255, 255, 0.8);
+            padding: 4px 10px;
+            border-radius: 10px;
+        }
+
+        /* === GRID SLOTS === */
         .slots-grid {
             display: grid;
             grid-template-columns: repeat(var(--cols), 1fr);
-            gap: 8px;
+            gap: 10px;
+            flex: 1;
         }
 
         .slot {
@@ -243,14 +271,16 @@
 
         .slot.empty {
             background: var(--slot-bg);
-            border: 2px solid #ff69b4;
+            border: 2px dashed #ffb8b8;
             box-shadow: none;
+            opacity: 0.8;
         }
 
         .slot.add-ready {
-            border: 2px solid var(--accent-cyan);
+            border: 2px dashed var(--accent-cyan);
             background: rgba(0, 206, 201, 0.05);
             animation: pulseSlot 2s infinite;
+            opacity: 1;
         }
 
         .slot.filled {
@@ -285,18 +315,18 @@
         }
 
         .add-symbol {
-            font-size: 20px;
+            font-size: 24px;
             color: #d1d8e0;
+            font-weight: 900;
         }
 
         .slot.add-ready .add-symbol {
             color: var(--accent-cyan);
-            font-weight: 900;
         }
 
         .slot img {
-            width: 80%;
-            height: 80%;
+            width: 85%;
+            height: 85%;
             object-fit: contain;
         }
 
@@ -336,6 +366,24 @@
             background: #ff7675;
         }
 
+        .panel-header {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .panel-title {
+            font-size: 0.9rem;
+            font-weight: 800;
+            color: var(--text-light);
+            text-transform: uppercase;
+        }
+
+        .panel-score {
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: var(--text-main);
+        }
+
         /* === DRAWER / MODAL === */
         .modal-backdrop {
             position: fixed;
@@ -351,7 +399,6 @@
             transition: opacity 0.2s ease;
             align-items: center;
             justify-content: center;
-            overscroll-behavior: contain;
         }
 
         .modal-backdrop.active {
@@ -372,7 +419,6 @@
             flex-direction: row;
         }
 
-        /* SIDEBAR */
         .drawer-sidebar {
             width: 250px;
             background: #f8f9fa;
@@ -384,7 +430,6 @@
             flex-shrink: 0;
         }
 
-        /* Rarity Filter Styles */
         .sidebar-controls {
             margin-bottom: 15px;
             padding-bottom: 15px;
@@ -406,7 +451,6 @@
             font-weight: 700;
             font-size: 0.7rem;
             color: var(--text-light);
-            white-space: nowrap;
             transition: all 0.2s;
         }
 
@@ -420,7 +464,6 @@
             border-color: var(--primary-light);
         }
 
-        /* Categories */
         #drawer-categories-list {
             display: flex;
             flex-direction: column;
@@ -439,7 +482,6 @@
             color: var(--text-light);
             cursor: pointer;
             border-radius: 12px;
-            white-space: nowrap;
             transition: all 0.2s;
         }
 
@@ -454,7 +496,6 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         }
 
-        /* CONTENT AREA */
         .drawer-content {
             flex: 1;
             display: flex;
@@ -481,12 +522,7 @@
             font-weight: 800;
             color: var(--text-light);
             border: none;
-            transition: all 0.2s;
             cursor: pointer;
-        }
-
-        .tab:hover {
-            background: #d1d8e0;
         }
 
         .tab.active {
@@ -509,24 +545,23 @@
             background: #f8f9fa;
         }
 
-        .search-icon {
+        .search-icon,
+        .clear-icon {
             position: absolute;
-            left: 14px;
             top: 50%;
             transform: translateY(-50%);
             color: #b2bec3;
+        }
+
+        .search-icon {
+            left: 14px;
         }
 
         .clear-icon {
-            position: absolute;
             right: 14px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #b2bec3;
             cursor: pointer;
         }
 
-        /* ITEMS GRID */
         .items-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
@@ -535,7 +570,6 @@
             padding-bottom: 140px;
             overflow-y: auto;
             flex: 1;
-            overscroll-behavior: contain;
         }
 
         .items-grid.standard-view {
@@ -662,11 +696,6 @@
             align-items: center;
             justify-content: center;
             z-index: 50;
-            transition: all 0.2s;
-        }
-
-        .drawer-close:hover {
-            background: #dfe6e9;
         }
 
         /* BOTTOM PANEL */
@@ -709,7 +738,6 @@
             margin: 0;
             font-size: 0.9rem;
             font-weight: 900;
-            color: var(--text-main);
         }
 
         .panel-info span {
@@ -803,35 +831,95 @@
             font-weight: 800;
             font-size: 0.85rem;
             cursor: pointer;
-            box-shadow: 0 4px 10px rgba(45, 52, 54, 0.2);
-            transition: all 0.2s;
-        }
-
-        .panel-add-btn:hover {
-            transform: scale(1.05);
         }
 
         /* ==========================================================================
-   MOBILE RESPONSIVE LOGIC
-   ========================================================================== */
+           RESPONSIVE (SIDE-BY-SIDE MOBILE)
+           ========================================================================== */
         @media (max-width: 768px) {
-            :root {
-                --cols: 3;
-            }
-
             .wrap {
-                padding: 15px;
-                padding-bottom: 100px;
+                padding: 10px;
+                padding-bottom: 50px;
             }
 
-            .scoreboard-wrap {
-                gap: 10px;
-            }
-
+            /* FORCE SIDE BY SIDE ROW */
             .trade-row {
                 flex-direction: row;
+                gap: 5px;
+                align-items: stretch;
             }
 
+            /* SHRINK PANELS */
+            .trade-panel {
+                padding: 8px;
+                border-radius: 16px;
+                flex: 1;
+                /* Take equal width */
+                min-width: 0;
+                /* Allow shrinking */
+            }
+
+            .panel-title {
+                font-size: 0.65rem;
+                white-space: nowrap;
+            }
+
+            .panel-score {
+                font-size: 1rem;
+                margin-top: 2px;
+            }
+
+            /* SHRINK GRID */
+            .slots-grid {
+                gap: 4px;
+            }
+
+            .slot {
+                border-radius: 8px;
+                border-width: 1px;
+            }
+
+            .slot .add-symbol {
+                font-size: 16px;
+            }
+
+            /* NARROW MIDDLE COLUMN */
+            .result-middle {
+                width: 30px;
+                /* Very thin middle column */
+                padding: 0;
+                justify-content: center;
+                gap: 5px;
+            }
+
+            /* Stack VS and Result vertically in the narrow column */
+            .vs-circle {
+                width: 24px;
+                height: 24px;
+                font-size: 0.6rem;
+                margin-bottom: 5px;
+            }
+
+            .result-badge {
+                padding: 4px 0;
+                width: 28px;
+                font-size: 0.65rem;
+                border-radius: 8px;
+                /* Vertical Text Mode for Mobile */
+                writing-mode: vertical-lr;
+                text-orientation: upright;
+                letter-spacing: -2px;
+                height: auto;
+                min-height: 60px;
+            }
+
+            .diff-display {
+                display: none;
+            }
+
+            /* Hide difference number on mobile to save space */
+
+            /* DRAWER MOBILE ADJUSTMENTS (Kept same) */
             .drawer-box {
                 flex-direction: column;
                 width: 100%;
@@ -852,14 +940,12 @@
                 overflow: visible;
             }
 
-            /* Mobile: Controls stack horizontally */
             .sidebar-controls {
                 border: none;
                 margin: 0;
                 padding: 0 0 10px 0;
             }
 
-            /* Mobile: Rarity Grid Scroll */
             .rarity-grid {
                 display: flex;
                 overflow-x: auto;
@@ -867,10 +953,6 @@
                 width: 100%;
                 padding-bottom: 5px;
                 scrollbar-width: none;
-            }
-
-            .rarity-grid::-webkit-scrollbar {
-                display: none;
             }
 
             .rarity-btn {
@@ -888,10 +970,6 @@
                 width: 100%;
                 padding-bottom: 5px;
                 scrollbar-width: none;
-            }
-
-            #drawer-categories-list::-webkit-scrollbar {
-                display: none;
             }
 
             .nav-btn {
@@ -921,29 +999,24 @@
                 background: #fff;
             }
 
-            .panel-left {
+            .panel-left,
+            .panel-controls,
+            .toggle-group {
                 width: 100%;
                 justify-content: center;
             }
 
             .panel-controls {
                 flex-direction: column;
-                width: 100%;
-                gap: 15px;
             }
 
             .toggle-group {
-                width: 100%;
                 justify-content: space-between;
             }
 
             .toggle-opt {
                 flex: 1;
                 text-align: center;
-            }
-
-            .toggle-opt span {
-                width: 100%;
             }
 
             .row-mobile {
@@ -963,30 +1036,13 @@
                 padding-bottom: 250px;
             }
         }
-
-        @media (min-width: 768px) {
-            :root {
-                --cols: 4;
-            }
-        }
     </style>
 </head>
 
 <body>
     <div class="wrap">
+        <!-- Top Meter -->
         <div class="scoreboard-wrap">
-            <div class="meter-labels">
-                <span>WIN</span>
-                <span>FAIR</span>
-                <span>LOSE</span>
-            </div>
-            <div class="score-line">
-                <span class="score-val" id="your-score">0</span>
-                <span class="score-label">YOUR OFFER</span>
-                <span class="score-separator">|</span>
-                <span class="score-label">THEIR OFFER</span>
-                <span class="score-val" id="their-score">0</span>
-            </div>
             <div class="meter-track">
                 <div class="meter-gradient"></div>
                 <div class="meter-pointer" id="fair-pointer"></div>
@@ -995,29 +1051,46 @@
 
 
         <div class="trade-row">
+            <!-- Left Panel -->
             <div class="trade-panel">
+                <div class="panel-header">
+                    <div class="panel-title">Your Offer</div>
+                    <div class="panel-score" id="your-score">0</div>
+                </div>
                 <div class="slots-grid" id="your-grid"></div>
             </div>
+
+            <!-- Middle Result Section -->
+            <div class="result-middle">
+                <div class="vs-circle">VS</div>
+                <div class="result-badge" id="result-status">---</div>
+                <div class="diff-display" id="result-diff">Diff: 0</div>
+            </div>
+
+            <!-- Right Panel -->
             <div class="trade-panel">
+                <div class="panel-header">
+                    <div class="panel-title">Their Offer</div>
+                    <div class="panel-score" id="their-score">0</div>
+                </div>
                 <div class="slots-grid" id="their-grid"></div>
             </div>
         </div>
     </div>
     <div class="unit-wrap">
-        <span class="recommended-label">RECOMMENDED <span class="arrow">→</span></span>
+        <span class="recommended-label">VALUES:</span>
         <div class="unit-switcher">
             <button class="unit-btn shark active" data-unit="shark">Shark</button>
             <button class="unit-btn frost" data-unit="frost">Frost</button>
         </div>
     </div>
 
-    <!-- DRAWER -->
+    <!-- DRAWER (Search/Select) -->
     <div class="modal-backdrop" id="drawer-overlay">
         <div class="drawer-box">
             <button class="drawer-close" id="drawer-close">&times;</button>
 
             <aside class="drawer-sidebar">
-                <!-- Rarity Filters (Added) -->
                 <div class="sidebar-controls" id="rarity-filters-container">
                     <div class="rarity-grid">
                         <button class="rarity-btn active" data-rarity="all">All</button>
@@ -1028,10 +1101,7 @@
                         <button class="rarity-btn" data-rarity="common">Com</button>
                     </div>
                 </div>
-
-                <div id="drawer-categories-list">
-                    <!-- Categories injected via JS -->
-                </div>
+                <div id="drawer-categories-list"></div>
             </aside>
 
             <div class="drawer-content">
@@ -1056,7 +1126,6 @@
                             <span>Select Variant</span>
                         </div>
                     </div>
-
                     <div class="panel-controls">
                         <div class="toggle-group">
                             <label class="toggle-opt reg"><input type="radio" name="p_ver" value="rvalue"
@@ -1066,7 +1135,6 @@
                             <label class="toggle-opt mega"><input type="radio" name="p_ver"
                                     value="mvalue"><span>Mega</span></label>
                         </div>
-
                         <div class="row-mobile">
                             <div class="potion-checks">
                                 <label class="potion-btn fly"><input type="checkbox" id="p_fly"><span>F</span></label>
@@ -1084,11 +1152,11 @@
         document.addEventListener("DOMContentLoaded", () => {
             let FROST_VALUE = 160.0;
             let SHARK_VALUE = 1.0;
-            const MAX_SLOTS = 16;
+            const MAX_SLOTS = 9;
+
             let allData = [], categories = [], activeCategory = "all", activeGrid = null, selectedItem = null;
             let isDetailedView = false;
             let currentUnit = 'shark';
-            // NEW: Active Rarity state
             let activeRarity = 'all';
 
             const dom = {
@@ -1097,6 +1165,10 @@
                 yourScore: document.getElementById("your-score"),
                 theirScore: document.getElementById("their-score"),
                 fairPointer: document.getElementById("fair-pointer"),
+
+                resultStatus: document.getElementById("result-status"),
+                resultDiff: document.getElementById("result-diff"),
+
                 drawerOverlay: document.getElementById("drawer-overlay"),
                 drawerItems: document.getElementById("drawer-items"),
                 drawerSearch: document.getElementById("drawer-search"),
@@ -1111,7 +1183,6 @@
                 checkRide: document.getElementById("p_ride"),
                 clearSearch: document.getElementById("clear-search"),
                 viewButtons: document.querySelectorAll(".tab[data-view]"),
-                // NEW: Rarity elements
                 rarityFiltersContainer: document.getElementById("rarity-filters-container"),
                 rarityButtons: document.querySelectorAll(".rarity-btn"),
             };
@@ -1122,7 +1193,6 @@
                     { name: "Shadow Dragon", type: "pets", rarity: "legendary", rvalue: 250, image: "https://static.wikia.nocookie.net/adoptme/images/e/e0/Shadow_Dragon.png", nvalue: 800, mvalue: 2500 },
                     { name: "Unicorn", type: "pets", rarity: "legendary", rvalue: 3, image: "https://static.wikia.nocookie.net/adoptme/images/e/e9/Unicorn.png", nvalue: 12, mvalue: 40 },
                     { name: "Cat", type: "pets", rarity: "common", rvalue: 0.1, image: "https://static.wikia.nocookie.net/adoptme/images/9/9d/Cat.png" },
-                    { name: "Sandwich", type: "food", value: 0.01, image: "https://static.wikia.nocookie.net/adoptme/images/9/9e/Sandwich.png" }
                 ];
 
                 try {
@@ -1158,13 +1228,9 @@
                         activeCategory = cat;
                         document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
                         btn.classList.add('active');
-
-                        // Toggle Rarity Visibility: Show if category is 'all' or 'pets'
-                        // (Matching behavior from reference code, usually relevant for pets)
                         if (dom.rarityFiltersContainer) {
                             dom.rarityFiltersContainer.style.display = (activeCategory === 'pets' || activeCategory === 'all') ? 'block' : 'none';
                         }
-
                         renderDrawerItems();
                         dom.bottomPanel.classList.remove('active');
                         document.querySelectorAll('.item-card').forEach(c => c.classList.remove('active'));
@@ -1200,7 +1266,6 @@
                     renderDrawerItems();
                 };
 
-                // NEW: Rarity Button Logic
                 dom.rarityButtons.forEach(btn => {
                     btn.onclick = () => {
                         dom.rarityButtons.forEach(b => b.classList.remove('active'));
@@ -1247,14 +1312,9 @@
                 const q = dom.drawerSearch.value.toLowerCase();
                 let filteredData = allData.filter(i => i.name.toLowerCase().includes(q));
 
-                // Category Filter
                 if (activeCategory !== 'all') {
                     filteredData = filteredData.filter(i => i.type === activeCategory);
                 }
-
-                // NEW: Rarity Filter Logic
-                // We apply rarity filter if activeRarity is not 'all'.
-                // Note: rarity in data usually matches the button data (legendary, ultra-rare, etc)
                 if (activeRarity !== 'all') {
                     filteredData = filteredData.filter(i => i.rarity && i.rarity.toLowerCase().replace(' ', '-') === activeRarity);
                 }
@@ -1356,53 +1416,59 @@
 
             function calculate() {
                 const sum = (g) => Array.from(g.children).reduce((a, b) => a + (parseFloat(b.dataset.value) || 0), 0);
-                const v1 = sum(dom.yourGrid), v2 = sum(dom.theirGrid);
+                let v1 = sum(dom.yourGrid);
+                let v2 = sum(dom.theirGrid);
 
                 const unitValue = currentUnit === 'frost' ? FROST_VALUE : SHARK_VALUE;
-                dom.yourScore.textContent = (v1 / unitValue).toFixed(0);
-                dom.theirScore.textContent = (v2 / unitValue).toFixed(0);
+                const displayV1 = v1 / unitValue;
+                const displayV2 = v2 / unitValue;
 
-                const t = v1 + v2; let pct = 50;
-                if (t > 0) pct = (v2 / t) * 100; pct = Math.max(5, Math.min(95, pct));
+                dom.yourScore.textContent = displayV1.toFixed(1);
+                dom.theirScore.textContent = displayV2.toFixed(1);
+
+                const t = v1 + v2;
+                let pct = 50;
+                if (t > 0) pct = (v2 / t) * 100;
+                pct = Math.max(5, Math.min(95, pct));
                 dom.fairPointer.style.left = `${pct}%`;
+
+                const diff = displayV2 - displayV1;
+                dom.resultDiff.textContent = `Diff: ${Math.abs(diff).toFixed(1)}`;
+
+                dom.resultStatus.className = 'result-badge';
+
+                let status = "---";
+                if (v1 === 0 && v2 === 0) {
+                    status = "---";
+                } else {
+                    const ratio = v1 > 0 ? (v2 / v1) : 2;
+
+                    if (ratio >= 1.1) {
+                        status = "WIN";
+                        dom.resultStatus.classList.add('win');
+                    } else if (ratio <= 0.9) {
+                        status = "LOSE";
+                        dom.resultStatus.classList.add('lose');
+                    } else {
+                        status = "FAIR";
+                        dom.resultStatus.classList.add('fair');
+                    }
+                }
+
+                dom.resultStatus.textContent = status;
             }
 
             init();
         });
 
-        let lastHeight = 0;
-
-        // --- Function to send height to the parent window (e.g., WordPress) ---
         function sendHeight() {
             if (window.parent) {
-                const height = document.body.scrollHeight;
-                window.parent.postMessage(
-                    {
-                        height: height,
-                    },
-                    "*"
-                );
+                window.parent.postMessage({ height: document.body.scrollHeight }, "*");
             }
         }
-        // --- Logic for Embedding and Dynamic Resizing ---
         document.addEventListener("DOMContentLoaded", () => {
-            // Initial animations on page load
-            document.querySelectorAll(".animate__animated").forEach((el, i) => {
-                el.style.animationDelay = `${i * 0.1}s`;
-            });
-
-            // Send initial height to parent window
             sendHeight();
-
-            // Use a MutationObserver to watch for any changes in the page content
-            // and send the new height to the parent window.
-            const observer = new MutationObserver(() => sendHeight());
-            observer.observe(document.body, {
-                childList: true,
-                subtree: true,
-                attributes: true,
-                characterData: true,
-            });
+            new MutationObserver(() => sendHeight()).observe(document.body, { childList: true, subtree: true, attributes: true });
         });
     </script>
 </body>
