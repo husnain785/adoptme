@@ -247,7 +247,7 @@
             align-items: center;
             justify-content: center;
             font-weight: 900;
-            font-size: 2rem;
+            font-size: 1.5rem;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
         }
 
@@ -889,90 +889,138 @@
         }
 
         /* ==========================================================================
-           RESPONSIVE (MOBILE)
+           RESPONSIVE (MOBILE) - FIXED
            ========================================================================== */
         @media (max-width: 768px) {
             .wrap {
-                padding: 10px;
+                padding: 12px;
             }
 
             /* TOP SECTION */
             .top-section {
-                padding: 20px 15px;
+                padding: 18px 12px;
+                margin-bottom: 15px;
+            }
+
+            .result-header {
+                margin-bottom: 15px;
             }
 
             .result-badge {
-                font-size: 1.1rem;
-                padding: 10px 30px;
-                min-width: 120px;
+                font-size: 1rem;
+                padding: 8px 24px;
+                min-width: 100px;
+                letter-spacing: 2px;
             }
 
             .values-row {
-                gap: 15px;
+                gap: 12px;
             }
 
             .value-label {
-                font-size: 0.75rem;
+                font-size: 0.7rem;
+                margin-bottom: 6px;
             }
 
             .value-number {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
 
             .divider {
-                height: 50px;
+                height: 45px;
+            }
+
+            .meter-wrap {
+                margin: 15px 0;
+            }
+
+            .meter-track {
+                height: 24px;
+            }
+
+            .meter-pointer {
+                width: 30px;
+                height: 30px;
+                border-width: 4px;
             }
 
             .diff-display {
-                font-size: 0.9rem;
+                font-size: 0.85rem;
+                margin-top: 8px;
             }
 
-            /* TRADE SECTION */
+            /* TRADE SECTION - CRITICAL FIX */
             .trade-section {
-                padding: 20px 15px;
+                padding: 15px 10px;
+                margin-bottom: 15px;
             }
 
             .trade-row {
-                gap: 10px;
+                gap: 8px;
+                flex-wrap: nowrap;
             }
 
-            .middle-score {
-                width: 60px;
-            }
-
-            .vs-circle {
-                width: 50px;
-                height: 50px;
-                font-size: 1.4rem;
-                border-width: 2px;
+            .trade-panel {
+                flex: 1;
+                min-width: 0;
             }
 
             .panel-title {
-                font-size: 0.85rem;
-                margin-bottom: 12px;
+                font-size: 0.75rem;
+                margin-bottom: 10px;
             }
 
+            /* MIDDLE CIRCLE - FIXED TO NOT OVERLAP */
+            .middle-score {
+                width: 50px;
+                flex-shrink: 0;
+            }
+
+            .vs-circle {
+                width: 48px;
+                height: 48px;
+                font-size: 1rem;
+                border-width: 2px;
+            }
+
+            /* SLOTS GRID */
             .slots-grid {
-                gap: 8px;
+                gap: 6px;
             }
 
             .slot {
-                border-radius: 12px;
-                min-height: 70px;
+                border-radius: 10px;
+                min-height: 60px;
+                border-width: 1.5px;
             }
 
             .slot .add-symbol {
-                font-size: 24px;
+                font-size: 20px;
+            }
+
+            .slot img {
+                width: 80%;
+                height: 80%;
+            }
+
+            .tag {
+                font-size: 8px;
+                padding: 2px 4px;
             }
 
             /* UNIT SWITCHER */
             .unit-section {
                 flex-direction: column;
-                gap: 10px;
+                gap: 8px;
+                margin-bottom: 15px;
+            }
+
+            .recommended-label {
+                font-size: 0.75rem;
             }
 
             .unit-btn {
-                padding: 10px 22px;
+                padding: 10px 20px;
                 font-size: 0.85rem;
             }
 
@@ -1007,9 +1055,10 @@
 
             .rarity-btn {
                 flex-shrink: 0;
-                padding: 10px 18px;
+                padding: 8px 14px;
                 border-radius: 20px;
-                min-width: 70px;
+                min-width: 65px;
+                font-size: 0.75rem;
             }
 
             #drawer-categories-list {
@@ -1026,12 +1075,12 @@
             .nav-btn {
                 width: auto;
                 flex-shrink: 0;
-                padding: 10px 18px;
+                padding: 8px 16px;
                 border: 2px solid #f1f2f6;
                 background: #fff;
                 border-radius: 20px;
-                font-size: 0.85rem;
-                min-width: 100px;
+                font-size: 0.8rem;
+                min-width: 90px;
             }
 
             .nav-btn.active {
@@ -1042,35 +1091,71 @@
 
             .search-area {
                 flex-direction: column;
-                padding: 15px;
-                gap: 10px;
+                padding: 12px;
+                gap: 8px;
+            }
+
+            .tab {
+                padding: 8px 16px;
+                font-size: 0.8rem;
             }
 
             .search-input {
-                padding: 14px 18px 14px 45px;
+                padding: 12px 16px 12px 40px;
+                font-size: 0.95rem;
+            }
+
+            .search-icon {
+                font-size: 1rem;
+                left: 14px;
+            }
+
+            .clear-icon {
+                font-size: 1.3rem;
+                right: 14px;
             }
 
             .items-grid {
-                grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-                gap: 12px;
-                padding: 15px;
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                gap: 10px;
+                padding: 12px;
                 padding-bottom: 300px;
             }
 
             .items-grid.standard-view {
-                grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+                grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+                gap: 8px;
+            }
+
+            .items-grid.standard-view .item-card {
+                height: 80px;
             }
 
             .item-card {
-                height: 160px;
+                height: 150px;
                 padding: 10px;
+                border-radius: 16px;
+            }
+
+            .item-name {
+                font-size: 0.75rem;
+            }
+
+            .item-val-badge {
+                font-size: 0.7rem;
+                padding: 3px 6px;
+            }
+
+            .item-rarity {
+                font-size: 0.6rem;
+                padding: 3px 6px;
             }
 
             /* BOTTOM PANEL */
             .bottom-panel {
                 flex-direction: column;
-                gap: 15px;
-                padding: 20px 15px;
+                gap: 12px;
+                padding: 16px 12px;
                 bottom: 0;
                 left: 0;
                 right: 0;
@@ -1080,18 +1165,26 @@
 
             .panel-left {
                 width: 100%;
-                gap: 15px;
+                gap: 12px;
             }
 
             .panel-img {
-                width: 70px;
-                height: 70px;
+                width: 60px;
+                height: 60px;
+            }
+
+            .panel-info h4 {
+                font-size: 1rem;
+            }
+
+            .panel-info span {
+                font-size: 0.75rem;
             }
 
             .panel-controls {
                 width: 100%;
                 flex-direction: column;
-                gap: 12px;
+                gap: 10px;
             }
 
             .toggle-group {
@@ -1103,21 +1196,28 @@
                 flex: 1;
             }
 
+            .toggle-opt span {
+                padding: 10px 12px;
+                font-size: 0.8rem;
+            }
+
             .row-mobile {
                 display: flex;
-                gap: 12px;
+                gap: 10px;
                 width: 100%;
                 justify-content: space-between;
             }
 
             .potion-btn span {
-                width: 50px;
-                height: 50px;
+                width: 48px;
+                height: 48px;
+                font-size: 0.95rem;
             }
 
             .panel-add-btn {
                 flex: 1;
-                padding: 16px;
+                padding: 14px;
+                font-size: 0.95rem;
             }
         }
     </style>
@@ -1591,12 +1691,30 @@
 
         function sendHeight() {
             if (window.parent) {
-                window.parent.postMessage({ height: document.body.scrollHeight }, "*");
+                const height = Math.max(
+                    document.body.scrollHeight,
+                    document.body.offsetHeight,
+                    document.documentElement.clientHeight,
+                    document.documentElement.scrollHeight,
+                    document.documentElement.offsetHeight
+                );
+                window.parent.postMessage({ height: height }, "*");
             }
         }
+
+        window.addEventListener("load", function() {
+            setTimeout(sendHeight, 100);
+            setTimeout(sendHeight, 500);
+            setTimeout(sendHeight, 1000);
+        });
+
         document.addEventListener("DOMContentLoaded", () => {
             sendHeight();
-            new MutationObserver(() => sendHeight()).observe(document.body, { childList: true, subtree: true, attributes: true });
+            new MutationObserver(() => sendHeight()).observe(document.body, { 
+                childList: true, 
+                subtree: true, 
+                attributes: true 
+            });
         });
     </script>
 </body>
