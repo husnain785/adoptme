@@ -41,7 +41,6 @@
             color: var(--text-main);
             overflow-x: hidden;
             overscroll-behavior-y: none;
-            background: transparent;
         }
 
         body.modal-open {
@@ -57,7 +56,7 @@
         .wrap {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 15px 20px 30px 20px;
+            padding: 20px;
         }
 
         /* === TOP SECTION (WIN/FAIR/LOSE + Values) === */
@@ -154,7 +153,7 @@
 
         /* === METER === */
         .meter-wrap {
-            margin: 20px 0 15px 0;
+            margin: 20px 0;
         }
 
         .meter-track {
@@ -293,8 +292,8 @@
 
         .slot.filled {
             background: #fff;
-            border: 2px solid #000000;
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+            border: 2px solid #ff69b4;
+            box-shadow: 0 8px 15px rgba(255, 105, 180, 0.15);
             animation: popIn 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         }
 
@@ -368,7 +367,7 @@
             justify-content: center;
             align-items: center;
             gap: 15px;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
         }
 
         .recommended-label {
@@ -894,7 +893,7 @@
            ========================================================================== */
         @media (max-width: 768px) {
             .wrap {
-                padding: 10px 10px 20px 10px;
+                padding: 10px;
             }
 
             /* TOP SECTION */
@@ -970,7 +969,6 @@
             .unit-section {
                 flex-direction: column;
                 gap: 10px;
-                margin-bottom: 15px;
             }
 
             .unit-btn {
@@ -1552,6 +1550,7 @@
                 dom.yourScore.textContent = displayV1.toFixed(currentUnit === 'frost' ? 2 : 0);
                 dom.theirScore.textContent = displayV2.toFixed(currentUnit === 'frost' ? 2 : 0);
 
+                // Update middle circle with difference
                 const diff = Math.abs(displayV2 - displayV1);
                 const vsCircle = document.querySelector('.vs-circle');
                 vsCircle.textContent = diff.toFixed(currentUnit === 'frost' ? 1 : 0);
@@ -1585,51 +1584,20 @@
                 }
 
                 dom.resultStatus.textContent = status;
-                
-                // Send updated height to parent
-                sendHeight();
             }
 
             init();
         });
 
-        // ENHANCED HEIGHT COMMUNICATION
         function sendHeight() {
-            if (window.parent && window.parent !== window) {
-                const height = Math.max(
-                    document.body.scrollHeight,
-                    document.body.offsetHeight,
-                    document.documentElement.clientHeight,
-                    document.documentElement.scrollHeight,
-                    document.documentElement.offsetHeight
-                );
-                window.parent.postMessage({ height: height }, "*");
+            if (window.parent) {
+                window.parent.postMessage({ height: document.body.scrollHeight }, "*");
             }
         }
-
-        // Send height multiple times on load to ensure capture
-        window.addEventListener("load", function() {
-            setTimeout(sendHeight, 100);
-            setTimeout(sendHeight, 300);
-            setTimeout(sendHeight, 500);
-            setTimeout(sendHeight, 1000);
-        });
-
         document.addEventListener("DOMContentLoaded", () => {
             sendHeight();
-            // Watch for any changes and update height
-            new MutationObserver(() => {
-                sendHeight();
-            }).observe(document.body, { 
-                childList: true, 
-                subtree: true, 
-                attributes: true,
-                characterData: true
-            });
+            new MutationObserver(() => sendHeight()).observe(document.body, { childList: true, subtree: true, attributes: true });
         });
-
-        // Also send on window resize
-        window.addEventListener("resize", sendHeight);
     </script>
 </body>
 
