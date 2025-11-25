@@ -55,18 +55,18 @@
            MAIN LAYOUT
            ========================================================================== */
         .wrap {
-            max-width: 1200px;
+            max-width: 720px;
             margin: 0 auto;
-            padding: 20px 20px 0 20px;
+            padding: 15px 15px 0 15px;
         }
 
         /* === TOP SECTION (WIN/FAIR/LOSE + Values) === */
         .top-section {
             background: var(--card-bg);
-            border-radius: var(--radius-xl);
+            border-radius: 20px;
             box-shadow: var(--card-shadow);
-            padding: 25px;
-            margin-bottom: 20px;
+            padding: 18px;
+            margin-bottom: 15px;
             border: 1px solid rgba(255, 255, 255, 0.6);
         }
 
@@ -74,22 +74,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 15px;
-            margin-bottom: 20px;
+            gap: 12px;
+            margin-bottom: 15px;
         }
 
         .result-badge {
             background: #dfe6e9;
-            padding: 12px 40px;
-            border-radius: 50px;
+            padding: 10px 32px;
+            border-radius: 40px;
             font-weight: 900;
-            font-size: 1.4rem;
+            font-size: 1.1rem;
             color: #b2bec3;
             text-transform: uppercase;
-            letter-spacing: 3px;
+            letter-spacing: 2px;
             transition: all 0.3s ease;
             border: 3px solid #f1f2f6;
-            min-width: 140px;
+            min-width: 110px;
             text-align: center;
         }
 
@@ -115,7 +115,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 20px;
+            gap: 15px;
         }
 
         .value-box {
@@ -124,16 +124,16 @@
         }
 
         .value-label {
-            font-size: 0.9rem;
+            font-size: 0.75rem;
             font-weight: 800;
             color: var(--text-light);
             text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 8px;
+            letter-spacing: 0.8px;
+            margin-bottom: 6px;
         }
 
         .value-number {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 900;
             color: var(--text-main);
         }
@@ -148,18 +148,18 @@
 
         .divider {
             width: 2px;
-            height: 60px;
+            height: 50px;
             background: linear-gradient(180deg, transparent, #dfe6e9, transparent);
         }
 
         /* === METER === */
         .meter-wrap {
-            margin: 20px 0;
+            margin: 15px 0;
         }
 
         .meter-track {
             width: 100%;
-            height: 28px;
+            height: 24px;
             background: #dfe6e9;
             border-radius: 20px;
             position: relative;
@@ -179,10 +179,10 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            width: 36px;
-            height: 36px;
+            width: 30px;
+            height: 30px;
             background: #fff;
-            border: 5px solid var(--text-main);
+            border: 4px solid var(--text-main);
             border-radius: 50%;
             transition: left 0.6s cubic-bezier(0.22, 1, 0.36, 1);
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -191,8 +191,8 @@
 
         .diff-display {
             text-align: center;
-            margin-top: 10px;
-            font-size: 1rem;
+            margin-top: 8px;
+            font-size: 0.9rem;
             font-weight: 800;
             color: var(--text-main);
         }
@@ -200,32 +200,32 @@
         /* === TRADE AREA === */
         .trade-section {
             background: var(--card-bg);
-            border-radius: var(--radius-xl);
+            border-radius: 20px;
             box-shadow: var(--card-shadow);
-            padding: 25px;
+            padding: 18px;
             border: 1px solid rgba(255, 255, 255, 0.6);
-            margin-bottom: 20px;
+            margin-bottom: 15px;
         }
 
         .trade-row {
             display: flex;
-            gap: 20px;
+            gap: 15px;
             align-items: center;
             justify-content: center;
         }
 
         .trade-panel {
             flex: 1;
-            max-width: 450px;
+            max-width: 300px;
         }
 
         .panel-title {
-            font-size: 1rem;
+            font-size: 0.85rem;
             font-weight: 800;
             color: var(--text-light);
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             text-align: center;
         }
 
@@ -233,13 +233,13 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 100px;
+            width: 70px;
             flex-shrink: 0;
         }
 
         .vs-circle {
-            width: 70px;
-            height: 70px;
+            width: 55px;
+            height: 55px;
             background: #fff;
             border: 3px solid #dfe6e9;
             color: var(--text-main);
@@ -248,7 +248,7 @@
             align-items: center;
             justify-content: center;
             font-weight: 900;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
         }
 
@@ -256,13 +256,13 @@
         .slots-grid {
             display: grid;
             grid-template-columns: repeat(var(--cols), 1fr);
-            gap: 12px;
+            gap: 10px;
         }
 
         .slot {
             aspect-ratio: 1;
             background: var(--slot-bg);
-            border-radius: 16px;
+            border-radius: 14px;
             border: 2px solid transparent;
             position: relative;
             cursor: pointer;
@@ -272,7 +272,7 @@
             justify-content: center;
             overflow: hidden;
             box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.04);
-            min-height: 80px;
+            min-height: 65px;
         }
 
         .slot:hover {
@@ -319,7 +319,7 @@
         }
 
         .add-symbol {
-            font-size: 32px;
+            font-size: 26px;
             color: #fab1a0;
             font-weight: 900;
             transition: 0.2s;
@@ -348,10 +348,10 @@
         }
 
         .tag {
-            font-size: 10px;
+            font-size: 9px;
             font-weight: 900;
             color: #fff;
-            padding: 3px 6px;
+            padding: 2px 5px;
             border-radius: 4px;
             line-height: 1;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -367,22 +367,22 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 15px;
+            gap: 12px;
             margin-bottom: 0;
         }
 
         .recommended-label {
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             font-weight: 800;
             color: #b2bec3;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            letter-spacing: 0.8px;
         }
 
         .unit-switcher {
             background: #fff;
-            padding: 5px;
-            border-radius: 40px;
+            padding: 4px;
+            border-radius: 35px;
             display: flex;
             gap: 4px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
@@ -390,11 +390,11 @@
 
         .unit-btn {
             border: none;
-            padding: 12px 28px;
+            padding: 10px 24px;
             border-radius: 30px;
             font-weight: 800;
             font-family: inherit;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             color: #636e72;
             cursor: pointer;
             background: transparent;
@@ -894,7 +894,7 @@
            ========================================================================== */
         @media (max-width: 768px) {
             .wrap {
-                padding: 10px 10px 0 10px;
+                padding: 10px 10px 5px 10px;
             }
 
             /* TOP SECTION */
@@ -1725,11 +1725,15 @@
 
         function sendHeight() {
             if (window.parent) {
-                // Wait a moment for layout to settle
                 setTimeout(() => {
                     const wrap = document.querySelector('.wrap');
-                    const height = wrap ? wrap.scrollHeight + 40 : document.body.scrollHeight;
-                    window.parent.postMessage({ height: height }, "*");
+                    if (wrap) {
+                        const wrapHeight = wrap.scrollHeight;
+                        const isMobile = window.innerWidth <= 768;
+                        const buffer = isMobile ? 15 : 30;
+                        const height = wrapHeight + buffer;
+                        window.parent.postMessage({ height: height }, "*");
+                    }
                 }, 50);
             }
         }
